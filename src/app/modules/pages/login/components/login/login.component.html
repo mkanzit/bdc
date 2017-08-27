@@ -1,0 +1,50 @@
+<div class="block block-login">
+  <div class="login-form-container">
+
+    <div class="site-branding mb28">
+      <a [routerLink]="['/home']" alt="Orange - Base de Co" title="Orange - Base de connaissance">
+        <img src="assets/imgs/contenus/logo-bdc.jpg" width="50" height="50" alt="Orange - Base de connaissance" title="Orange - Base de connaissance">
+      </a>
+      <span>Base de connaissance</span>
+    </div>
+
+    <div class="login-form block-bg-stand">
+      <h3 class="n3-title mb28">Authentification</h3>
+      <div class="grid-2-3">
+        <div class="block-bg-stand__content">
+          <form class="form-login" [formGroup]="form" (ngSubmit)="submit()">
+            <fieldset title="">
+              <div class="mbs">
+                <div>
+                  <div class="unstyled">
+                    <div class="block-mob__item item-form">
+                      <label for="email">Login</label>
+                      <div class="item-form-input">
+                        <input type="text" class="input-form" formControlName="email">
+                      </div>
+                    </div>
+                    <div class="block-mob__item item-form">
+                      <label for="mot-passe">Mot de passe</label>
+                      <div class="item-form-input">
+                        <input type="password" class="input-form" formControlName="password">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                </div>
+              </div>
+              <div class="grid-2-small-2-tiny-2">
+                <button class="btn mbm" (click)="reset($event)">Annuler</button>
+                <input type="submit" value="Connexion" class="btn btn--important submit mbm" [disabled]="!form.valid">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="block-bg-stand__visuel">
+          <img src="assets/imgs/contenus/login-img.jpg" alt="illustration" title="illustration">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

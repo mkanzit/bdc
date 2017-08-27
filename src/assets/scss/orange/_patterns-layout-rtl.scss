@@ -1,0 +1,256 @@
+/*LAYOUT*/
+body {
+    color: $bodyColor;
+    font: 1.6rem $HelvNeue-roman-arabic;
+    font-weight: $font-B;
+    line-height: 140%;
+}
+
+h1,.n1-title{
+    font-family: $HelvNeue-roman-arabic;
+    letter-spacing:0;
+}
+.headband-title{
+    font-family: $HelvNeue-roman-arabic;
+    letter-spacing:0;
+}
+h2,.n2-title{
+    font-family: $HelvNeue-roman-arabic;
+    line-height: 140% !important;
+    letter-spacing:0;
+}
+h3,.n3-title{
+    font-family: $HelvNeue-roman-arabic;
+    letter-spacing:0;
+}
+.n3-title--alt{
+    font-family: $HelvNeue-roman-arabic;
+    letter-spacing:0;
+}
+
+h4,.n4-title{
+    font-family: $HelvNeue-roman-arabic;
+    line-height: 35px;
+    letter-spacing:0;
+}
+
+h5,.n5-title{
+    font-family: $HelvNeue-roman-arabic;
+    letter-spacing:0;
+}
+@media #{$phone} {
+
+    [class*=grid-]>* {
+        margin-left: 0;
+        margin-right: 9px;
+    }
+    [class*=grid-] {
+        margin-right:  -9px;
+        margin-left: -9px;
+    }
+}
+.input-form {
+    padding: 0 8px 0 37px;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.block-myProfil .input-form {
+    padding: 0 8px 0 5px;
+}
+
+.validetta-error .item-form-input:before {
+    left: 10px;
+    right: inherit !important;
+}
+
+.validetta .item-form-input:before {
+    left: 10px;
+    right: inherit !important;
+}
+
+.btn {
+    padding: 9px 20px 11px;
+}
+
+.form-type-radio > label:before {
+    margin: 0 0 0 10px;
+}
+
+.link-wi{
+    text-decoration:none;
+    line-height: 1;
+    .icon{
+        &:before{
+            margin-right: 4px;
+            font-size: 1.6rem;
+            vertical-align: super;
+        }
+    }
+}
+.progress-bar {
+    float: right;
+}
+.simpletoggle-title{
+    &:before{
+        float: left;
+        margin-left: 0;
+        margin-right:  16px;
+    }
+    &.simpletoggle-title--alt{
+        &:before{
+            margin-right: 16px;
+            margin-left: 0;
+        }
+    }
+}
+
+.form-type-checkbox > label:before {
+    margin: 0 0 0 10px;
+}
+
+.sb-search-input-site {
+    float: right;
+    padding: 0 35px 0 15px;
+}
+.sb-search-submit-site {
+    float: left;
+}
+.block-search-site {
+
+    .ic-search {
+        left: inherit !important;
+        right: 10px;
+    }
+
+}
+.liste-wp{
+    margin-left: 0;
+    margin-right:  15px;
+}
+.toggle-option__body{
+    .liste-wp{
+        margin-right: 23px;
+    }
+}
+.selectBox-dropdown{
+    text-align: right;
+}
+.selectBox-dropdown .selectBox-arrow {
+    right: auto;
+    left:  0;
+}
+.table-liste{
+    td,th{
+        text-align: right;
+        &.table-liste__check{
+            padding-right: 5px;
+            padding-left: 30px;
+        }
+        &:last-child {
+            text-align: left;
+        }
+    }
+}
+
+.ui-datepicker-prev {
+
+    background: url("../imgs/css/icons/arrow-white-right.png") no-repeat 0 0;
+}
+
+.ui-datepicker-next {
+
+    background: url("../imgs/css/icons/arrow-white-left.png") no-repeat right 0;
+}
+
+.ui-datepicker-rtl .ui-datepicker-prev {
+    right: 2px;
+    left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+    left: 2px;
+    right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+    right: 2px;
+    left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+    left: 2px;
+    right: auto;
+}
+.block-theme {
+    >img{
+           -moz-transform: scaleX(-1) translate(50%,0);
+    -o-transform: scaleX(-1) translate(50%,0);
+    -webkit-transform: scaleX(-1) translate(50%,0);
+    transform: scaleX(-1) translate(50%,0);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    }
+}
+
+
+/*.block-theme-inside{
+
+    @media screen and (min-width: 768px) {
+        -webkit-transform:scaleX(-1);
+        -moz-transform:scaleX(-1);
+        -ms-transform:scaleX(-1);
+        -o-transform:scaleX(-1);
+        transform:scaleX(-1);
+
+    }
+    .block-theme-container{
+        @media screen and (min-width: 768px) {
+            -webkit-transform:scaleX(-1);
+            -moz-transform:scaleX(-1);
+            -ms-transform:scaleX(-1);
+            -o-transform:scaleX(-1);
+            transform:scaleX(-1);
+
+        }
+    }
+}
+.block-theme{
+    @media #{$phone} {
+        -webkit-transform:scaleX(-1);
+        -moz-transform:scaleX(-1);
+        -ms-transform:scaleX(-1);
+        -o-transform:scaleX(-1);
+        transform:scaleX(-1);
+
+    }
+     .block-theme-container{
+        @media #{$phone} {
+            -webkit-transform:scaleX(-1);
+            -moz-transform:scaleX(-1);
+            -ms-transform:scaleX(-1);
+            -o-transform:scaleX(-1);
+            transform:scaleX(-1);
+
+        }
+    }
+
+}*/
+.onlineediteur .liste-av li, .onlineediteur  .liste-av__item, .liste-av li, .liste-av__item{
+
+    padding-right: 25px;
+    padding-left: 0;
+
+}
+
+
+.onlineediteur .liste-av li,
+.onlineediteur .liste-av__item,
+.liste-av li,
+.liste-av__item {
+
+    &:before {
+        position: absolute;
+        left: auto;
+        right:  0;
+    }
+    padding-left: 0;
+    padding-right:  25px;
+}

@@ -1,0 +1,9 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  circle {
+    stroke: transparent;
+  }
+}
+
+:host(.rtl) /deep/ { }

@@ -1,0 +1,10 @@
+.service-box-icon{
+    min-height: 79px;
+}
+.items-vos-services{
+    >div{
+        @media #{$phone} {
+            margin-bottom: 20px;
+        }
+    }
+}

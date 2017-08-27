@@ -1,0 +1,201 @@
+
+.item-form-input{
+    &.item-form-datepicker{
+        &:before{
+            right: inherit !important;
+            left:  0;
+            border-left: none;
+            border-right:  2px solid #cccccc;
+        }
+    }
+}
+
+.validetta-error{
+    .item-form-input{
+        &:before{
+            right: auto;
+            left:  10px;
+        }
+    }
+
+} 
+.validetta{
+    .item-form-input{
+
+        &:before{
+
+            right: auto;
+            left:  10px;
+
+        }
+        &.item-form-datepicker{
+            &:before{
+                right: auto;
+                left: 0;
+                border-left: none;
+                border-right:  2px solid #cccccc;
+            }
+        }
+    }
+} 
+.form-type-radio {
+    > input[type="radio"] {
+        height: 20px;
+        left: auto;
+        right:  0;
+
+        @media #{$phone} {
+            top: 3px;
+        }
+    }
+    > label {
+        padding-left: 0;
+        padding-right:  29px;
+        &:before{
+
+            left: auto;
+            right:  0;
+            margin: 0 0 0 10px;
+        }
+    }
+    &.ntxt{
+        > label {
+            &:before{
+                margin: 0;
+            }
+        }
+    }
+}
+.form-type-checkbox {
+
+    > input[type="checkbox"] {
+        left: auto;
+        right:  0;
+    }
+    > label {
+        padding-left: 0;
+        padding-right:  31px;
+        &:before{
+            left: auto;
+            right:  0;
+            margin: 0 0 0 10px;
+
+             @media #{$phone} {
+                margin: 4px 0 0 10px;
+            }
+        }
+    }
+    &.ntxt{
+        > label {
+            &:before{
+                margin: 0;
+            }
+        }
+    }
+}
+.dropdown-black{ 
+    .selectBox-arrow{
+        &:before{
+            color: $black;
+            margin: 11px 8px 0 0;
+        }
+    }
+}
+.selectBox-options.selectBox-dropdown-menu {
+    li {
+        &[class^=ic-]{
+            &:before{
+                float: left;
+            }
+        }
+    }
+}
+
+.content-info {
+    left: inherit !important;
+    right:  36px;
+    @media #{$phone} {
+        right: 36px;
+        left: inherit !important;
+    }
+}
+
+.arrow_box {
+    &:after {
+        left: 100%;
+        right: auto;
+        border: solid transparent;
+        border-width: 7px;
+        border-color: rgba(221, 221, 221, 0);
+        border-left-color: #dddddd;
+    }
+    @media #{$phone} {
+        &:after {
+            right: 100%;
+            left: auto;
+          
+        
+        border-color: rgba(221, 221, 221, 0);
+        border-right-color: #dddddd;
+        border-width: 7px;
+     
+        }
+    }
+}
+/////////////
+.sb-search-input-site {
+    float: right;
+    padding: 0 35px 0  15px;
+}
+.sb-search-submit-site {
+    float: left;
+}
+.block-search-site {
+    .ic-search {
+        position: absolute;
+        left: auto;
+        right:  10px;
+    }
+}
+.checkbox{
+    input[type='checkbox']:checked+ label{
+        &:after{
+            left: auto;
+            right:  3px;
+        }
+    }
+}
+
+.alert{
+    .close{
+        right: auto;
+        left:  4px;
+    }
+}
+
+.table-stand {
+    
+    .form-type-checkbox > label:before {
+
+         @media #{$phone} {
+            margin-top: 4px;
+        }
+       
+    }
+}
+.picto-info {
+    
+    .ic-assistance {
+-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+}
+.txtright.inbl-label{
+    @media #{$phone} {
+        text-align: right;
+    }
+}

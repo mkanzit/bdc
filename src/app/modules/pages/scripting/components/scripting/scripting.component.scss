@@ -1,0 +1,16 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  .block-simple-text-illustration {
+    padding-bottom: 0;
+
+    .onlineediteur {
+      p {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+:host(.rtl) /deep/ { }

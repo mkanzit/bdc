@@ -1,0 +1,67 @@
+<div class="block-menu-aside" id="block-menu-aside">
+  <div class="anchor"></div>
+  <div class="widgets" style="display: none">
+    <ul class="widgets-list">
+
+      <li *ngIf="state.suggestion" class="widget widget-suggestion icon-suggestion">
+        <form class="block-widget block-suggestion" [formGroup]="suggestionForm" (ngSubmit)="suggest(suggestionForm.value)">
+          <i class="ic-Delete"></i>
+          <div class="block-widget-inner fl">
+            <h4 class="n4-title">{{ data.suggestion.title }}</h4>
+            <p>{{ data.suggestion.desc }}</p>
+
+            <div class="form-block mbm">
+              <label for="titre">{{ data.suggestion.label1 }}</label>
+              <input type="text" class="input-form" name="titre" formControlName="title">
+            </div>
+
+            <div class="form-block">
+              <label for="message">{{ data.suggestion.label2 }}</label>
+              <textarea name="message" class="input-form" rows="3" formControlName="message"></textarea>
+            </div>
+
+            <div class="mon-grid-2">
+              <div><button type="reset" class="btn btn-block" (click)="resetSuggestion($event)">{{ data.suggestion.cta[0] }}</button></div>
+              <div><button type="submit" class="btn btn--important btn-block" [disabled]="!suggestionForm.valid">{{ data.suggestion.cta[1] }}</button></div>
+            </div>
+          </div>
+        </form>
+      </li>
+
+      <li *ngIf="state.like" class="widget widget-like icon-like">
+        <form class="block-widget block-like" [formGroup]="dislikeForm" (ngSubmit)="dislike(dislikeForm.value)">
+          <i class="ic-Delete"></i>
+          <div class="block-widget-inner fl">
+            <h4 class="n4-title">{{ data.like.title }}</h4>
+            <button class="btn btn-like" [class.active]="notation.like" (click)="likeContent($event)">
+              <i class="ic-like"></i><span>{{ data.like.likes }}</span>
+            </button>
+            <button class="btn btn-dislike" (click)="dislikeContent($event)" [class.active]="notation.dislike">
+              <i class="ic-dislike"></i><span>{{ data.like.dislikes }}</span>
+            </button>
+
+            <div *ngIf="notation.dislike">
+              <label for="why-tt">{{ data.like.label1 }}</label>
+              <textarea name="why-tt" class="input-form" rows="3" formControlName="message"></textarea>
+
+              <div class="mon-grid-2">
+                <div><button type="reset" class="btn btn-block"(click)="resetDislike($event)">Annuler</button></div>
+                <div><button type="submit" class="btn btn--important btn-block" [disabled]="!dislikeForm.valid">Envoyer</button></div>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </li>
+
+      <li *ngIf="state.scripting" class="widget widget-scripting icon-scripting">
+        <a [routerLink]="['/scripting']"></a>
+      </li>
+
+      <li *ngIf="state.process" class="widget widget-attach">
+        <a [routerLink]="['/process']"><i class="icon ic-Generic_Document"></i></a>
+      </li>
+    </ul>
+  </div>
+</div>
+

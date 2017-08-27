@@ -1,0 +1,77 @@
+<div class="block-fournisseurs block block--n">
+    <div class="container">
+        <div class="o-mbl hidden-tiny">
+            <%= include('b2c-blocks/block-breadcrumbs') %>
+        </div>
+        <a href="" class="link-wi mbms inbl plr"><i class="icon ic-left"></i>Retour à mon compte</a>
+        <h1 class="mbl">Enregistrer votre entreprise</h1>
+        <p class="mbs">Pour permettre à votre entreprise de faire partie de la liste des fournisseurs agrées à travailler avec MEDI TELECOM, vous êtes priés de compléter le questionnaire de référencement suivant.</p>
+        <p class="mbm">Pour toute mise à jour des données fournies, merci de les adresser à <span>support.achats@meditel.ma</span></p>
+        <div class="block_step block_step--four step mbl">
+            <ul class="step2 clearfix">
+                <li class="current">
+                    <span class="number-step">1.</span><span class="step-txt">Coordonnées</span>
+                </li>
+                <li>
+                    <span class="number-step">2.</span><span class="step-txt">Activités </span>
+                </li>
+                <li>
+                    <span class="number-step">3.</span><span class="step-txt">Compétences</span>
+                </li>
+                <li>
+                    <span class="number-step">4.</span><span class="step-txt">Confirmation</span>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <form class="form-parsley-validate" novalidate>
+                <fieldset>
+                    <div class="grid-2-1 tiny-1">
+                        <div>
+                            <div class="row-form grid-2-tiny-1">
+                                <div class="item-form">
+                                    <label for="nom">Prénom et Nom<span>*</span></label>
+                                    <div class="item-form-input">
+                                        <input type="text" class="input-form" name="nom" id="nom" required data-parsley-trigger="input" />
+                                    </div>
+                                </div>
+                                <div class="item-form">
+                                    <label for="mail">Adresse e-mail<span>*</span></label>
+                                    <div class="item-form-input">
+                                        <input type="email" class="input-form" name="mail" id="mail" required data-parsley-trigger="input" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-form grid-2-tiny-1">
+                                <div class="item-form">
+                                    <label for="telephone">Téléphone<span>*</span></label>
+                                    <div class="item-form-input">
+                                        <input type="tel" class="input-form tel" placeholder="" id="telephone" data-parsley-trigger="input" data-parsley-type="number" minlength="10" maxlength="10" data-parsley-error-message="Le numéro de téléphone doit être 10 chiffres">
+                                    </div>
+                                </div>
+                                <div class="item-form ">
+                                    <label for="telecopie">Télécopie<span>*</span></label>
+                                    <div class="item-form-input">
+                                        <input type="tel" class="input-form" name="telecopie" id="telecopie" data-parsley-trigger="input" data-parsley-type="number" minlength="10" maxlength="10" data-parsley-error-message="Le numéro de Télécopie doit être 10 chiffres" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-form">
+                                <div class="item-form validetta-error ">
+                                    <div class="form-type-checkbox mrl">
+                                        <input type="checkbox" name="conditions" id="conditions" data-parsley-trigger="change" required>
+                                        <label class="option" for="conditions">J'accepte les <a href="#">conditions générales de vente.</a></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-form">
+                                <input type="reset" class="btn mrs" value="Annuler" />
+                                <input type="submit" class="btn btn--important inactive submit" value="Suivant" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<app-breadcrumb [data]="edocDetail.breadcrumb"></app-breadcrumb>
+<app-menu-aside  [state]="anchorsState" asideMenu></app-menu-aside>
+
+<section class="mbl {{ edocDetail.blocks[0].classes | class }}">
+    <div class="container">
+        <h2 class="mbl">{{ edocDetail.title }}</h2>
+
+        <app-edoc-detail-filter></app-edoc-detail-filter>
+
+        <div class="grid-2-tiny-1">
+            <div *ngFor="let item of edocDetail.blocks[0].content">
+                <div class="{{ item.classes | class }} item-{{ item.id }}">
+                    <i *ngIf="item.icon" class="icon {{ item.icon }}"></i>
+                    <div class="onlineediteur ">
+                        <h4>{{ item.title }}</h4>
+                        <p>
+                            {{ item.desc }}
+                        </p>
+                        <a *ngIf="item.downloadLink" href="{{ item.downloadLink.href }}" target="_blank" class="{{ item.downloadLink.classes | class }}"
+                           title="{{ item.downloadLink.title }}">
+                            {{ item.downloadLink.text }} <i class="icon ic-Inbox"></i>
+                        </a>
+                        <a *ngIf="item.viewLink" href="{{ item.viewLink.href }}" target="_blank" class="{{ item.viewLink.classes | class }}" title="{{ item.viewLink.title }}">
+                            {{ item.viewLink.text }} <i class="icon ic-accessibility_vision"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,151 @@
+.block-flexslider {
+	position:relative;
+	text-align:center;
+
+	.flex-control-paging {
+	    bottom: 13px;
+	    left: 0;
+	    margin: auto;
+	    position: absolute;
+	    right: 0;
+	    text-align: center;
+	    padding: 0;
+	    height: 12px;
+	}
+	.flex-control-nav {
+	    z-index: 1;
+	}
+
+	.flex-control-paging li a {
+	    background: #cccccc;
+	    border-radius: 20px;
+	    box-shadow: none !important;
+	    cursor: pointer;
+	    display: block;
+	    height: 10px;
+	    direction: ltr;
+	    text-indent: -9999px;
+	    width: 10px;
+	}
+
+	.flex-control-paging li a.flex-active {
+	    background: #ff7900;
+	}
+	
+	.flex-control-paging li {
+	    display: inline-block;
+	    margin: 0 4px;
+	    padding: 0;
+	}
+
+	.flex-direction-nav {
+	    max-width: 960px;
+	    width: 100%;
+	    z-index: 0;
+	    left: 0;
+	    margin: auto;
+	    position: absolute;
+	    right: 0;
+	    text-align: center;
+	    top:40%;
+	}
+
+	.flex-nav-prev {
+	 	left: 0;
+    	position: absolute;
+
+    	.flex-prev {
+
+	    	@extend .ic;
+	        @extend .ic-left;
+	        color:$black;
+	        &:before{
+	            float: right;
+	            font-size: 4rem;
+	            margin-top: -1px;
+
+	             @media #{$phone} {
+			       font-size: 2rem;
+			    }
+	        }
+    	}
+	}
+
+	.flex-nav-next {
+		right: 0;
+    	position: absolute;
+
+    	.flex-next {
+
+    		@extend .ic;
+	        @extend .ic-right;
+	        color:$black;
+	        &:before{
+	            float: right;
+	            font-size: 4rem;
+	            margin-top: -1px;
+
+	             @media #{$phone} {
+			       font-size: 2rem;
+			    }
+	        }
+    	}
+	}
+
+
+}
+
+
+.block-bxsilder {
+	text-align:center;
+
+	.bx-controls-direction  {
+		max-width: 960px;
+	    width: 100%;
+	    z-index: 0;
+	    left: 0;
+	    margin: auto;
+	    position: absolute;
+	    right: 0;
+	    text-align: center;
+	    top:46%;
+	}
+
+	.bx-wrapper .bx-controls-direction a.bx-prev {
+	    left: 0;
+
+	    @media screen and  (min-width: 768px) and (max-width: 959px) {
+            left: 15px;
+        }
+	}
+
+	.bx-wrapper .bx-controls-direction a.bx-next {
+	    right: 0;
+
+	    @media screen and  (min-width: 768px) and (max-width: 959px) {
+            right: 15px;
+        }
+	}
+
+	img {
+	    max-width: 100%;
+	    display: inline-block;
+	}
+
+
+	.bx-wrapper .bx-pager {
+
+		@media #{$phone} {
+			bottom: 5px;
+		}
+	    
+	}
+
+}
+
+.block-slider {
+    &.block-slider--top{
+        margin-top: -10px;
+    }
+   
+}

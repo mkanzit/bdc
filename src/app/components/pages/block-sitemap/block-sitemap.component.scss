@@ -1,0 +1,16 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .n2-title,
+    .n3-title {
+        @media #{$phone} {
+            margin-top: 1rem
+        }
+    }
+
+    .extra-links {
+        padding-top: 60px;
+    }
+}
+
+:host(.rtl) /deep/ {}

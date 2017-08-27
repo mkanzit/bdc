@@ -1,0 +1,33 @@
+.block-sponsor {
+    
+    padding-top: 34px;
+    z-index: 9;
+
+    .title-block-2 {
+        letter-spacing: -2px;
+        margin-bottom: 38px;
+    }
+}
+
+.block-number-actif {
+
+    @media #{$phone} {
+        float:none;
+        width:100%;
+        margin:0 0 10px 0;
+    }
+    
+    span {
+        font-size:2.4rem;
+        color:#f16e00;
+    }
+}
+
+.block-list-actif {
+    
+    @media #{$phone} {
+        float:none;
+        width:100%;
+    }
+
+}

@@ -1,0 +1,20 @@
+<div class="block block-top-news">
+  <!-- <div class="container"> -->
+    <h2>{{ title }}</h2>
+    <ul class="news-list">
+      <li class="news-item mb28 w87" *ngFor="let item of latestNews">
+        <div class="grid-1-4">
+          <div class="vid">
+            <a routerLink="{{ item.link.href }}" class="color-orangeB" title="{{ item.link.title }}">
+              <img class="mob-mb25" src="{{ item.vid.src }}" alt="{{ item.vid.alt }}" title="{{ item.vid.title }}">
+            </a>
+          </div>
+          <div class="desc">
+            <div class="mb5" [innerHTML]="item.html"></div>
+            <a routerLink="{{ item.link.href }}" class="color-orangeB" title="{{ item.link.title }}">{{ item.link.text }}</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  <!-- </div> -->
+</div>

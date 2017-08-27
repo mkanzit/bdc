@@ -1,0 +1,21 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ data.title }}</h2>
+
+        <app-faq-filter *ngIf="filter" [filter]="filter"></app-faq-filter>
+
+        <div class="onlineediteur">
+            <div class="items-histoire">
+
+                <article class="item-histoire" *ngFor="let item of data.content; let i = index">
+                    <h3 class="n3-title--alt item-histoire__title js-st-title mbm">
+                        <span>{{ item.title }}</span>
+                    </h3>
+                    <div [innerHtml]="item.html" class="item-histoire__centent simpletoggle-content mb50"></div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>

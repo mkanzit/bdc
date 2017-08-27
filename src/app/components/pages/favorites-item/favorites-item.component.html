@@ -1,0 +1,17 @@
+<section class="{{ data.classes | class }}">
+  <article class="favorites-items w96">
+    <div class="favorites-items__item" *ngFor="let item of data.content; let i = index; let l = last" (click)="toggle(i)" [class.active]="selected == i" [class.mbl]="l">
+      <div class="container">
+        <h4 class="mbm">{{ item.title }}</h4>
+        <div class="content w80 " [innerHTML]="item.html"></div>
+        <div class="block-btns mtl" *ngIf="item.cta">
+          <a *ngFor="let btn of item.cta" class="btn {{ btn.class | class }}" href="{{ btn.href }}" title="{{ btn.title }}">
+            {{ btn.text }}
+            <i class="icon {{ btn.icon }}" *ngIf="btn.icon !== ''"></i>
+          </a>
+        </div>
+        <span class="icon ic-right"></span>
+      </div>
+    </div>
+  </article>
+</section>

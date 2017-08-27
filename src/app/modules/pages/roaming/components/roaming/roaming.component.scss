@@ -1,0 +1,123 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+@import './src/app/components/pages/block-faq/block-faq.component.scss';
+
+:host /deep/ {
+    .item-histoire__centent {
+        span {
+            color: $orangeB;
+        }
+    }
+
+    .roaming-zone {
+        position: relative;
+        border: 1px solid $black;
+        width: 100%;
+        max-width: 73.7rem;
+        margin-bottom: 3rem;
+
+        .roaming-zone-title {
+            margin: 0;
+            padding: .5rem;
+            color: $white;
+            background-color: $black;
+        }
+
+        .roaming-zone-inner {
+            padding: 1rem;
+
+            .d-table {
+                display: table;
+                width: 100%;
+                table-layout: auto;
+                margin-bottom: 1rem;
+                border: none;
+
+                .roaming-zone-inner-title {
+                    color: $orangeB;
+                    display: table-row;
+                }
+
+                .d-row {
+                    display: table-row;
+
+                    .d-table-cell {
+                        display: table-cell;
+                        padding: .5rem;
+                        padding-left: 2rem;
+                        &.cell2 {
+                            text-align: right;
+                            color: $orangeB;
+                        }
+                    }
+                }
+            }
+        }
+
+        .note {
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+    .h2 {
+        font-size: 3.4rem
+    }
+
+    .item-av__content {
+        .price {
+            font-size: 2.4rem;
+            color: $orangeB;
+        }
+    }
+
+    .onlineediteur {
+        h3 {
+            line-height: normal;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        p {
+            width: 80%;
+            margin-bottom: 3rem;
+            @media #{$phone} {
+                width: 100%;
+            }
+        }
+
+        .item-av__content {
+            h3 {
+                margin-bottom: 1rem
+            }
+
+            p {
+                width: 100%;
+                margin-bottom: 0;
+
+                &.price {
+                    margin-bottom: 2rem
+                }
+            }
+        }
+    }
+    .item-av-position .item-av__content {
+        padding: 0 18px 1rem;
+    }
+}
+
+:host(.rtl) /deep/ {
+    .roaming-zone-inner {
+        .d-table {
+            .d-row {
+                .d-table-cell {
+                    &.cell2 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

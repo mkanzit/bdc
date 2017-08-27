@@ -1,0 +1,17 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+
+}
+
+:host(.rtl) /deep/ {
+    direction: rtl;
+    text-align: right;
+
+    .block-bg-stand__visuel {
+        img {
+            left: 9px;
+            right: auto;
+        }
+    }
+}

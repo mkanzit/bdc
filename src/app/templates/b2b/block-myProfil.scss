@@ -1,0 +1,155 @@
+
+.tab-dash-header-3col li {
+
+    @media #{$phone} {
+         width: 32.2%;
+    }
+}
+
+.info-contact-col {
+
+    .info-contact-item {
+        margin-right: 3%;
+        vertical-align: top;
+        width: 30%;
+        position:relative;
+        padding: 0 0 45px;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+           width: 29%;
+        }
+
+        @media #{$phone} {
+            margin-bottom: 40px;
+            padding-left: 0;
+            padding-bottom: 0;
+            width: 97%;
+        }
+    }
+}
+
+.info-contact-col >.info-contact-row:first-child {
+
+    .link-edite {
+
+        @media screen and (min-width: 768px) {
+            position:absolute;
+            left:0;
+            bottom:0;
+        }
+        
+    }
+    
+}
+
+.form-edit-profil .item-form.w30 {
+
+    @media #{$phone} {
+         width: 100%;
+    }
+   
+}
+
+.picto-15-radius {
+    border-radius: 15px;
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    width: 15px;
+}
+
+
+.table-stand .link-ml-icon {
+    margin-right: 10px;
+}
+
+.table-stand .link-ml-icon .icon {
+    margin-right: 0;
+}
+
+.mob-larg {
+    
+    @media #{$phone} {
+         width: 100%;
+    }
+}
+
+.separator-icon {
+    border-left:1px solid #eeeeee; 
+    margin:0 3px; 
+    height:25px; 
+    display: inline-block;
+}
+
+
+.table-stand .link-ml5-icon {
+    margin-right: 5px;
+}
+
+.table-stand .link-ml5-icon .icon {
+    margin-right: 0;
+}
+
+.input-table::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+
+.input-table:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+}
+
+.input-table::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   #000;
+   opacity:  1;
+}
+
+.input-table:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+}
+
+.block-table-stand-padd .table-stand tfoot tr {
+    border-bottom: 1px solid #cccccc;
+}
+
+.block-table-stand-padd .table-stand td, .block-table-stand-padd .table-stand th {
+    padding: 4px 2%;
+}
+
+.w18 {
+    width: 18%;
+}
+
+.block-desc-ste {
+    
+    margin-top:20px;
+
+    @media #{$phone} {
+        margin-top:0;
+        width:70%;
+    }
+
+    h4 {
+
+        margin-right:7.6rem;
+
+        @media #{$phone} {
+            margin-right:0;
+            display:block;
+        }
+
+    }
+
+    .editer-profil {
+
+        margin-top: -2px;
+
+        .icon {
+
+            @media #{$phone} {
+                margin-left: -3px;
+            }
+            
+        }
+    }
+}

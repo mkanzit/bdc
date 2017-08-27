@@ -1,0 +1,51 @@
+
+.block-new-shops{
+    .bx-wrapper .bx-prev{
+        left: -23px;
+        top: 22%;
+    }
+    .bx-wrapper .bx-next{
+        right:  -23px;
+        top: 22%;
+    }
+    @media #{$tablet} {
+        .bx-wrapper .bx-prev{
+            left: -9px;
+        }
+        .bx-wrapper .bx-next{
+            right:  -9px;
+        }
+    }
+    .bx-wrapper .bx-pager {
+        bottom: -25px;
+    }
+    h2{
+        
+        @media #{$phone} {
+            width: 50%;
+        } 
+    }
+}  
+.img-block-f{
+    margin-bottom: -75px !important;
+    margin-right: 79px !important;
+    margin-left: 79px !important;
+}
+.img-block-f{
+    @media #{$phone} {
+            width: 39%;
+            margin: 0 !important;      
+    }
+}
+.item-shops{
+    h3{
+        @media #{$phone} {
+            margin-bottom: 20px;
+        }
+    }
+}
+.item-shops__info{
+    .liste-wp {
+        margin-left: 20px;
+    }
+}

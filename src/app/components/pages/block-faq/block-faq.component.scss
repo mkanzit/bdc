@@ -1,0 +1,74 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+  .block-histoire {
+
+    &.block>.container {
+      padding-top: 0;
+    }
+
+    .item-histoire {
+      padding-top: 23px;
+      border-bottom: 1px solid $gray3;
+
+      .item-histoire__title {
+        color: $black;
+        display: block;
+        cursor: pointer;
+
+        span {
+          width: 70%;
+          display: inline-block;
+          line-height: normal;
+
+          @media #{$phone} {
+            width: 90%;
+          }
+        }
+
+        &:before {
+          content: '+ Plus d\'infos';
+          float: right;
+          font-size: 1.4rem;
+          letter-spacing: 0;
+
+          @media #{$phone} {
+            content: '+';
+            font-size: 1.6rem;
+          }
+        }
+
+        &.open {
+          color: $orangeW;
+
+          &:before {
+            content: '- moins d\'infos';
+
+            @media #{$phone} {
+              content: '-';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:host(.rtl) /deep/ {
+  direction: rtl;
+  text-align: right;
+
+  .block-histoire {
+    .item-histoire__title,
+    .item-histoire__title.open {
+      direction: rtl;
+      text-align: right;
+
+      &:before {
+        content: '+ أكثر';
+        float: left;
+      }
+    }
+  }
+}

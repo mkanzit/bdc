@@ -1,0 +1,23 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+
+  .table-stand {
+    tr { border: 0; }
+    td, th {
+      padding: 0;
+    }
+
+    span {
+      color: $orangeW;
+    }
+  }
+
+  .block-catalogue-categories {
+    .wp-active {
+      cursor: pointer;
+    }
+  }
+}
+
+:host(.rtl) /deep/ { }

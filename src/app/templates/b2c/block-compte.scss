@@ -1,0 +1,93 @@
+.block-Service {
+	padding:0;
+	
+	min-height:465px;
+
+	@media #{$phone} {
+        min-height:253px;
+    }
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+	    min-height:425px;
+	}
+        .block-theme{
+           min-height:507px;
+        }
+}
+
+.block-ServiceCont__desc {
+	width: 41%;
+	border:1px solid yellow;
+
+	p {
+		font-size:1.8rem;
+		line-height:20px;
+	}
+}
+
+.block-ServiceCont__picto {
+	position: relative;
+	float:right;
+	height:146px;
+	width:140px;
+
+	@media #{$phone} {
+		height:73px;
+		width:70px;
+    }
+}
+ 
+.icon-top-up {
+	background: url("../img/css/icons/top-up.png") no-repeat 0 0;
+    display: inline-block;
+    height: 71px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -35px; 
+    width: 63px;
+
+    @media #{$phone} {
+        background: url("../img/css/icons/top-up.png") no-repeat 0 0 /32px 36px;
+	    height: 36px;
+	    top: 19px;
+	    width: 32px;
+    }
+}
+
+.title-ServiceCont-bg {
+
+    	display: table-cell;
+	    font-size: 3.2rem;
+	    line-height: 33px;
+	    padding: 0 60px;
+	    text-align: center;
+	    text-decoration: none;
+	    vertical-align: middle;
+
+}
+.block-ServiceCont {
+	padding:30px 0 20px 0;
+
+	@media #{$phone} {
+        padding:15px 9px 0 9px;
+    }
+}
+
+.block-ServiceCont__content2 {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+}
+
+.ServiceCont-care {
+	display:table;
+    margin:0 0 15px 0;
+    position:relative;
+    width:100%;
+
+    img {
+    	width:100%;
+    }
+}

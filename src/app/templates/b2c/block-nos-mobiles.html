@@ -1,0 +1,29 @@
+<section class="block block-nos-mobiles">
+    <div class="container">
+        <a href="#" class="btn btn-small btn-all fr">Tous nos mobiles</a>
+        <h2 class="mbl">Nos mobiles</h2>
+        <div class="tab-line">
+            <ul class="list-inline type-mobile-list">
+                <li class="inbl mrm"><a href="#items-mobile1"><span>Sélection Smartphones</span></a></li>
+                <li class="inbl "><a href="#items-mobile2">Sélection High-Tech</a></li>
+            </ul>
+            <select class="type-mobile-select dropdown-black">
+                <option class="inbl mrm" value="#items-mobile1">Sélection Smartphones</option>
+                <option class="inbl" value="#items-mobile2" >Sélection High-Tech</option>
+            </select>
+            <div class="separator mtm mbl"></div>
+            <div class="grid-4-tiny-1 items-mobile" id="items-mobile1">
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Alcatel One Touch Pixi 3 Galaxy Pixi  Galaxy Pixi',img: '../img/contenus/mobile1.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Samsung Galaxy A5 2016  Galaxy Pixi  Galaxy Pixi',img: '../img/contenus/mobile2.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'iPhone 6S 128Go Pink  Galaxy Pixi',img: '../img/contenus/mobile3.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Samsung Galaxy S5  Galaxy Pixi',img: '../img/contenus/mobile4.png'}) %>
+            </div>
+            <div class="grid-4-tiny-1 items-mobile" id="items-mobile2">
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Alcatel One Touch',img: '../img/contenus/mobile1.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Samsung Galaxy A5 2019',img: '../img/contenus/mobile2.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'iPhone 6S 128Go Pink',img: '../img/contenus/mobile3.png'}) %>
+                <%= include('b2c-blocks/block-nos-mobiles-article',{title: 'Samsung Galaxy S6',img: '../img/contenus/mobile4.png'}) %>
+            </div>
+        </div>
+    </div>
+</section>

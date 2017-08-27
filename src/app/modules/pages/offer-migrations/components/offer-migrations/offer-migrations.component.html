@@ -1,0 +1,33 @@
+<app-breadcrumb [data]="offerImigrations.breadcrumb"></app-breadcrumb>
+<app-menu-aside asideMenu></app-menu-aside>
+
+<section class="{{ offerImigrations.blocks[0].classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ offerImigrations.title }}</h2>
+
+        <div class="onlineediteur mb50" [innerHTML]="offerImigrations.description"></div>
+
+        <app-offer-migrations-filter></app-offer-migrations-filter>
+
+        <div class="offers-List">
+            <h3 class="offers-List-h">{{ offerImigrations.blocks[0].title }}</h3>
+
+            <article class="offre offre-{{ forfait.id }}" *ngFor="let forfait of offerImigrations.blocks[0].content">
+                <h4 class="h mbl" *ngIf="forfait.title">{{ forfait.title }} : <span>{{ forfait.price }}</span></h4>
+                <div class="grid-{{ 4 || forfait.items.length }}-tiny-1">
+                    <div class="offre-item mbl {{ item.type }}" *ngFor="let item of forfait.items">
+                        <p *ngIf="item.offre">
+                            <i *ngIf="item.icon" class="{{ item.icon }}"></i>
+                            <strong>{{ item.offre }}</strong>
+                        </p>
+                        <p *ngIf="item.desc">
+                            {{ item.desc }}
+                        </p>
+                    </div>
+                </div>
+                <a href="{{ forfait.link.href }}" class="btn btn--important" title="{{ forfait.link.title }}">{{ forfait.link.text }}</a>
+            </article>
+        </div>
+    </div>
+</section>

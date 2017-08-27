@@ -1,0 +1,154 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  &::after {
+    background: $white;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 2px;
+    position: absolute;
+    width: calc(100% - 4px);
+    @media #{$phone} {
+      display: none;
+    }
+  }
+
+  &:hover {
+    z-index: 2;
+
+    .icon {
+      border: 2px solid $gray6;
+      border-bottom-color: $white;
+    }
+
+    .widget-links {
+      display: block;
+      opacity: 1;
+      top: calc(100% - 2px);
+
+      @media#{$phone} {
+        top: 100%;
+        display: none;
+      }
+    }
+  }
+
+  .widget-links {
+    background: $white;
+    color: $white;
+    border: 2px solid $gray6;
+    display: none;
+    opacity: 0;
+    padding: 13px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 30px);
+    width: 280px;
+
+    @media#{$phone} {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid $gray6;
+      padding: 15px 15px;
+      color: $black;
+    }
+
+    li {
+      a {
+        border-bottom: 1px solid $gray6;
+        display: block;
+        padding: 10px 0;
+        font-size: 16px;
+        text-align: left;
+        &hover{
+          color: $orangeB
+        }
+      }
+
+      &:last-child {
+        a {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .icon {
+    border: 2px solid transparent;
+    padding: 20px 18px 32px;
+    transition: $fade;
+
+    @media #{$phone} {
+      border: 0 solid transparent;
+      padding: 0;
+    }
+  }
+
+  .notice-widget {
+
+    @media #{$phone} {
+      position: relative;
+
+      .widget-links {
+        position: fixed;
+        top: 50px;
+      }
+    }
+
+    .notice-counter {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      color: $white;
+      display: inline-block;
+      height: 20px;
+      font-family: $Arial;
+      font-weight: $font-B;
+      font-size: 13px;
+      line-height: 20px;
+      position: absolute;
+      right: 3px;
+      text-align: center;
+      top: 9px;
+      width: 20px;
+
+      @media #{$phone} {
+        font-size: 12px;
+        right: 14px;
+        top: -2px;
+      }
+    }
+  }
+}
+
+:host(.rtl) {
+
+  .widget-links {
+    right: auto;
+    left: 0;
+
+    li {
+      a {
+        direction: rtl;
+        text-align: right;
+      }
+    }
+  }
+
+  .notice-widget {
+    .notice-counter {
+      @media #{$phone} {
+        right: auto;
+        left: 12px;
+        top: -2px;
+      }
+    }
+  }
+}
+

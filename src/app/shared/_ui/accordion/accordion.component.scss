@@ -1,0 +1,95 @@
+@import '../../../../assets/scss/global/_variables';
+
+/deep/  .panel-group {
+  .card {
+    margin-bottom: 15px;
+
+    &-header {
+      text-align: left;
+      border-bottom: 1px solid $gray5;
+      font-size: 16px;
+      font-family: $Arial;
+      font-weight: $font-B;
+      padding: 0 0 6px;
+      position: relative;
+      text-align: left;
+
+      &::after {
+        background: url('/assets/imgs/css/icons/icon-arrow.png');
+        content: '';
+        display: block;
+        height: 8px;
+        position: absolute;
+        top: 6px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        transition: $fade;
+        right: 0;
+        width: 14px;
+      }
+
+      &.active {
+        &::after {
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          transform: rotate(0);
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+
+      a { width: 100%; }
+    }
+
+    &-block {
+      padding: 12px;
+      text-align: left;
+
+      .tab-item {
+        a, p {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+
+:host(.rtl) {
+  /deep/  .panel-group {
+    .card {
+      &-header {
+        direction: rtl;
+        text-align: right;
+        &::after {
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          transform: rotate(90deg);
+          transition: $fade;
+          left: 0;
+          right: auto;
+        }
+        &.active{
+          &::after {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            transform: rotate(0deg);
+            transition: $fade;
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+
+      &-block {
+        direction: rtl;
+        text-align: right;
+      }
+    }
+  }
+}

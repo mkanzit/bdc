@@ -1,0 +1,52 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .Link-List {
+        padding: 2rem;
+        background-color: $pink;
+        list-style: none;
+
+        li {
+            &:before {
+                font-size: inherit;
+                color: inherit;
+                content: counter(section) " - ";
+            }
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: $black;
+                }
+            }
+        }
+
+        @media #{$phone} {
+            display: none;
+        }
+    }
+    .onlineediteur {
+        ol {
+            list-style: none;
+            padding: 0;
+
+            li {
+                &:before {
+                    display: none
+                }
+                margin-bottom: 1.5rem
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    article{
+        .content{
+            margin-right: 1px;
+        }
+    }
+}

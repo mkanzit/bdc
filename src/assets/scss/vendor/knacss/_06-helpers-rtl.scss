@@ -1,0 +1,107 @@
+/* ---------------------------------- */
+/* ==state helpers                    */
+/* ---------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------- */
+/* ==visual helpers                   */
+/* .. use them with parcimony !       */
+/* ---------------------------------- */
+
+
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l = all,top,right,bottom,left
+s,m,l,n = small, medium, large, none
+*/
+
+
+
+
+
+
+.#{$kna-namespace}mrn,
+.#{$kna-namespace}mr0 {
+  margin-left: 0;
+}
+
+.#{$kna-namespace}mrs {
+  margin-left: $small-value;
+  margin-right: 0;
+}
+
+.#{$kna-namespace}mrm {
+  margin-left: $medium-value;
+  margin-right: 0;
+}
+
+.#{$kna-namespace}mrl {
+  margin-left: $large-value;
+  margin-right: 0;
+}
+
+.#{$kna-namespace}mln,
+.#{$kna-namespace}ml0 {
+  margin-right: 0;
+}
+
+.#{$kna-namespace}mls {
+  margin-right: $small-value;
+  margin-left: 0;
+}
+
+.#{$kna-namespace}mlm {
+  margin-right: $medium-value;
+  margin-left: 0;
+}
+
+.#{$kna-namespace}mll {
+  margin-right: $large-value;
+  margin-left: 0;
+}
+
+.#{$kna-namespace}prn,
+.#{$kna-namespace}pr0 {
+  padding-left: 0;
+}
+
+.#{$kna-namespace}prs {
+  padding-left: $small-value;
+  padding-right: 0;
+}
+
+.#{$kna-namespace}prm {
+  padding-left: $medium-value;
+  padding-right: 0;
+}
+
+.#{$kna-namespace}prl {
+  padding-left: $large-value;
+  padding-right: 0;
+}
+
+
+.#{$kna-namespace}pln,
+.#{$kna-namespace}pl0 {
+  padding-right:  0;
+}
+
+.#{$kna-namespace}pls {
+  padding-right: $small-value;
+  padding-left: 0;
+}
+
+.#{$kna-namespace}plm {
+  padding-right: $medium-value;
+  padding-left: 0;
+}
+
+.#{$kna-namespace}pll {
+  padding-right: $large-value;
+  padding-left: 0;
+}

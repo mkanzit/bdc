@@ -1,0 +1,39 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ data.title }}</h2>
+
+        <form name="list-filter" class="grid-5-tiny-1 mbl" #filterForm="ngForm">
+            <div>
+                <select name="filter-by-date" class="selectBox dropdown-black selectBox-dropdown" (select)="order($event)" selectBox>
+                    <option value="asc">Ordre croissant</option>
+                    <option value="desc">Ordre decroissant</option>
+                </select>
+            </div>
+        </form>
+
+        <article class="onlineediteur">
+            <div class="items fl mbl">
+
+                <div class="item fl" *ngFor="let item of data.content; let i = index">
+                    <figure class="fl mrm">
+                        <a href="{{ item.link.href }}" title="{{ item.link.title }}">
+                            <img src="{{ item.vid.src }}" alt="{{ item.vid.alt }}" title="{{ item.vid.title }}">
+                        </a>
+                    </figure>
+                    <h3 class="item-title"><a href="{{ item.link.href }}" title="{{ item.link.title }}">{{ item.title }}</a></h3>
+                    <div class="item-content mbs" [innerHTML]="item.html"></div>
+                    <a class="btn mrs mob-mbs" routerLink="{{ item.link.href }}" title="{{ item.link.title }}">{{ item.link.text }}</a>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="btn mrs mob-mbs" title="">
+                    Charger plus de resultats
+                    <i class="ic-Add"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>

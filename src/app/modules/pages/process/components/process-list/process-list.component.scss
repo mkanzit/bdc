@@ -1,0 +1,24 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+:host /deep/ {
+    .item {
+        padding-bottom: 4rem;
+        border-bottom: 1px solid $gray3;
+
+        figure {
+            text-align: center;
+            margin: 0 2rem 0 0;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .item-title {
+            width: 80%;
+        }
+    }
+}
+
+:host(.rtl) /deep/ {}

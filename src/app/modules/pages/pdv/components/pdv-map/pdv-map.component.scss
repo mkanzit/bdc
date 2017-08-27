@@ -1,0 +1,12 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    agm-map {
+        height: 540px;
+        @media #{$phone} {
+            height: 400px;
+        }
+    }
+}
+
+:host(.rtl) /deep/ { }

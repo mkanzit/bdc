@@ -1,0 +1,8 @@
+<div class="history-widget">
+  <i class="icon icon-history" title="{{ history.title }}"></i>
+  <div class="widget-links" malihu-scrollbar [scrollbarOptions]="csOptions">
+    <ul>
+      <li *ngFor="let link of history.links"><a href="{{ link.href }}" title="{{ link.title }}">{{ link.text }}</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+[class*="#{$kna-namespace}grid-"] {
+
+  margin-left: 0;
+  margin-right: -$gutter;
+}
+
+/* grid childs */
+[class*="#{$kna-namespace}grid-"] > * {
+  margin-left: 0;
+  margin-right: $gutter;
+}
+
+// Sass mixins for *equal* columns grid container
+// example : .grid-perso { @include grid(12); }
+@mixin grid($number:$number,$newgutter:$gutter) {
+  @if $newgutter != $gutter {
+    margin-left: 0;
+    margin-right: -$newgutter;
+  }
+  & > * {
+    width: calc(100% * 1 / #{$number} - #{$newgutter} - .01px);
+    @if $newgutter != $gutter {
+      margin-left: 0;
+      margin-right:  $newgutter;
+    }
+  }
+}
+
+
+// Sass mixins for *unequal* columns grid container
+// example : .grid-perso { @include uneven-grid(2, 1); }
+@mixin uneven-grid($left:$left, $right:$right, $newgutter:$gutter) {
+  @if $newgutter != $gutter {
+    margin-left: 0;
+    margin-right:  -$newgutter;
+  }
+  > * {
+    @if $newgutter != $gutter {
+      margin-left: 0;
+      margin-right:  $newgutter;
+    }
+
+  }
+
+}
+
+
+
+.#{$kna-namespace}pull {
+  margin-right: 0;
+  margin-left: auto;
+}
+.#{$kna-namespace}push {
+  margin-left: 0;
+  margin-right:  auto;
+}

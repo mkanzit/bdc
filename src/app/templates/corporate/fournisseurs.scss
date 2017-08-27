@@ -1,0 +1,52 @@
+.block-histoire{
+    &.block > .container{
+        padding-top: 0;
+    }
+}
+.moveAction{
+    display: block;
+    .icon{
+        color: $black;
+        &:hover{
+            color: $orangeW;
+        }
+    }
+    
+    @media screen and  (max-width: 767px) {
+        .ic-left{
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+        }
+        .ic-right{
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+        }
+    }
+    
+}
+.controls-select-multiple{
+    width: 100px;
+    text-align: center;
+    padding-top: 7%;
+    @media #{$tablet} {
+        width: 40px;
+    }
+    @media #{$phone} {
+        width: 100%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+}
+
+select.select-multiple option:checked,
+select.select-multiple option:active,
+select.select-multiple option:focus{
+  
+    background: $orangeW;
+   
+   
+}
+ 
+

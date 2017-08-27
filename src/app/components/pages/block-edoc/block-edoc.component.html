@@ -1,0 +1,21 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ data.title }}</h2>
+
+        <div class="grid-4-tiny-1 e-doc-list">
+
+            <article class="e-doc" *ngFor="let item of data.content; let i = index">
+                <a href="{{ item.downloadLink }}" target="_blanc" title="Télécharger">
+                    <i class=" icon {{ item.icon }}"></i>
+                    <div class="onlineediteur ">
+                        <p>
+                            {{ item.content }}
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>

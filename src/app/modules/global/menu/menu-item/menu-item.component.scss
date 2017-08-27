@@ -1,0 +1,55 @@
+@import '../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .menu-item {
+        color: $white;
+        cursor: pointer;
+        // left: -50%;
+        // opacity: 0;
+        padding: 22px 0;
+        text-align: center;
+        transition: $fade;
+
+        .menu-item-link {
+            color: $white;
+            display: block;
+            font-family: $Arial;
+            font-weight: $font-B;
+            font-size: 16px;
+
+            span {
+                display: block;
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            background: $gray2-background;
+        }
+
+        &.active {
+            background: $gray2-background;
+        }
+
+        @media #{$phone} {
+            padding: 1rem 0;
+            &:hover {
+                background: transparent;
+            }
+            &.active {
+                background: $gray2-background;
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    .menu-item-link {
+        direction: rtl;
+        text-align: center;
+        span {
+            direction: rtl;
+        }
+    }
+}

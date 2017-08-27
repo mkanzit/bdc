@@ -1,0 +1,38 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ data.title }}</h2>
+        <div class="grid-3-1">
+            <!-- liste des blocks -->
+            <div class="tarifs-list mrm">
+                <owl-carousel #owlCarousel class="owl-container grid-4" [options]="options" [carouselClasses]="['owl-theme']">
+                    <div class="slide-item" *ngFor="let item of data.content; let i = index" class="item item-{{i}} ">
+
+                        <h3 class="n3-title--alt">{{ item.title }}</h3>
+                        <div [innerHTML]="item.content" class="onlineediteur offers"></div>
+                        <p>
+                            <strong class="price color-orangeB fs-24">{{ item.price }}</strong>
+                        </p>
+
+                    </div>
+                </owl-carousel>
+            </div>
+
+            <!-- block gratuite -->
+            <div class="tarifs-gratuit" *ngIf="gratuite">
+                <div class="slide-item" class="item item-gratuit ">
+                    <h3 class="n3-title--alt">{{ gratuite.title }}</h3>
+                    <div [innerHTML]="gratuite.content" class="onlineediteur offers"></div>
+                    <p>
+                        <strong class="price color-orangeB fs-24">{{ gratuite.price }}</strong>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+</section>

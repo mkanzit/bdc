@@ -1,0 +1,42 @@
+.block-myCine {
+
+
+    @media #{$phone} {
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+
+    .popout-out {
+
+        display:inline-block;
+    }
+
+
+    .block-symb-popout {
+        display:inline-block;
+        font-size:3.6rem;
+        padding-top:50px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    
+    .popout span {
+        font-size:2.4rem;
+    }
+
+    .ic-tariff-out {
+
+        span {
+            color:#ffffff;
+        }
+    }
+}
+
+.block-myCine__item {
+    
+    @media #{$phone} {
+        display:none;
+    }
+
+
+}

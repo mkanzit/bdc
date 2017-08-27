@@ -1,0 +1,8 @@
+<div class="favori-widget">
+  <i class="icon icon-favori" title="{{ favorites.title }}"></i>
+  <div class="widget-links" malihu-scrollbar [scrollbarOptions]="csOptions">
+    <ul>
+      <li *ngFor="let link of favorites.links"><a href="{{ link.href }}" title="{{ link.title }}">{{ link.text }}</a></li>
+    </ul>
+  </div>
+</div>

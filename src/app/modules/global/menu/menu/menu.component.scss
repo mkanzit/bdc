@@ -1,0 +1,16 @@
+@import '../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .menu {
+        &.nav-menu {
+            margin: 14px auto;
+        }
+    }
+    .input-form {
+        @media #{$phone} {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+:host(.rtl) /deep/ {}

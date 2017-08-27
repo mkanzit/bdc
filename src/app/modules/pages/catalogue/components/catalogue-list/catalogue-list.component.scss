@@ -1,0 +1,40 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .block-link-search-mobile {
+        border-bottom: 1px solid $gray7;
+        padding-bottom: 15px;
+    }
+    .order-filter,
+    .criteria-filter {
+        border-bottom: 2px solid $black;
+    }
+    .criteria-filter {
+        .filter-section {
+            border-bottom: 1px solid $gray7;
+        }
+    }
+    .tab-dash-header{
+        li{
+            text-align: center;
+            *{
+                text-align: center;
+            }
+        }
+    }
+    .block-catalogue-categories {
+        .wp-active {
+            cursor: pointer;
+            &.active {
+                &:hover {
+                    a {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ { }

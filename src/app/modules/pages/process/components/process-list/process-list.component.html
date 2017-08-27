@@ -1,0 +1,29 @@
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+<app-breadcrumb [data]="process.breadcrumb"></app-breadcrumb>
+
+<section class="mbl {{ process.blocks[0].classes | class }}">
+    <div class="container">
+        <h2 class="mbl">{{ process.title }}</h2>
+
+        <app-process-filter></app-process-filter>
+
+        <div class="process-list mbl">
+
+            <article class="item item-{{ item.id }} fl mbl" *ngFor="let item of process.blocks[0].content">
+                <h3 class="item-title mbm">{{ item.title }}</h3>
+                <div class="item-content mbs w72" [innerHTML]="item.html"></div>
+                <a class="btn mrs mob-mbs" [routerLink]="['details']" title="{{ item.link.title }}">{{ item.link.text }}</a>
+            </article>
+
+            <div class="clearfix"></div>
+
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn mrs mob-mbs btn-infinite-load" title="Charger plus de resultats">
+                Charger plus de resultats
+                <i class="ic-Add"></i>
+            </a>
+        </div>
+    </div>
+
+</section>

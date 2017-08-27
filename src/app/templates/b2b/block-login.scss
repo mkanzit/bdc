@@ -1,0 +1,28 @@
+.border-l-gray {
+    
+    border-left:1px solid #e6e6e6;
+}
+
+
+
+.block-loginCont-clt .block-loginCont-col-2 {
+    border-left: 1px solid #e6e6e6;
+    padding-left: 4rem;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    @media #{$phone} {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+
+.block-loginCont-clt {
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        margin-bottom: 20px;
+    }
+}

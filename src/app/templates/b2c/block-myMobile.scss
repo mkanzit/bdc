@@ -1,0 +1,16 @@
+.block-myMobile-left {
+	
+	@media #{$phone} {
+        
+        float:left;
+        width:25% !important;
+    }
+}
+
+.block-myMobile-right {
+	
+	@media #{$phone} {
+        float:right;
+        width:60% !important;
+    }
+}

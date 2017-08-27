@@ -1,0 +1,60 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .content {
+        p {
+            margin: 0;
+        }
+    }
+    .block-btns {
+        display: none;
+    }
+    .favorites-items{
+        &__item{
+            padding: 2rem 0;
+            border-bottom: 1px solid $gray3;
+            position: relative;
+            transition: $fade;
+
+            &.active{
+                background: $gray8;
+
+                .block-btns { display: block; }
+                .icon {
+                    &::before {
+                        color: $orangeB;
+                    }
+                }
+            }
+        }
+    }
+    [class^="ic-"],
+    [class*="ic-"]{
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translate(0,-50%);
+        font-size: 4.5rem;
+    }
+}
+
+:host(.rtl) /deep/ {
+    direction: rtl;
+    text-align: right;
+
+    .block-bg-stand__visuel {
+        img {
+            left: 9px;
+            right: auto;
+        }
+    }
+
+    [class^="ic-"],
+    [class*="ic-"]{
+        position: absolute;
+        left: 0;
+        right: inherit;
+        top:50%;
+        transform: translate(0,-50%) rotate(180deg);
+    }
+}

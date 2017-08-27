@@ -1,0 +1,25 @@
+/* text and contents alignment */
+.#{$kna-namespace}txtleft {
+  text-align: right;
+}
+
+.#{$kna-namespace}txtright {
+  text-align: left;
+}
+
+.#{$kna-namespace}txtcenter {
+  text-align: center;
+}
+
+/* floating elements */
+.#{$kna-namespace}fl {
+  float: right;
+}
+
+img.#{$kna-namespace}fl {
+  margin-right: $small-value;
+}
+
+.#{$kna-namespace}fr {
+  float: left;
+}

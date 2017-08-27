@@ -1,0 +1,107 @@
+.note{
+    img{
+        vertical-align: baseline;
+    }
+}
+.items-mobile{
+    margin-bottom: -40px;
+    @media #{$phone} {
+        margin: 0 -9px;
+    }
+}
+.item-mobile{
+    position: relative;
+    padding-bottom: 125px;
+    &.item-mobile--compare{
+        padding-bottom: 180px;
+        @media #{$phone} {
+            padding-bottom: 40px;
+        }
+    }
+    > .visual {
+        >a{
+            display: block;
+        }
+    }
+    margin-bottom: 40px;
+    @media #{$tablet-desktop} {
+        h3{
+            min-height: 66px;
+        }
+    }
+    @media #{$phone} {
+        >.visual{
+            float: left;
+            width: 50%;
+            img{
+                width: 70%;
+            }
+        }
+        >.feature{
+            overflow: hidden;
+        }
+        border-bottom: 1px solid #cccccc;
+        padding: 0 9px 40px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100%;
+        &:last-child{
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+}
+.old-price{
+    text-decoration: line-through;
+
+    .number-direction{
+        display: initial;
+        color: inherit;
+    }
+}
+.s-price{
+    color: $orangeW;
+    font-size: 2.4rem;
+}
+.prices{
+    min-width: 120px;
+}
+.lam-lebel{
+    @media #{$tablet-desktop} {
+        min-height: 30px;
+    }
+}
+.r-liste{
+    min-height: 105px;
+}
+.block-nos-mobiles {
+    .item-mobile {
+        @media #{$phone} {
+            margin-bottom:20px;
+        }
+    }
+}
+.type-mobile-select{
+    @media #{$tablet-desktop} {
+        display: none !important;
+    }
+}
+.type-mobile-list{
+    li.ui-tabs-active a{
+        color: $orangeB;
+    }
+    @media #{$phone} {
+        display: none;
+    }
+}
+.prices-detail{
+    @media #{$tablet-desktop} {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    @media #{$phone} {
+        overflow: hidden;
+    }
+}

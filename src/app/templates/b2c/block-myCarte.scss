@@ -1,0 +1,69 @@
+.block-myCarte{
+    color: $white;
+    background: #000;
+    padding: 30px 0 40px 0;
+    .title-block-2{
+        color: #fff;    
+    }
+    @media #{$phone} {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .ic-Sim {
+        margin-left: -15px;
+
+        &:before {
+
+            @media #{$phone} {
+                font-size: 10rem !important; 
+            }
+        }
+        
+    }
+}
+.myCarte-content {
+    z-index: 9;
+}
+
+.myCarte-number {
+    font-size:6rem;
+    color:$orangeW;
+
+    @media #{$phone} {
+        font-size:4rem;
+    }
+}
+
+.myCarte-number-content {
+    letter-spacing: -2px;
+    margin-top: 30px;
+
+    span:nth-child(2n) {
+        margin-right: 14px;
+    }
+}
+
+.span-number-carte {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0 0 6px;
+    line-height: 50px;
+}
+
+.block-myCarte-left {
+    
+    @media #{$phone} {
+        
+        float:left;
+        width:20% !important;
+    }
+}
+
+.block-myCarte-right {
+    
+    @media #{$phone} {
+        float:right;
+        width:65% !important;
+    }
+}

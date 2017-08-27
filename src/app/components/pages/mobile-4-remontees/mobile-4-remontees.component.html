@@ -1,0 +1,40 @@
+<div class="{{ data.classes | class }}">
+  <div class="container">
+    <h2 class="mbl">{{ data.title }}</h2>
+
+    <div class="{{ layout }}" id="items-mobile1">
+
+      <div class="item-mobile" *ngFor="let item of data.content; let i = index">
+        <div class="visual">
+          <a [routerLink]="[item.link.href]" title="{{ item.title }}">
+            <img src="{{ item.img.src }}" class="mbm" alt="{{ item.img.alt }}" title="{{ item.img.title }}">
+          </a>
+        </div>
+        <div class="mod">
+          <div class="feature">
+            <h3 class="n3-title--alt">{{ item.title }}</h3>
+
+            <div class="lam-lebel mb5" *ngIf="item.discount.state">
+              <span class="lebel">{{ item.discount.label }}</span>
+            </div>
+
+            <div class="lam-lebel mb5" *ngIf="item.new.state">
+              <span class="lebel">{{ item.new.label }}</span>
+            </div>
+
+          </div>
+          <div class="prices-detail">
+            <div class="prices mbs">
+              <p>{{ item.label }}</p>
+              <p class="old-price">{{ item.tarifpromo }}</p>
+              <p class="s-price">{{ item.tarifdh }}</p>
+            </div>
+            <a [routerLink]="[item.link.href]" class="btn btn--standard" title="{{ item.link.title }}">{{ item.link.text }}</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

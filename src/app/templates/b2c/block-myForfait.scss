@@ -1,0 +1,52 @@
+.color-orange {
+    color:#f16e00;
+}
+
+.txt-icon-medium {
+    font-size:2.4rem;
+    @media #{$phone} {
+        font-size: 2.3rem;
+        display:block;
+    }
+}
+
+.block-icon-offer {
+
+    .ic-call {
+        margin-left:-5px;
+        margin-top: -14px;
+    }
+
+    .ic-Orange_Messenger {
+        margin-left:-5px;
+        margin-top: -7px;
+    }
+
+    .ic-Internet {
+        margin-left:-5px;
+        margin-top: -6px;
+    }
+    @media #{$phone} {
+        .ic-call {
+            margin-top: -7px;
+        }
+        .ic-Orange_Messenger {
+            margin-top: -7px;
+        }
+        .ic-Internet {
+            margin-top: -7px;
+        }
+    }
+}
+
+.o-mb-m {
+    margin-top:-20px;
+}
+
+.link-pos-flr {
+    
+    @media #{$phone} {
+        float:none;
+        margin:0 0 20px 0;
+    }
+}

@@ -1,0 +1,13 @@
+<div [@slideUp]='state' class="block-notifications bg-yellow">
+  <span class="aide visible-phone">
+    <i class="icon ic-Delete" (click)="hide()"></i>
+  </span>
+  <span class="aide hidden-phone">
+    <i class="icon ic-assistance"></i>
+    <span>{{ data.help }}</span>
+  </span>
+  <div class="label">{{ data.label }}</div>
+  <div *ngFor="let link of data.links" class="{{ link.type }}">
+    <a [routerLink]="[link.href]" title="{{ link.title }}">{{ link.text }}</a>
+  </div>
+</div>

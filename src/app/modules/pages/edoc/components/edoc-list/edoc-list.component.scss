@@ -1,0 +1,24 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .item-av-position .item-av__content {
+        padding: 0 18px 16px;
+    }
+
+    .item-item-av {
+        .item-av__content {
+            h3 {
+                font-weight: 100;
+            }
+        }
+    }
+
+    .block-edoc {
+        article {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+:host(.rtl) /deep/ {}

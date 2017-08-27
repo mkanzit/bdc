@@ -1,0 +1,58 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .block-error {
+        background: $yellow-background;
+        padding: 30px 0 36px 0;
+
+        @media #{$phone} {
+            padding: 25px 9px 10px;
+        }
+    }
+
+    .block-search-site-top {
+        @media #{$phone} {
+            padding-bottom: 20px;
+        }
+    }
+
+    .block-error__visuel {
+        margin-top: 4px;
+
+        @media #{$phone} {
+            img {
+                width: 69px;
+            }
+        }
+    }
+
+    .block-error__content {
+        @media #{$phone} {
+            position: relative;
+        }
+    }
+
+    .block-error__content__title-p {
+        @media #{$phone} {
+            width: 100%;
+            float: none;
+        }
+        p {
+            @media #{$phone} {
+                padding: 0 115px 0 0;
+            }
+        }
+    }
+
+    .block-error__visuel {
+        @media #{$phone} {
+            bottom: 0;
+            float: none;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+:host(.rtl) /deep/ {}

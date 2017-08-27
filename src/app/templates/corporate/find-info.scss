@@ -1,0 +1,37 @@
+.block-info-b{
+    background: $black;
+     position: relative;
+     padding-bottom: 75px;
+     @media #{$phone} {
+           padding-bottom: 0;
+        }
+    @media #{$phone} { 
+        margin-bottom: 20px;
+    img{
+        
+            width: 100%;
+        }
+    }
+    .block-info-b__centent{
+        padding: 20px 23px 0;
+       
+        color: $white;
+        @media #{$phone} {
+            padding: 20px;
+        }
+        p{
+            min-height: 62px;
+            @media #{$phone} {
+                min-height: 0;
+            }
+        }
+        .btn{
+            position: absolute;
+            bottom: 23px;
+            @media #{$phone} {
+                position: relative;
+                bottom: auto;
+            }
+        }
+    }
+} 

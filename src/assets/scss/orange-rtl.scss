@@ -1,0 +1,132 @@
+
+@import "global/variables";
+@import "global/fonts";
+@import "orange/patterns-layout-rtl";
+@import "orange/page-rtl";
+@import "orange/form-patterns-rtl";
+@import "orange/pager-rtl";
+// @import "orange/form-header-ar";
+// @import "../../fragments/header/header-ar";
+// @import "../../fragments/footer/footer-ar";
+// @import "../../fragments/b2c-blocks-arabe/block-box";
+// @import "../../fragments/b2c-blocks-arabe/block-login";
+// @import "../../fragments/b2c-blocks-arabe/block-club";
+// @import "../../fragments/b2c-blocks-arabe/block-cineday";
+// @import "../../fragments/b2c-blocks-arabe/block-compte";
+// @import "../../fragments/b2c-blocks-arabe/contact";
+// @import "../../fragments/b2c-blocks-arabe/block-step";
+// @import "../../fragments/b2c-blocks-arabe/block-tab-dash";
+// @import "../../fragments/b2c-blocks-arabe/block-myFacture";
+// @import "../../fragments/b2c-blocks-arabe/block-myOffre";
+// @import "../../fragments/b2c-blocks-arabe/block-myForfait";
+// @import "../../fragments/b2c-blocks-arabe/block-myLigne";
+// @import "../../fragments/b2c-blocks-arabe/block-MYBilan";
+// @import "../../fragments/b2c-blocks-arabe/block-MyPass";
+// @import "../../fragments/b2c-blocks-arabe/block-options";
+// @import "../../fragments/b2c-blocks-arabe/block-prep-data";
+// @import "../../fragments/b2c-blocks-arabe/block-myInvoice";
+// @import "../../fragments/b2c-blocks-arabe/block-send-sms";
+// @import "../../fragments/b2c-blocks-arabe/block-Sponsor";
+// @import "../../fragments/b2c-blocks-arabe/block-detail-communication";
+// @import "../../fragments/b2c-blocks-arabe/block-other-ligne";
+// @import "../../fragments/b2c-blocks-arabe/block-graphData";
+// @import "../../fragments/b2c-blocks-arabe/block-graph-bundle";
+// @import "../../fragments/b2c-blocks-arabe/block-myProfil";
+// @import "../../fragments/b2b-blocks-arabe/block-administration";
+// @import "../../fragments/b2b-blocks-arabe/block-breadcrumbs";
+// @import "../../fragments/b2b-blocks-arabe/block-detail-ligne";
+// @import "../../fragments/b2b-blocks-arabe/block-facture";
+// @import "../../fragments/b2b-blocks-arabe/block-site";
+// @import "../../fragments/b2b-blocks-arabe/block-myBlocgenerique";
+// @import "../../fragments/b2b-blocks-arabe/block-login";
+// @import "../../fragments/b2b-blocks-arabe/block-myProfil";
+// @import "../../fragments/b2b-blocks-arabe/block-vue";
+// @import "../../fragments/b2b-blocks-arabe/block-slider";
+// @import "../../fragments/b2c-blocks-arabe/block-banner";
+// @import "../../fragments/corporate-blocks-arabe/histoire";
+// @import "../../fragments/corporate-blocks-arabe/fournisseurs";
+// @import "../../fragments/public-blocks-arabe/contact";
+// @import "../../fragments/public-blocks-arabe/block-nouvelles-boutiques";
+// @import "../../fragments/corporate-blocks-arabe/diaporama";
+// @import "../../fragments/public-blocks-arabe/block-carte";
+// @import "../../fragments/public-blocks-arabe/block-catalogue";
+// @import "../../fragments/public-blocks-arabe/block-promo-product";
+// @import "../../fragments/public-blocks-arabe/block-slide-detail-offre-3";
+// @import "../../fragments/public-blocks-arabe/block-compare";
+// @import "../../fragments/public-blocks-arabe/sousmenu";
+
+/////////////////////////
+
+.block-theme .group-right {
+  text-align: left;
+}
+.push {
+  margin-right: auto;
+  margin-left: inherit !important;
+}
+
+.popout {
+  font-family: $HelvNeue-roman-arabic !important;
+}
+
+.popout--lt.popout--2l span {
+  font-size: 3.2rem;
+}
+
+
+.popout-title {
+  word-break: normal;
+}
+
+@media #{$phone} {
+
+
+	.block-icon {
+    margin: 0 0 0 7px;
+	}
+}
+
+.table-facture > .table-facture__row > .table-facture__cell .table-facture__cell.txtright {
+  text-align: left;
+}
+
+.txt-width-icon {
+  display: inline-block;
+  line-height: 15px;
+  width: 40px;
+}
+
+.dropdown-links .dropdown-links__contentr a.link-width-icon {
+
+  @media #{$phone} {
+
+    padding: 7px 1px !important;
+
+    .txt-width-icon {
+      width: 47px;
+    }
+
+
+  }
+
+}
+
+.ui-datepicker-calendar  {
+
+  @media #{$phone} {
+
+
+    table-layout: auto !important;
+  }
+}
+
+
+.item-block-av .mod {
+
+  .btn-pos {
+    left: inherit !important;
+    right:0;
+
+  }
+
+}

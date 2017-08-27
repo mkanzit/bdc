@@ -1,0 +1,31 @@
+
+.cell-vert-middle td, .cell-vert-middle th {
+    vertical-align: middle;
+}
+
+.dropdown-links .dropdown-links__contentr a.link-width-icon i {
+    margin-right: 4px !important;
+}
+
+.txt-width-icon {
+      display: table-cell;
+       vertical-align: middle;
+    @media #{$phone} {
+    display: inline-block;
+    line-height: 15px;
+    width: 80px;
+    }
+}
+
+
+
+.block-patclear  {
+
+
+	@media #{$phone} {
+       	clear: both;
+    	padding-top: 15px;
+    }
+	
+
+}

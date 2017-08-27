@@ -1,0 +1,59 @@
+.block-addOptions-pt15 {
+    padding: 15px 0 40px;
+}
+.o-ptl {
+    
+    padding-top:30px;
+}
+
+.block-size-36 {
+    
+    font-size:3.6rem;
+}
+
+.progress.progress--greenF .progress-bar {
+  
+    height: 34px;
+    line-height: 34px;
+    color:#000000;
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.progress--greenF {
+    height: 34px;
+}
+
+.list-ligne {
+    font-size:1.4rem;
+}
+
+.class-border-left {
+    
+    border-left:1px solid #dddddd;
+    padding-left:30px;
+
+    @media #{$phone}{
+         border-left:none;
+        padding-left:0;
+    }
+}
+
+.class-ptl57 {
+    
+    padding-top:57px;
+
+    @media #{$phone}{
+        padding-top:0;
+        padding-bottom:15px;
+    }
+}
+
+.block-addOptions.block-addOptions-pt15 .toggle-add-option__header .txtright {
+
+     @media #{$phone}{
+         text-align: right;
+    }
+   
+}
+

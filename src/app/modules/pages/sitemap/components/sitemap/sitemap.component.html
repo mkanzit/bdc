@@ -1,0 +1,15 @@
+<app-breadcrumb [data]="sitemap.breadcrumb"></app-breadcrumb>
+<!--
+<div class="page">
+  <div class="container">
+
+  </div>
+</div>-->
+
+<section class="mbl {{ sitemap.blocks[0].classes | class }}">
+  <div class="container">
+    <h2 class="mbl">{{ sitemap.title }}</h2>
+  </div>
+  <app-block-sitemap></app-block-sitemap>
+
+</section>

@@ -1,0 +1,9 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .item-av-position .item-av__content {
+        padding: 0 18px 0;
+    }
+}
+
+:host(.rtl) /deep/ { }

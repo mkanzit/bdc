@@ -1,0 +1,125 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+  .breadcrumbs {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media #{$phone} {
+      padding-bottom: 12px;
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: initial;
+      // float: left;
+      padding: 0;
+    }
+
+    ul {
+      > li {
+        line-height: 16px;
+        font-size: 1.4rem;
+        padding: 0;
+        position: relative;
+        @extend .ic;
+        @extend .ic-right;
+        color: $black;
+
+        @media #{$phone} {
+          font-size: 1.2rem;
+        }
+
+        &.home {
+          font-family: $Arial;
+
+          i {
+            margin-top: -4px;
+          }
+
+          a {
+            font-family: $Arial;
+          }
+        }
+
+        &:before {
+          float: right;
+          font-size: 1.5rem;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 0;
+          @media #{$phone} {
+            margin-left: 2px;
+            margin-right: 2px;
+          }
+        }
+
+        &:hover {
+          >a {
+            color: $orangeB;
+          }
+        }
+
+        &.active {
+          &:before {
+            display: none;
+          }
+          span {
+            color: $orangeB;
+          }
+        }
+      }
+    }
+
+    &.breadcrumbs-select {
+      ul {
+        >li {
+          margin-top: 9px;
+        }
+      }
+    }
+
+    .dropdown-black {
+      max-width: 170px;
+      border: 2px solid $black;
+    }
+  }
+}
+
+
+
+:host(.rtl) /deep/ {
+  .breadcrumbs {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 20px 12px;
+
+    @media #{$phone} {
+      padding: 5px 10px 12px;
+    }
+
+    .container {
+      float: right;
+    }
+
+    ul {
+      >li {
+        float: right;
+        direction: rtl;
+        text-align: right;
+        @extend .ic-left;
+
+        &:before {
+          float: left;
+        }
+      }
+    }
+  }
+}

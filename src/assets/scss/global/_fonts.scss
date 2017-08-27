@@ -1,0 +1,60 @@
+/* fonts */
+@font-face {
+  font-family: 'HelvNeue-light';
+  src: url('../fonts/Helvetica-Neue-Light/HelvNeue45_W1G.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Light/HelvNeue45_W1G.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Light/HelvNeue45_W1G.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Light/HelvNeue45_W1G.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Light/HelvNeue45_W1G.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'HelvNeue-roman';
+  src: url('../fonts/Helvetica-Neue-Roman/HelvNeue55_W1G.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Roman/HelvNeue55_W1G.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Roman/HelvNeue55_W1G.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Roman/HelvNeue55_W1G.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Roman/HelvNeue55_W1G.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Helvetica-Neue-Bold';
+  src: url('../fonts/Helvetica-Neue-Bold/HelvNeue75_W1G.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Bold/HelvNeue75_W1G.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Bold/HelvNeue75_W1G.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Bold/HelvNeue75_W1G.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Bold/HelvNeue75_W1G.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'HelvNeue-light-arabic';
+  src: url('../fonts/Helvetica-Neue-Light-Arabic/HelveticaNeueW20-45Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Light-Arabic/HelveticaNeueW20-45Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Light-Arabic/HelveticaNeueW20-45Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Light-Arabic/HelveticaNeueW20-45Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Light-Arabic/HelveticaNeueW20-45Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Helvetica-Neue-Bold-arabic';
+  src: url('../fonts/Helvetica-Neue-Bold-Arabic/HelveticaNeueW20-75Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Bold-Arabic/HelveticaNeueW20-75Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Bold-Arabic/HelveticaNeueW20-75Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Bold-Arabic/HelveticaNeueW20-75Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Bold-Arabic/HelveticaNeueW20-75Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'HelvNeue-roman-arabic';
+  src: url('../fonts/Helvetica-Neue-Roman-Arabic/HelveticaNeueW20-55Roman.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica-Neue-Roman-Arabic/HelveticaNeueW20-55Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica-Neue-Roman-Arabic/HelveticaNeueW20-55Roman.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Helvetica-Neue-Roman-Arabic/HelveticaNeueW20-55Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica-Neue-Roman-Arabic/HelveticaNeueW20-55Roman.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'icon-orange';
+  src: url('../fonts/icon-orange/icons-orange.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/icon-orange/icons-orange.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/icon-orange/icons-orange.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/icon-orange/icons-orange.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/icon-orange/icons-orange.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@import "./fonts/icon-orange";

@@ -1,0 +1,14 @@
+.block-commitment{
+    
+    .liste-wp {
+
+        @media #{$phone} {
+            margin-bottom:17px;
+        }
+        
+    }
+}
+
+.block-commitment.block > .container {
+    padding-top: 0;
+}

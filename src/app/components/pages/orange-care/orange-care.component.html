@@ -1,0 +1,24 @@
+<section class="{{ data.classes | class }}">
+		<div class="container">
+
+				<h2 class="mbm">{{ data.title }}</h2>
+
+				<div class="grid-2-tiny-1 items-links-service" *ngIf="data.content.length > 0">
+						<article class="item-links-service mob-mbm" *ngFor="let item of data.content; let i = index">
+								<div class="container">
+										<div class="grid-1-3">
+												<div class="icon-cell"><i class="icon {{ item.icon }} ic-FS-75 mbs"></i></div>
+												<div class="content-cell">
+														<h3 class="n3-title--alt "><a *ngIf="item.link.href " href="{{ item.link.href }}" title="{{ item.link.title }}">{{ item.title }}</a></h3>
+														<div [innerHTML]="item.html"></div>
+														<a *ngIf="item.link.href | url" routerLink="{{ item.link.href }}" title="{{ item.link.title }}" class="btn mbm">
+																{{ item.link.text }}
+														</a>
+												</div>
+										</div>
+								</div>
+						</article>
+				</div>
+
+		</div>
+</section>

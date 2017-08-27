@@ -1,0 +1,10 @@
+<app-breadcrumb [data]="promotions.breadcrumb"></app-breadcrumb>
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+<section class="block block-promotions">
+  <div class="container">
+    <h2 class="mbl">{{ promotions.title }}</h2>
+    <app-promo-filter></app-promo-filter>
+  </div>
+</section>
+
+<app-media [data]="promotions.blocks[0]"></app-media>

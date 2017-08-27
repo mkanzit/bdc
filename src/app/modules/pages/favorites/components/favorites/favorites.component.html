@@ -1,0 +1,19 @@
+<app-breadcrumb [data]="favorites.breadcrumb"></app-breadcrumb>
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+
+<section class="mbl block">
+  <div class="container">
+    <h2 class="mbl">{{ favorites.title }}</h2>
+    <app-favorites-filter></app-favorites-filter>
+  </div>
+
+  <favorites-item [data]="favorites.blocks[0]"></favorites-item>
+
+  <div class=" text-center">
+
+    <a href="#" class="btn mrs mob-mbs btn-infinite-load" title="Charger plus de resultats">
+      Charger plus de resultats
+      <i class="ic-Add"></i>
+    </a>
+  </div>
+</section>

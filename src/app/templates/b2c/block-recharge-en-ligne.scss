@@ -1,0 +1,28 @@
+.block-recharge-en-ligne{
+    background: $green;
+}
+.block-recharge-en-ligne--content {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+.block-recharge-en-ligne--visuel {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: -40px;
+}
+@media screen and (max-width: 959px){
+    .block-recharge-en-ligne--content {
+        width: 60%;
+    }
+}
+@media #{$phone}{
+    .block-recharge-en-ligne--content {
+        width: 100%;
+    }
+}
+@media #{$phone}{
+    .block-recharge-en-ligne--visuel {
+        display: none;
+    }
+}

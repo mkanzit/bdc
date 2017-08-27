@@ -1,0 +1,23 @@
+<div class="flash-news-container">
+  <div class="label fl">
+    <h2 (click)="collapse($event)">{{ label }}</h2>
+  </div>
+
+  <div class="flash-news-slider fl">
+    <owl-carousel #owlCarousel class="owl-container"
+      [options]="options"
+      [items]="flashNews"
+      [carouselClasses]="['owl-theme']">
+      <div class="slide-item fl" *ngFor="let slide of flashNews;let i = index">
+        <img *ngIf="slide.vid.src" class="vid" src="{{ slide.vid.src }}" alt="{{ slide.vid.alt }}" title="{{ slide.vid.title }}">
+        <p class="desc" [class.full]="!slide.vid.src">
+          <a [routerLink]="['/details']">
+            {{ slide.desc }}
+          </a>
+        </p>
+      </div>
+    </owl-carousel>
+
+    <span class="next" (click)="next()"></span>
+  </div>
+</div>

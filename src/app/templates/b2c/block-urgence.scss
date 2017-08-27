@@ -1,0 +1,49 @@
+.block-urgence {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-top: 2px solid #eeeeee;
+}
+.block-urgence--content{
+  .block-btns{
+
+    .btn{
+        min-width:160px;
+        width:auto;
+    }
+
+    @media #{$phone} {
+        .btn{
+            width: 80%; 
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+        }
+    }
+}  
+}
+
+.block-urgence--visuel { 
+    display: inline-block;
+    vertical-align: top;
+    width: 34%;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width: auto !important;
+    }
+
+    @media #{$phone} {
+        display:none;
+    }
+}
+.block-urgence--content{
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+    @media screen and (max-width: 959px) {
+        width: 72%;
+    }
+
+    @media #{$phone} {
+        width: 100%;    
+    }
+}

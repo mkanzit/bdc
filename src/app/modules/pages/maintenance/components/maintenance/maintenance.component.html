@@ -1,0 +1,26 @@
+<section class="maintenance">
+    <div class="header container-large">
+        <div class="sticky-wrapper">
+            <div class="container">
+                <div class="clearfix block-bg-top">
+                    <a class="nav-logo" href="#">
+                        <img alt="Orange Logo" src="assets/imgs/contenus/logo.png">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container-large">
+            <div>
+                <div class="container">
+                    <div class="block-content-maintenance">
+                        <h1>{{ maintenance.blocks[0].content[0].title }}</h1>
+                        <div [innerHTML]="maintenance.blocks[0].content[0].html"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .block-pdv-list {
+        padding-bottom: 20px;
+
+        .scrollable {
+            max-height: 540px;
+            padding-right: 24px;
+
+            .agence {
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray3;
+                    padding-bottom: 16px;
+                }
+
+                .vid {
+                    img {
+                        display: block;
+                        height: 75px;
+                        width: 95px;
+                        @media #{$phone} {
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .infos {
+                    p:not(.name) {
+                        font-size: 14px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ { }

@@ -1,0 +1,89 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .offer-migrations {
+        font-family: $Arial;
+
+        .offers-List {
+            .offre {
+                padding: 3rem 20% 3rem 0;
+                border-bottom: 1px solid $gray4;
+                width: 100%;
+                @media #{$phone} {
+                    padding: 2rem 0 2rem 0;
+                }
+
+                &:last-child {
+                    border-bottom: 0 solid $gray4;
+                }
+
+                .h {
+                    font-size: 2.2rem;
+                    font-weight: 900;
+                    @media #{$phone} {
+                        line-height: normal;
+                        margin-bottom: 2rem;
+                    }
+
+                    span {
+                        color: $orangeB;
+                    }
+                }
+
+                .offre-item {
+                    @media #{$phone} {
+                        line-height: normal;
+                    }
+
+                    p {
+                        margin-bottom: 0
+                    }
+
+                    p:first-child {
+                        margin-bottom: 1rem;
+                    }
+
+                    i {
+                        vertical-align: middle;
+                        font-size: 3rem;
+                    }
+
+                    strong {
+                        vertical-align: middle;
+                        font-size: 2rem;
+                    }
+
+                    span {
+                        vertical-align: middle;
+                    }
+
+                    &.frais {
+                        strong {
+                            font-size: 1.6rem;
+                        }
+
+                        p:last-child {
+                            font-size: 2.2rem;
+                            display: block;
+                            margin-top: 1rem;
+                            color: $orangeB;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    .offer-migrations {
+        font-family: $Arial;
+
+        .offers-List {
+            .offre {
+                padding: 3rem 0 3rem 20%;
+            }
+        }
+    }
+}

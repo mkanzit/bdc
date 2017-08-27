@@ -1,0 +1,52 @@
+<div class="banner-lg block">
+    <img class="DM-BundleWrapper__visuel" alt="visuel" src="assets/imgs/contenus/a-visuel-2.jpg">
+    <div class="container block-theme-container-with-breadcrumbs">
+
+        <!-- class 2 - 1 -->
+        <div class="grid-2-1-small-2-tiny-2">
+            <div class="left-side">
+                <div class="d-table">
+                    <div class="man left-side-left">
+                        <div class="ic {{ data.content[0].theme.graph }} popout popout--2l ic-FS-220 popout--mt color-orangeW mbs fl">
+                            <span class="popout-title">{{ data.content[0].theme.title }}</span>
+                        </div>
+                    </div>
+
+                    <div class="left-side-right">
+                        <h3 class="mbm">
+                            {{ data.content[0].title }}
+                        </h3>
+
+                        <p class="mbm">
+                            {{ data.content[0].desc }}
+                        </p>
+
+                        <ul class="mbl">
+                            <li *ngFor="let item of data.content[0].features">{{ item }}</li>
+                        </ul>
+
+                        <p class="price mbs">{{ data.content[0].price }}</p>
+
+                        <ul class="details mbm">
+                            <li *ngFor="let item of data.content[0].dates">{{ item }}</li>
+                        </ul>
+
+                        <a routerLink="{{ data.content[0].link.href }}" class="btn mrs mob-mbs" title="{{ data.content[0].link.title }}">{{ data.content[0].link.text }}</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="push group-right txtright">
+                    <div *ngFor="let item of data.content[0].popouts">
+                        <div class="ic ic-tariff-out popout  popout-out popout--rt mbs color-orangeW">
+                            <span class="popout-title" [innerHTML]="item.html"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

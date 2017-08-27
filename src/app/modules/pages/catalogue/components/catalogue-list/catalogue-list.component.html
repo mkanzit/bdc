@@ -1,0 +1,151 @@
+<app-breadcrumb [data]="catalogues.breadcrumb"></app-breadcrumb>
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+
+<section class="mbl {{ catalogues.blocks[0].classes | class }}">
+  <div class="container">
+    <h2 class="mbl">Nos mobiles</h2>
+    <div class="block-catalogue-categories">
+      <ul class="tab-dash-header hidden-tiny hidden-mob">
+        <li class="wp-active" [class.active]="i === active" *ngFor="let cat of categories; let i = index">
+          <a (click)="showCat($event, i, catalogues.blocks[0])" id="{{ cat.term }}">{{ cat.label }}</a>
+        </li>
+      </ul>
+
+      <form name="list-filter" class="grid-5-tiny-1 visible-phone mbl" #filterForm="ngForm">
+        <div>
+          <select name="filter-by-date" class="selectBox dropdown-black selectBox-dropdown" (select)="selectCat($event)" selectBox>
+            <option *ngFor="let cat of categories" value="{{ cat.term }}">{{ cat.label }}</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="grid-3-1">
+      <div class="block block-terminals">
+        <app-mobile-4-remontees [data]="catFiltered" [grid]="'grid-3 items-mobile'"></app-mobile-4-remontees>
+      </div>
+      <div class="block block-terminals-filter">
+        <div class="grid-3-1">
+          <aside class="aside-affinez-recherche">
+            <div class="block-content-search-mobile">
+              <form>
+                <div class="order-filter mbs">
+                  <h4 class="block-link-search-mobile mbm">Afficher par</h4>
+
+                  <div class="filter-section">
+                    <div class="form-type-radio mbs w96">
+                      <input type="radio" name="show" id="new" checked required>
+                      <label class="option" for="new">Nouveautés</label>
+                    </div>
+                    <div class="form-type-radio mbs w96">
+                      <input type="radio" name="show" id="pc" required>
+                      <label class="option" for="pc">Prix croissant</label>
+                    </div>
+                    <div class="form-type-radio mbs w96">
+                      <input type="radio" name="show" id="pdc" required>
+                      <label class="option" for="pdc">Prix décroissant</label>
+                    </div>
+                    <div class="form-type-radio mbs w96">
+                      <input type="radio" name="show" id="az" required>
+                      <label class="option" for="az">Nom A-Z</label>
+                    </div>
+                    <div class="form-type-radio mbs w96">
+                      <input type="radio" name="show" id="za" required>
+                      <label class="option" for="za">Nom Z-A</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="criteria-filter">
+                  <h4 class="block-link-search-mobile mbm">Filtrer par</h4>
+
+                  <div class="filter-section mbs">
+
+                    <p class="fs-18 mbm js-st-title-mob">Marques</p>
+
+                    <div class="simpletoggle-content-mob">
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-m-1" name="marques">
+                        <label for="checkbox-m-1" class="option">Samsung</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-m-2" name="marques">
+                        <label for="checkbox-m-2" class="option">Alcatel</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-m-3" name="marques" checked>
+                        <label for="checkbox-m-3" class="option">Sony</label>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="filter-section mbs">
+                    <p class="fs-18 mbm js-st-title-mob">Système d'éxploitation</p>
+                    <div class="simpletoggle-content-mob">
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-s-1" name="systeme" checked>
+                        <label for="checkbox-s-1" class="option">Androïd</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-s-2" name="systeme">
+                        <label for="checkbox-s-2" class="option">Nokia OS</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-s-3" name="systeme">
+                        <label for="checkbox-s-3" class="option">Windows Phone</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-s-4" name="systeme">
+                        <label for="checkbox-s-4" class="option">iOS</label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="filter-section mbs">
+                    <p class="fs-18 mbm js-st-title-mob">Taille d'écran</p>
+                    <div class="simpletoggle-content-mob">
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-e-1" name="ecran" checked>
+                        <label for="checkbox-e-1" class="option">4” et plus</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-e-2" name="ecran">
+                        <label for="checkbox-e-2" class="option">entre 4” et 5” Sony</label>
+                      </div>
+
+                      <div class="form-type-checkbox  mbs w96">
+                        <input type="checkbox" id="checkbox-e-3" name="ecran">
+                        <label for="checkbox-e-3" class="option">5,5” et plus</label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="block-btns mbs">
+                    <div class="grid-2">
+                      <button class="btn btn--ms" type="submit" name="reset">Annuler</button>
+                      <button class="btn btn--standard" type="submit" name="reset">Valider</button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </form>
+            </div>
+          </aside>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

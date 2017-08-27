@@ -1,0 +1,30 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .block-orange-care {
+
+        article[class^='item-'] {
+            @media #{$phone} {
+                margin: 0;
+            }
+        }
+
+        .icon-cell {
+            width: 80px;
+        }
+
+        .btn {
+            @media #{$phone} {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+:host(.rtl) /deep/ {
+    .block-orange-care {
+        direction: rtl;
+        text-align: right;
+    }
+}

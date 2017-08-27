@@ -1,0 +1,34 @@
+<section class="{{ data.classes | class }}">
+  <div class="container">
+
+    <div *ngIf="!twocol">
+      <article class="block-bg-stand__content">
+        <h2 class="mbm">{{ data.content[0].title }}</h2>
+        <div class="onlineediteur mbm" [innerHTML]="data.content[0].html"></div>
+        <div class="block-btns" *ngIf="cta > 0">
+          <a *ngFor="let btn of data.content[0].cta" class="btn {{ btn.class | class }}" href="{{ btn.href }}" title="{{ btn.title }}">
+            {{ btn.text }}
+            <i class="icon {{ btn.icon }}" *ngIf="btn.icon !== ''"></i>
+          </a>
+        </div>
+      </article>
+      <div class="block-bg-stand__visuel" *ngIf="data.content[0].img.src">
+        <img src="{{ data.content[0].img.src }}" alt="{{ data.content[0].img.alt }}" alt="{{ data.content[0].img.title }}">
+      </div>
+    </div>
+
+    <h3 class="mbm" *ngIf="twocol">{{ data.title }}</h3>
+    <div *ngIf="twocol" [class.grid-2-tiny-1]="twocol">
+      <article *ngFor="let item of data.content">
+        <h4 class="mbm">{{ item.title }}</h4>
+        <div class="onlineediteur mbm" [innerHTML]="item.html"></div>
+        <div class="block-btns" *ngIf="item.cta > 0">
+          <a *ngFor="let btn of item.cta" class="btn {{ btn.class | class }}" href="{{ btn.href }}" title="{{ btn.title }}">
+            {{ btn.text }}
+            <i class="icon {{ btn.icon }}" *ngIf="btn.icon !== ''"></i>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

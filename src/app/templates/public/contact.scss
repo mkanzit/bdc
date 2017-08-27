@@ -1,0 +1,85 @@
+.block-title-afborder {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+
+.block-title-afborder:after {
+    background-color: #cccccc;
+    content: " ";
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+
+.block-title-afborder:after {
+    margin-left: 22px;
+}
+
+.item-form-childmb0  {
+    
+    .form-type-radio {
+        margin: 0 15px 0 0;
+
+        @media #{$phone} {
+           display:inline-block;
+        }
+
+        label, .label {
+            margin-bottom: 0;
+        }
+
+    }
+
+
+}
+
+
+.mll30 {
+    
+     margin-left: 3rem;
+
+    @media #{$phone} {
+        margin-left: 1.5rem;
+    }
+}
+
+.form-quiz {
+    
+    .form-type-radio > label {
+        font-size: 1.6rem;
+
+        @media #{$phone} {
+          font-size: 1.3rem;
+        }
+    }
+
+}
+
+.item-form-childmb0.grid-5 {
+    margin-bottom: 20px;
+}
+
+.item-form-childmb0.grid-5  .form-type-radio {
+    margin: 0 0 20px 0;
+    margin-left:2rem;
+}
+
+.m-w100 {
+    
+    @media #{$phone} {
+        
+        width:100%;
+    }
+}
+
+.m-w90 {
+    
+    @media #{$phone} {
+        
+        width:90%;
+    }
+}

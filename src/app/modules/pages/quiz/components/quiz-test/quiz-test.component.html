@@ -1,0 +1,37 @@
+<section class="{{ quizTest.blocks[0].classes | class }}">
+    <h2 class="n2-title mbm">{{ quizTest.title }}</h2>
+    <p class="mbm bg-pink p20 w85">{{ quizTest.description }}</p>
+
+    <div class="grid-3-1">
+        <form class="filter quiz-filter" name="quiz-filter" (ngSubmit)="startQuiz(region)" #region="ngForm" novalidate>
+
+            <div class="{{ item.classes | class }} item-{{ item.tid }}" *ngFor="let item of quizTest.blocks[0].content[0].tests; let i = index">
+                <p class="mbm">{{ i + 1  + '. ' + item.title }}</p>
+                <div class="{{ champ.classes | class }}" *ngFor="let champ of item.champs; let j = index">
+                    <input type="{{ champ.type }}" name="{{ champ.name + (i + 1) }}" id="q{{ i + 1 }}-checkbox-{{ j + 1 }}" [attr.checked]=" champ.checked ? '' : checked " >
+                    <label class="option" for="q{{ i + 1 }}-checkbox-{{ j + 1 }}">{{ champ.label }}</label>
+                </div>
+            </div>
+
+            <div>
+                <button class="{{ quizTest.blocks[0].content[0].button.classes | class }}" type="{{ quizTest.blocks[0].content[0].button.type }}">{{ quizTest.blocks[0].content[0].button.text }}</button>
+            </div>
+        </form>
+        <div class="score">
+            <circle-progress #score
+              [percent]="quizTest.blocks[0].content[0].progress.percent"
+              [boxSize]="quizTest.blocks[0].content[0].progress.boxSize"
+              [radius]="quizTest.blocks[0].content[0].progress.radius"
+              [lowColor]="quizTest.blocks[0].content[0].progress.lowColor"
+              [middleColor]="quizTest.blocks[0].content[0].progress.middleColor"
+              [interColor]="quizTest.blocks[0].content[0].progress.interColor"
+              [highColor]="quizTest.blocks[0].content[0].progress.highColor"
+              [border]="quizTest.blocks[0].content[0].progress.border"
+              [time]="quizTest.blocks[0].content[0].progress.time"
+              [fontFamily]="quizTest.blocks[0].content[0].progress.fontFamily"
+              [fontSize]="quizTest.blocks[0].content[0].progress.fontSize"
+              [backgroundColor] = "quizTest.blocks[0].content[0].progress.backgroundColor">
+            </circle-progress>
+        </div>
+    </div>
+</section>

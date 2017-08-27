@@ -1,0 +1,36 @@
+<div class="main-container" [class.expended]="expended" pageDir>
+  <div #leftcontainer class="left-container bg-black">
+    <div class="scrollable" malihu-scrollbar [scrollbarOptions]="csMenu">
+      <div class="site-logo">
+        <a [routerLink]="['/home']">
+          <img class="logo" src="assets/imgs/contenus/logo-bdc.jpg" width="50" height="50" alt="Orange - Base de connaissance" title="Orange - Base de connaissance">
+        </a>
+      </div>
+      <app-profiler></app-profiler>
+      <div class="main-menu">
+        <!-- <app-menu *ngIf="state.menu" [menu]="state.menu" [menuextra]="state.menuextra"></app-menu> -->
+        <app-menu *ngIf="navTree.b2c" [menu]="navTree.b2c"></app-menu>
+      </div>
+      <app-lang-switcher class="lang-switcher-component"></app-lang-switcher>
+    </div>
+  </div>
+  <div #rightcontainer class="right-container">
+    <!-- Header -->
+    <header class="main-header">
+      <app-header [site]="state.site"></app-header>
+    </header>
+    <!-- /Header -->
+
+    <!-- Content -->
+    <div class="main-content" malihu-scrollbar [scrollbarOptions]="csContent" pageClass scrollView>
+      <router-outlet></router-outlet>
+    </div>
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <footer class="main-footer bg-yellow">
+      <app-flash-news></app-flash-news>
+    </footer>
+    <!-- /Footer -->
+  </div>
+</div>

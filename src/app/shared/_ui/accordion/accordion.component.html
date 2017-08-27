@@ -1,0 +1,11 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0" class="panel-group">
+  <ngb-panel *ngFor="let tab of data" title="{{ tab.title }}" class="panel">
+    <ng-template ngbPanelContent class="tab-content">
+      <div class="tab-item" *ngFor="let item of tab.children">
+        <a *ngIf="item.external_url" [routerLink]="[item.external_url.id]" class="link external-link" title="{{ item.title }}">{{ item.title }}</a>
+        <a *ngIf="!item.external_url && item.internal_url" [routerLink]="[item.internal_url.id]" class="link internal-link" title="{{ item.title }}">{{ item.title }}</a>
+        <p *ngIf="!item.external_url && item.internal_url" class="normal-text">{{ item.title }}</p>
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

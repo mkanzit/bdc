@@ -1,0 +1,425 @@
+.block-myInvoice {
+    z-index: 9;
+    .title-block-2 {
+        margin-bottom: 44px;
+        letter-spacing: -2px;
+    }
+    .table-facture {
+        >.table-facture__row {
+            >.table-facture__cell {
+                .table-facture__cell {
+                    @media #{$phone} {
+                        &.table-liste__visualiser {
+                            display: block;
+                        }
+                        &.table-liste__visualiser,
+                        &.table-liste__etat {
+                            height: 28px;
+                        }
+                        &.table-liste__actions.mob-mbs {
+                            margin-bottom: 13px;
+                            .dropdown-links {
+                                @media #{$phone} {
+                                    width: 100%;
+                                }
+                                .dropdown-links__contentr {
+                                    a {
+                                        i,
+                                        .txt-label {
+                                            @media #{$phone} {
+                                                display: inline-block;
+                                            }
+                                        }
+                                        .txt-label {
+                                            @media #{$phone} {
+                                                width: 65%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info-alert {
+    i {
+        float: left;
+        margin-right: 10px;
+        margin-top: -9px;
+    }
+
+    p {
+        width: 60%;
+        line-height: 17px;
+    }
+}
+
+.total-dette-value {
+    span {
+        font-size: 10rem;
+        color: $orangeW;
+        @media #{$tablet} {
+            font-size: 8rem;
+        }
+
+        @media #{$phone} {
+            //font-size: 7rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.sslist-block {
+    position: relative;
+}
+
+.sslist {
+    position: absolute;
+    background: #000;
+    width: 50%;
+    top: 50px;
+    left: 0;
+    z-index: 99999;
+
+    @media #{$phone} {
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        border-bottom: 1px solid #3f3f3f;
+        font-size: 1.6rem;
+        padding: 16px 25px 16px 25px;
+        color: #fff;
+
+        .icn-arrow-white-left,
+        .ic-left {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            color: $orangeW;
+        }
+    }
+}
+
+.table-liste {
+    border: none;
+    margin-bottom: 25px;
+
+    tr {
+        border-bottom: 1px solid #cfcfcf;
+        &:last-child {
+            border-bottom-width: 2px;
+        }
+    }
+
+    td {
+        @media #{$phone} {
+            padding: 0 0 4px 0;
+        }
+    }
+
+    .table-liste__check {
+        padding-right: 30px;
+        width: 5.2%;
+    }
+
+    .table-liste__date {
+        font-weight: bold;
+        font-size: 1.8rem;
+        @media #{$phone} {
+            font-size: 1.4rem;
+        }
+
+        span {
+            display: block;
+            font-size: 1.6rem;
+            @media #{$phone} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .table-liste__montant {
+        color: #f16e00;
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1;
+        @media #{$phone} {
+            //font-size: 2.4rem;
+            font-size: 2rem;
+        }
+    }
+
+    .table-liste__etat {
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.7;
+        .icon {
+            margin-right: 7px;
+            &.ic-accessibility_vision {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .table-liste__visualiser {
+        font-size: 1.4rem;
+        font-weight: bold;
+        .icon {
+            margin-right: 7px;
+            &.ic-accessibility_vision {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .table-liste__actions {
+        text-align: right;
+    }
+}
+
+.dropdown-links {
+    position: relative;
+    border: 2px solid #000;
+    padding: 0 7px;
+    height: 40px;
+    display: inline-block;
+    @media #{$phone} {
+        padding: 0 3px; // width: 100%;
+    }
+
+    @media #{$tablet} {
+        padding: 0 2px;
+    }
+
+    .dropdown-links__contentr {
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        left: -2px;
+        right: -2px;
+        border: 2px solid #000;
+        z-index: 10;
+        a {
+            display: block;
+            border-bottom: 1px solid #000;
+            padding: 7px 9px 7px 7px;
+            background: #fff;
+            text-decoration: none;
+            overflow: hidden;
+            i {
+                vertical-align: middle;
+                padding-right: 10px;
+                font-size: 2.5rem;
+                display: table-cell;
+            }
+            .txt-label {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    .dropdown-links__header {
+        height: 40px;
+        display: block;
+        line-height: 40px;
+        text-align: left;
+        @media #{$phone} {
+            font-size: 1.4rem;
+        }
+        &:after {
+            margin-left: 25px;
+        }
+    }
+
+    @media #{$phone} {
+        .simpletoggle-title:before {
+            margin-top: 12px;
+        }
+    }
+}
+
+.total-facture {
+    color: #f16e00;
+    font-size: 2.4rem;
+    margin-bottom: 27px;
+}
+
+.my-payment-item {
+    margin-bottom: 0;
+    @media screen and (max-width: 959px) {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.my-payment-items {
+    margin-bottom: 39px;
+    background: #f6f6f6;
+    padding: 20px;
+}
+
+.liste-facture__item {
+    margin-bottom: 52px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    fieldset {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.form-type-radio.my-payment-item div:not(#foo)>label {
+    font-size: 2rem;
+}
+
+.my-payment-item {
+    display: inline-block;
+    margin-right: 53px;
+    &.form-type-radio {
+        label {
+            font-size: 2rem;
+            margin: 0;
+            line-height: 22px;
+        }
+    }
+    input {
+        margin-right: 8px;
+    }
+    img {
+        margin-left: 12px;
+        vertical-align: bottom;
+        @media #{$phone} {
+            margin-left: 26px;
+            margin-top: 8px;
+        }
+    }
+}
+
+.my-payment {
+    .sb-submit-orange {
+        display: inline-block;
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.color-red {
+    color: $red;
+}
+
+.mob-mbs {
+    @media #{$phone} {
+        margin-bottom: 1rem;
+    }
+}
+
+.chackall-contener {
+    padding: 0 5px;
+}
+
+.table-facture {
+    .o-table {
+        display: table;
+    }
+    display: table;
+    >.table-facture__row {
+        >.table-facture__cell {
+            border-bottom: 1px solid #cfcfcf;
+            .table-facture__cell {
+                @media #{$phone} {
+                    &.table-liste__visualiser {
+                        display: none;
+                    }
+                    &.txtright {
+                        text-align: left;
+                    }
+                    display: block;
+                    width: 100%; //margin-bottom: 20px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        &:last-child {
+            >.table-facture__cell {
+                border-bottom: 2px solid #cfcfcf;
+            }
+        }
+    }
+    .table-facture__row {
+        display: table-row;
+    }
+    .table-facture__cell {
+        display: table-cell;
+        border: none;
+        vertical-align: middle;
+        padding: 13px 5px;
+        height: 40px;
+        @media #{$phone} {
+            vertical-align: top;
+        }
+        &.w42 {
+            @media #{$tablet} {
+                width: 40%;
+            }
+        }
+        @media #{$phone} {
+            padding: 2px;
+        }
+        &.npcell {
+            padding: 0;
+            @media #{$phone} {
+                padding: 10px 0 0 0;
+            }
+        }
+        &.p8cell {
+            padding-top: 8px;
+            @media #{$phone} {
+                /*padding-top: 2px;*/
+                padding-top: 14px;
+            }
+        }
+        .visualiser-content {
+            margin-top: -4px;
+        }
+    }
+    &.table-liste {
+        @media #{$phone} {
+            .form-type-checkbox>label {
+                padding-left: 21px;
+            }
+            .table-facture__cell.w45 {
+                width: 46%;
+            }
+        }
+    }
+}
+
+.table-facture.table-liste.w70 {
+    @media #{$phone} {
+        width: 100%;
+    }
+}
+
+.table-facture.table-liste.w70 .w60 {
+    @media #{$phone} {
+        width: 50%;
+    }
+}

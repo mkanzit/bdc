@@ -1,0 +1,8 @@
+<ul class="menu sub-menu bg-gray2">
+  <span class="close-menu" (click)="hide($event)"></span>
+  <h3 class="submenu-label color-orangeW">{{ title }}</h3>
+  <app-accordion [data]="menu"></app-accordion>
+  <div class="extralinks" *ngIf="menu.extra">
+    <a *ngFor="let link of menu.extra" [routerLink]="[link.href]" title="{{ link.title }}">{{ link.label }}</a>
+  </div>
+</ul>

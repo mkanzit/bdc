@@ -1,0 +1,328 @@
+.block-login {
+    position: relative;
+    z-index: 2;
+    .title-block-2 {
+        margin: 0 0 16px 0;
+    }
+}
+.txt-small {
+    font-size: 1.6rem;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 65px 8px 0;
+    @media #{$phone} {
+        padding: 0 13px 8px 0;
+    }
+}
+.form-client {
+    fieldset {
+        margin:0;
+        padding:0;
+    }
+}
+.block-loginCont-col-2 {
+    margin-bottom:10px;
+    @media #{$phone} {
+        margin-bottom:0;
+    }
+}
+.sb-submit, .sb-border-black {
+    border:2px solid #000000;
+    color:$black;
+    background:$white-background;
+    display:inline-block;
+    font-size:1.6rem;
+    padding:0 18px 0 17px;
+    height:40px;
+    margin:0 0 10px 0;
+    width: auto !important;
+    border-radius: 0 !important;
+    &:hover {
+        border:2px solid #000000;
+        color:$white;
+        background:$black-background;
+    }
+    &.pressed {
+        border:2px solid #f16e00;
+        color:$white;
+        background:$orangeW-background;
+    }
+    &.inactive {
+        border:2px solid #cccccc;
+        color:#cccccc;
+        background:$white-background;
+    }
+}
+.sb-border-black {
+    padding:0 5px;
+    width: 100% !important;
+}
+.block-loginCont-col-2{
+    .form-type-radio {
+        display: inline-block;
+        margin: 0 18px 0 0;
+        position:relative;
+        @media #{$phone} {
+            display: block;
+            margin: 0 0 12px 0;
+        }
+    }
+}
+.form-login {
+    fieldset {
+        margin:0;
+        padding:0;
+    }
+}
+.label {
+    font-size:1.6rem;
+    margin:0 0 3px 0;
+    display:block;
+}
+.asterisk {
+    color: $orangeW;
+}
+.link-form {
+    text-decoration:underline;
+    font-size:1.4rem;
+}
+.sb-submit-orange {
+    border:none;
+    color:$white;
+    background:$orangeW-background;
+    display:inline-block;
+    font-size:1.6rem;
+    height:40px;
+    padding:0 5px;
+    margin:0 0 10px 0;
+    width: 100%;
+    text-align:center;
+    border-radius: 0 !important;
+    &:hover {
+        color:$white;
+        background:$black-background;
+    }
+    &.pressed {
+        border:2px solid #000000;
+        height:42px;
+        color:$black;
+        background:$white-background;
+    }
+    &.inactive {
+        color:$white;
+        background:#cccccc;
+    }
+}
+.block-separator-txt {
+    border-top: 1px solid #cccccc;
+    margin: 16px 0 32px;
+    padding: 0 5px 0 14px;
+    position: relative;
+    clear: both;
+
+    @media #{$phone} {
+        margin: 31px 0 32px;
+    }
+
+    span {
+        background: $white;
+        display: inline-block;
+        font-size: 1.6rem;
+        left: 0;
+        margin: auto;
+        padding: 3px 12px;
+        position: absolute;
+        right: 0;
+        top: -16px;
+        width: 45px;
+
+        @media #{$phone} {
+            font-size: 3rem;
+            text-transform: uppercase;
+            top: -22px;
+            width: 71px;
+        }
+    }
+}
+/////////////
+
+.content-info {
+    display: none;
+    left: 36px;
+    position: absolute;
+    top: -3px;
+
+    @media #{$phone} {
+        right: 36px;
+        left: inherit !important;
+    }
+}
+
+.zone-info {
+    position: relative;
+
+    &:hover {
+
+        .content-info {
+            display:block;
+        }
+    }
+}
+
+.picto-info {
+
+    display: inline-block;
+
+    .ic-assistance {
+        /*font-size:2.5rem;*/
+        color:#527ddb;
+        margin-top:4px;
+    }
+}
+.space-top {
+    padding-top:24px;
+
+    @media #{$phone} {
+        padding-top:5px;
+    }
+}
+.block-loginCont {
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        margin-left: 0 !important;
+        .block-loginCont-col-1 {
+            margin-left: 0 !important;
+            width: 100%;
+        }
+
+        .block-loginCont-col-2 {
+            margin-left: 0 !important;
+            width: 100%;
+        }
+    }
+    @media #{$phone} {
+        .block-loginCont-col-1,  .block-loginCont-col-2 {
+            margin-left: 0 !important;
+            width: 100%;
+        } 
+    }
+}
+
+.block-pv-tab {
+    .item-form-input{
+        width: 75%;
+    }
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        .item-form-input{
+            width: 95%; 
+        }
+        display: inline-block;
+        margin-right: 1.3rem;
+        vertical-align: top;
+        width: 39%;
+
+        .input-form {
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and  (max-width: 767px) {
+        .item-form-input{
+            width: 100%;
+        }
+    }
+}
+
+.form-login, .form-client {
+
+    @media #{$phone} {
+        display:none;
+        padding: 10px 9px 20px;
+    }
+}
+
+.block-login .block-loginCont-col-1, .block-login .block-loginCont-col-2 {
+
+    @media #{$phone} {
+        border-bottom: 2px solid #e7e7e7;
+
+        h2 {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.6rem;
+            line-height: 17px;
+            margin-bottom: 0;
+            padding: 10px 30px 10px 9px;
+        }
+    }
+
+    h2 {
+
+        @extend .ic;
+        @extend .ic-Arrow_down;
+
+        &:before{
+            float: right;
+            margin-top: 4px;
+            margin-right: -20px;
+            @media screen and (min-width: 768px) {
+                display:none;
+            }
+        }
+    }
+
+
+    .open-title-block-2 {
+
+        color:$orangeW;
+        @extend .ic;
+        @extend .ic-Arrow_up;
+
+        @media screen and (min-width: 768px) {
+            display:none;
+        }
+
+    }
+
+}
+
+.block-login .block-loginCont-col-1 {
+
+    @media #{$phone} {
+        border-top: 2px solid #e7e7e7;
+    }
+}
+
+.form__item {
+    &.item-form{
+        margin-bottom: 15px;
+    }
+    @media #{$phone} {
+        margin:0 0 19px 0;
+    }
+}
+
+.block-mob__item {
+    .item-form{
+        margin-bottom: 10px;
+    }
+    @media #{$phone} {
+        margin-bottom: 10px;
+    }
+}
+
+.block-mob__item1 {
+    @media #{$phone} {
+        margin-bottom: 8px;
+        .sb-submit-orange {
+            padding: 0 18px;
+            width: auto !important;
+        }
+    }
+}
+.captcha-logon{
+    padding-top:20px;
+    .item-form{
+        @media #{$desktop} { 
+            margin-bottom: 10px;
+        }
+    }
+}

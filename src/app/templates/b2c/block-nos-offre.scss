@@ -1,0 +1,32 @@
+.our-offres{
+    .item-block__action{
+        i{
+           @media #{$phone} {
+                display:none;   
+            }
+        }
+    }
+  
+    a{
+        display: block;
+    }
+}  
+.item-block__action{
+    @media #{$phone} {
+        cursor: pointer;
+    }
+}
+
+.b-our-offres{
+    @media #{$phone} {
+        .item-block-padd {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}
+.our-service-last{
+    @media #{$phone} {
+        display:none;   
+    }
+}

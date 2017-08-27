@@ -1,0 +1,6 @@
+<ul class="menu nav-menu">
+  <!-- <app-menu-item *ngFor="let item of menu.items; let i = index" [item]="item" [index]="i"></app-menu-item> -->
+  <app-menu-item *ngFor="let item of menu; let i = index" [item]="item" [index]="i"></app-menu-item>
+</ul>
+<app-menuextra *ngIf="menuextra" [menu]="menuextra"></app-menuextra>
+

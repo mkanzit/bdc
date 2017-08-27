@@ -1,0 +1,12 @@
+<app-breadcrumb [data]="quiz.breadcrumb"></app-breadcrumb>
+<app-menu-aside asideMenu></app-menu-aside>
+<div class="block block-quiz">
+    <div class="container">
+        <div class="block">
+            <a class="btn mrs mob-mbs" [routerLink]="['start']">Quiz start</a>
+            <a class="btn mrs mob-mbs" [routerLink]="['test']">Quiz test</a>
+            <a class="btn mrs mob-mbs" [routerLink]="['score']">Quiz score</a>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

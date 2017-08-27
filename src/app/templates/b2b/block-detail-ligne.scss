@@ -1,0 +1,51 @@
+.info-ligne-item {
+    display: inline-block;
+    margin-right: 3%;
+    vertical-align: top;
+    width: 46%;
+    .link-picto-souligne.open{
+        @extend .mbl;
+    }
+    .link-picto-souligne.dateend.open{
+        @extend .mb5;
+    }
+    @media #{$phone} {
+        margin-right: 0;
+        margin-bottom:0;
+        width: 100%;
+    }
+    &.second {
+        @media #{$phone} {
+            margin-top:20px;
+        }
+    }
+}
+.ml-16 {
+    margin-left: -16px;
+}
+.forclose + .link-click-hidden {
+    display:none;
+}
+.block-bt-appel  {
+    padding-top:25px;
+    @media #{$phone} {
+        padding-top:0;
+        .block-dropdown-links {
+            float:right;
+        }
+    }
+    @media #{$tablet} {
+        .mrm {
+            margin-right: 0.6rem;
+        }
+        .block-dropdown-links {
+            float:right;
+        }
+    }
+}
+.changeuser { 
+    min-width: 600px;
+    @media #{$tablet-phone} {
+         min-width: 0;
+    }
+}

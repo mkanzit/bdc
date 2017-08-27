@@ -1,0 +1,6 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ { }
+
+:host(.rtl) /deep/ {
+}

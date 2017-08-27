@@ -1,0 +1,77 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+:host /deep/ .item img,
+:host /deep/ .owl-carousel .owl-item img {
+    width: initial;
+    margin-top: 2rem;
+}
+
+.item {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 22rem;
+
+    @media #{$phone} {
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+}
+
+:host /deep/ .owl-dots {
+    .owl-dot {
+        margin-top: 0;
+
+        @media #{$phone} {
+            margin-bottom: 4rem;
+        }
+
+        span {
+            background-color: $gray3;
+            margin: 5px 3px;
+        }
+
+        &:hover span {
+            background-color: $gray4;
+        }
+
+        &.active span {
+            background-color: $orangeW;
+        }
+    }
+}
+
+:host /deep/ .owl-carousel {
+    margin-left: 0;
+    padding-left: 2rem;
+
+    @media #{$phone} {
+        padding-left: 1rem;
+    }
+}
+
+.tarifs-gratuit,
+.tarifs-list {
+    margin-left: 0;
+    position: relative;
+}
+
+.tarifs-list {
+    overflow: hidden;
+    @media #{$tablet-desktop}{
+        border-right: 1px solid $white;
+    }
+}
+
+.tarifs-gratuit:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: $gray3;
+    width: 1px; // border-left: 1px solid $gray3;
+}
+
+:host(.rtl) /deep/ {
+    direction: rtl;
+    text-align: right;
+}

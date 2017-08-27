@@ -1,0 +1,132 @@
+.block-options{
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 9;
+
+    .toggle-option {
+        .toggle-option__header {
+            .linkOpenOptions {
+                width: 50%;
+                text-align: right;
+            }
+        }
+    }
+}
+.toggle-option__item{
+    border-bottom: 1px solid #dddddd;
+}
+.toggle-option__header{
+    padding: 25px 0 18px 0;
+    .link-edite{
+        .close{i{font-size: 2.4rem;    margin-top: -3px;}}
+        .edit,.close{font-size: 1.8rem;letter-spacing: -1px;}
+    }
+}
+.toggle-option__body{
+    padding-bottom: 40px;
+    @media #{$phone} {
+        .btn{
+            margin-bottom: 8px;
+        }
+        .w80{
+            margin-bottom: 20px;
+        }
+    }
+}
+.block-addOptions{
+    padding: 30px 0 40px 0;
+    background: $black;
+    h3{color: $white;
+    }
+
+    .toggle-option {
+        .toggle-option__header {
+            .linkOpenOptions {
+                width: 50%;
+                text-align: right;
+            }
+        }
+    }
+
+    .toggle-add-option__header{
+        color: $white;
+        .n3-title--alt{
+            i{
+                margin-right: 18px;
+                float: left;
+                margin-top: -10px;
+            }
+
+        }
+        a{
+            color: $white;
+        }
+    }
+
+}
+.price-detail{
+    >div{
+        @media #{$phone} {
+            width: 48% !important;
+            margin-top: 20px;
+            margin-left: 0;
+            &:first-child{
+                margin-left: 18px;
+                width: 37% !important;
+            }
+        }
+    }
+
+}
+.toggle-add-option__item{
+    position: relative;
+    > .js-blockEdite{
+        margin-top: 0;
+    }
+    .link-edite {
+        i{
+            vertical-align: top;
+        }
+    }
+}
+.toggle-add-option__header{
+    border-bottom: 1px solid #333333;
+    padding-bottom: 15px;
+    padding-top: 21px;
+    @media #{$phone} {
+        padding-bottom: 20px;
+        .txtright{
+            a{
+                margin-top: 0;
+            }
+        }
+    }
+}
+.linkOpenOptions{
+    margin-top: 6px;
+    font-size: 1.8rem;
+    i{
+        font-size: 2.2rem;
+    }
+    &.forclose{
+        color: $orangeB;
+        i{
+            @extend .ic-Arrow_up;
+            color: $orangeB !important;
+        }
+
+    }
+}
+.toggle-add-option__body{
+    background: $white;
+    h3{
+        color: $black;
+    }
+    .link-wi{
+        color: $orangeW;
+    }
+}
+.addOptions{
+    border-top: 2px solid #cccccc;
+    padding: 30px 0 0;
+}

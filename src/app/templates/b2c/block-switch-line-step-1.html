@@ -1,0 +1,72 @@
+<div class="block">
+    <div class="container">
+        <a class="link-wi mbms inbl plr" href="#"><i class="icon ic-left"></i>Retour à mon compte</a>
+        <div>
+            <h2 class="o-mbl plr">Ajouter une ligne</h2>
+            <div class="block_step block_step_2col step o-mbl">
+                <ul class="step1 clearfix">
+                    <li class="current">
+                        <span class="number-step">1.</span><span class="step-txt">Choix de la ligne</span>
+                    </li>
+                    <li>
+                        <span class="number-step">2.</span><span class="step-txt">Confirmation</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="plr">
+                <form class="form-parsley-validate form-tab" novalidate>
+                    <fieldset title="">
+                        <div class="grid-3">
+                            <div class="block-grid__item">
+                                <div><i class="icon ic-device_smart_phone ic-FS-100"></i></div>
+                                <div>
+                                    <div class="form-type-radio">
+                                        <input type="radio" id="radio-1" name="genre" required data-parsley-trigger="change">
+                                        <label for="radio-1" class="option txtleft">Vous avez un mobile</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-grid__item">
+                                <div><i class="icon ic-Internet ic-FS-100"></i></div>
+                                <div>
+                                    <div class="form-type-radio">
+                                        <input type="radio" id="radio-2" name="genre">
+                                        <label for="radio-2" class="option txtleft">Vous avez un accés internet</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-grid__item">
+                                <div><i class="icon ic-device_fixed-line_phone ic-FS-100"></i></div>
+                                <div>
+                                    <div class="form-type-radio">
+                                        <input type="radio" id="radio-3" name="genre">
+                                        <label for="radio-3" class="option txtleft">Vous avez une ligne fixe</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-3-tiny-1">
+                            <div>
+                                <div class="item-form">
+                                    <div class="item-form-input">
+                                        <input type="tel" class="input-form tel" placeholder="06 64" id="numero-contact" data-parsley-trigger="input" data-parsley-type="number" minlength="10" maxlength="10" data-parsley-error-message="Le numéro de téléphone doit être 10 chiffres" required>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mbs">
+                            <div class="mrs inbl">
+                                <input type="reset" class="btn" value="Annuler">
+                            </div>
+                            <div class="inbl">
+                                <input type="submit" value="Valider" class="btn btn--important inactive submit" disabled="">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .block-e-doc {
+        position: relative;
+        .icon {
+            font-size: 6rem;
+            margin-right: 20px;
+        }
+        .e-doc {
+            a {
+                display: table;
+                width: 100%;
+                &:hover {
+                    color: $white;
+                }
+                i,
+                div {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+            p {
+                width: 100%
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    direction: rtl;
+    text-align: right;
+
+    .txtright {
+        text-align: left;
+    }
+
+}

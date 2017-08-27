@@ -1,0 +1,47 @@
+/*pager*/
+.pager {
+    li,.pager__item {
+        span,a {
+            float: right;
+            &.prev{
+                i{
+                    &.ic-left{
+                        &:before{
+                            @extend .ic-right;
+                        }
+                    }
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+            }
+            &.next{
+                i{
+                    &.ic-right{
+                        &:before{
+                            @extend .ic-left;
+                        }
+                    }
+                    margin-left: 0;
+                    margin-right:  5px;
+                }
+            }
+        }
+
+    }
+}
+
+.item-shops{
+    direction: rtl;  
+    text-align: right;
+    div{
+        direction: rtl;      
+        text-align: right;
+    }
+    ul{
+        direction: rtl;          
+        text-align: right;
+    }
+}
+.block-resultat-findstore h2+.fl.mts{
+        margin-top: 2rem;
+}

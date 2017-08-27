@@ -1,0 +1,51 @@
+.block-myParc-gener{
+    background: #fff;
+    padding: 35px 0 49px 0;
+    
+    .txt-medium{
+        color: #ff7900;
+        margin-bottom: 27px;
+        padding: 0;
+    }
+    @media #{$phone} {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.block-myParc-gener-content {
+    z-index: 9;
+}
+.block-myParc-gener-visual img{
+    position: absolute; 
+    bottom: -52px;
+    right: 0;
+    @media #{$phone} {
+        display:none;
+    }
+
+}
+
+.block-bg-stand {
+    overflow: hidden;
+}
+.block-bg-stand__content {
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    z-index:9;
+    @media #{$phone} {
+        width: 100%;
+    }
+}
+.block-bg-stand__visuel{
+    @media #{$phone} {
+        display:none;
+    }
+    img {
+        bottom: -40px;
+        position: absolute;
+        right: 9px;
+
+
+    }
+} 

@@ -1,0 +1,26 @@
+.item-more__title{
+    .icon{
+        font-size: 2rem;
+        @media #{$phone} {
+            font-size: 1.6rem;
+        }
+    }
+}
+.item-more{
+    padding: 20px 0 3px 0;
+    border-bottom: 1px solid #cccccc;
+    &:first-child{
+        border-top: 1px solid #cccccc;    
+    }
+    @media #{$tablet-phone} {  
+            margin: 0 -9px; 
+         padding-left:  9px ;
+         padding-right:  9px ;
+    }
+}
+input.cssAccordion-input:checked ~ .cssAccordion-body.item-more__content{
+    margin-bottom: 25px;
+}
+input.cssAccordion-input:checked ~ .cssAccordion-header h3{
+    color: $orangeB;
+}

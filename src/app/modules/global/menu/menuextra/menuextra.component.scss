@@ -1,0 +1,64 @@
+@import '../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .menu-extra {
+        position: relative;
+        margin: 28px auto 0;
+
+        &::after {
+            background-color: $gray2;
+            content: '';
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            top: -14px;
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            width: 62px;
+        }
+
+        &.nav-menu {
+            .menu-item {
+                color: $white;
+                cursor: pointer;
+                padding: 22px 0;
+                text-align: center;
+                transition: $fade;
+                @media #{$phone} {
+                    padding: 1rem 0;
+                }
+
+                .menu-item-link {
+                    color: $white;
+                    display: block;
+                    font-family: $Arial;
+                    font-weight: $font-B;
+                    font-size: 16px;
+
+                    span {
+                        display: block;
+                        margin-top: 10px;
+                        text-align: center;
+                    }
+                }
+
+                &:hover {
+                    background: $gray2-background;
+                }
+
+                &.active {
+                    background: $gray2-background;
+
+                    .sub-menu {
+                        left: 80px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ { }

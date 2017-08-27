@@ -1,0 +1,36 @@
+<app-breadcrumb [data]="edoc.breadcrumb"></app-breadcrumb>
+<app-menu-aside  [state]="anchorsState" asideMenu></app-menu-aside>
+
+<section class="mbl {{ edoc.blocks[0].classes | class }}">
+    <div class="container">
+        <h2 class="mbl">{{ edocList.title }}</h2>
+
+        <app-edoc-filter></app-edoc-filter>
+
+        <div class="e-doc-list mbm grid-4-small-2-tiny-1">
+
+            <div class="{{ item.classes | class }} item-{{ item.id }}" *ngFor=" let item of edoc.blocks[0].content ">
+                <figure class="mbm" *ngIf="item.img">
+                    <a routerLink="{{ item.link.routerLink }}" title="{{ item.link.title }}">
+                        <img alt="{{ item.img.alt }}" src="{{ item.img.src }}">
+                    </a>
+                </figure>
+                <div class="item-av__content">
+                    <h3>
+                        <a routerLink="{{ item.link.routerLink }}" title="{{ item.link.title }}">
+                            {{ item.link.text }}
+                        </a>
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="text-center" *ngIf="infinitScroll">
+    <a href="{{ infinitScroll.href }}" class="{{ infinitScroll.classes | class }}" title="{{ infinitScroll.title }}">
+        {{ infinitScroll.text }}
+        <i class="{{ infinitScroll.icon }}"></i>
+    </a>
+</div>

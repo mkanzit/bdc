@@ -1,0 +1,39 @@
+ .item-art{
+        margin-bottom: 40px;
+ }
+ .mob-push-none{
+     @media #{$phone} {
+     margin-left: 2rem;
+     }
+ }
+@media #{$phone} {
+    .item-art{
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+.item-art__title{
+    color: #666666;
+}
+
+.item-art__desc{
+    color: $black;   
+}
+.item-art__time{
+    color: $gray5;   
+    display:inline-block;
+    &:hover{
+        color: $gray5;
+    }
+}
+.item-art--larg{
+    .item-art__title{
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+}

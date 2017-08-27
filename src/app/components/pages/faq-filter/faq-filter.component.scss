@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+
+    .faq-filter {
+        width: 70%;
+        margin-bottom: 60px;
+
+        @media#{$phone} {
+            width: 100%;
+
+            .input-form {
+                margin-bottom: 1rem
+            }
+        }
+    }
+
+}
+
+:host(.rtl) /deep/ { }

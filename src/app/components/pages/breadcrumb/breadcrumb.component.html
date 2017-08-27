@@ -1,0 +1,13 @@
+<div class="breadcrumbs">
+  <div class="container fl">
+    <ul class="links-group">
+      <li class="home fl">
+        <a routerLink="/home" title="Base de Co - Home"><i class="icon icon-bc-home"></i></a>
+      </li>
+      <li class="links-group-item fl" *ngFor="let link of data.blockdata; let isLast = last" [class.active]="isLast">
+        <a routerLink="{{ link.href }}" *ngIf="link.href | url" title="{{link.title}}">{{ link.text }}</a>
+        <span *ngIf="!(link.href | url)" title="{{link.title}}">{{ link.text }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  figure {
+    margin: 0 0 2rem 0;
+
+    a,
+    img {
+      width: 100%;
+    }
+  }
+}
+
+:host(.rtl) /deep/ {
+  .item-av__content {
+    direction: rtl;
+    text-align: right;
+
+    .btn {
+      left: auto;
+      right: 18px;
+    }
+  }
+}

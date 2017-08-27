@@ -1,0 +1,16 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+
+        <h2 class="mbl">{{ data.title }}</h2>
+
+        <article class="onlineediteur">
+
+            <figure *ngIf="data.content[0].img">
+                <img src="{{ data.content[0].img.src }}" alt="{{ data.content[0].img.alt }}">
+            </figure>
+
+            <div class="desc" [innerHTML]="data.content[0].html"></div>
+
+        </article>
+    </div>
+</section>

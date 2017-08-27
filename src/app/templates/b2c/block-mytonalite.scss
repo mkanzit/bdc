@@ -1,0 +1,31 @@
+.block-mytonalite {
+    background: $black;
+   color: #fff;
+}
+.block-mytonalite-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+}
+.block-mytonalite-visuel {
+    display: inline-block;
+    vertical-align: sub;
+    margin-top: 30px;
+    margin-bottom: -40px;
+
+}
+@media screen and (max-width: 959px){
+    .block-mytonalite-content {
+        width: 60%;
+    }
+}
+@media #{$phone}{
+    .block-mytonalite-content {
+        width: 100%;
+    }
+}
+@media #{$phone}{
+    .block-mytonalite-visuel{
+        display: none;
+    }
+}

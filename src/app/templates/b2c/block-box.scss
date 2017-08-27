@@ -1,0 +1,115 @@
+.block-box {
+
+    padding:30px 0 40px 0;
+
+    @media #{$phone} {
+        padding:25px 0 5px 0;
+    }
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        padding: 29px 0 42px 0;
+    }
+
+    h2 {
+        margin: 0 0 23px;
+
+        @media #{$phone} {
+            font-size: 3rem;
+            line-height: 31px;
+        }
+    }
+
+    .ic-My_Boutique:before {
+        margin-left:-5px;
+
+        @media #{$phone} {
+            font-size:5.3rem;
+            margin-left:-5px;
+        }
+    }
+
+    .ic-assistance:before {
+
+        margin-left:-4px;
+
+        @media #{$phone} {
+            font-size:5.2rem;
+            margin-left:-5px;
+        }
+    }
+
+    .ic-Control_Centre:before {
+
+        margin-left:-1px;
+
+        @media #{$phone} {
+            font-size:5.2rem;
+            margin-left:-5px;
+        }
+    }
+
+    .ic-Business_Lounge:before {
+
+        margin-left:-10px;
+
+        @media #{$phone} {
+            font-size:5.2rem;
+            margin-left:-5px;
+        }
+    }
+
+    .ic-Orange_Experts_Expert:before {
+
+        margin-left:-5px;
+
+        @media #{$phone} {
+            font-size:5.6rem;
+            margin-left:-8px;
+        }
+    }
+}
+
+.block-box__content {
+
+    .box {
+        font-size:1.6rem;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            font-size: 2.4rem;
+            line-height: 25px;
+        }
+
+        @media #{$phone} {
+            font-size: 2rem;
+            line-height: 21px;
+            margin-bottom:16px;
+        }
+    }
+
+
+    a {
+        text-decoration:none;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            font-size: 2.4rem;
+            line-height: 25px;
+        }
+
+        @media #{$phone} {
+            font-size: 2rem;
+            line-height: 21px;
+            margin-bottom:16px;
+        }
+    }
+}
+
+.block-box-icon {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 14px;
+}
+
+.block-box-bg-color {
+    background:#eeeeee;
+}

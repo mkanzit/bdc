@@ -1,0 +1,309 @@
+//Online editor
+.onlineediteur {
+
+  // Global styles
+  display: block;
+
+
+  // Images
+  img{
+    &.fl{
+      margin-right: 2rem;
+    }
+  }
+
+  img{
+    &.fr{
+      margin-left: 2rem;
+    }
+  }
+
+  // Lists
+  ul {
+    li {
+      span{
+        color: $orangeW;
+      }
+    }
+  }
+
+  ol {
+    li {
+      font-size: 1.6rem;
+      &::before{
+        font-size: 1.6rem;
+      }
+      span{
+        color: $orangeW;
+      }
+    }
+  }
+
+  // Buttons
+  .btn {
+    @media #{$phone} {
+      margin-bottom: 1rem;
+    }
+    border: 2px solid $black;
+    color: $black;
+    background: transparent;
+    display: inline-block;
+    padding: 11px 20px 9px;
+    line-height: 16px;
+    border-radius: 0;
+    text-decoration: none;
+    text-align: center;
+    &.btn--bb {
+      border: 2px solid $white;
+      color: $white;
+      background: $black-background;
+    }
+    &.btn-small {
+      padding-top: 6px;
+      padding-bottom: 4px;
+      font-size: 1.4rem;
+    }
+    &.btn-large {
+      padding-top: 17px;
+      padding-bottom: 14px;
+    }
+    &.btn--ms {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &.btn--mm {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &.btn--ml {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &.btn--icon {
+      .icon {
+        font-size: 2.3rem;
+        margin-top: -9px;
+      }
+    }
+    &.btn--wi {
+      .icon {
+        margin-left: -8px;
+        margin-right: 4px;
+      }
+    }
+    &:hover {
+      border-color: $black;
+      color: $white;
+      background: $black-background;
+      text-decoration: none;
+      &.btn--bb {
+        border-color: $white;
+        color: $black;
+        background: $white-background;
+      }
+    }
+    &:active,
+    &:focus {
+      border-color: $orangeW;
+      color: $white;
+      background: $orangeW-background;
+      outline: none;
+      &.btn--bb {
+        border-color: $orangeW;
+        color: $white;
+        background: $orangeW;
+      }
+    }
+    &.inactive {
+      border: 2px solid $gray3;
+      color: $gray3;
+      background: $white;
+      cursor: auto;
+      opacity: 1;
+      &.btn--bb {
+        border-color: $gray5;
+        background: $black;
+        color: $gray5;
+        &:hover {
+          color: $gray5;
+        }
+      }
+    }
+    &.btn--standard {
+      color: $white;
+      border-color: $black;
+      background: $black-background;
+      &.btn--bb {
+        border-color: $white;
+        color: $black;
+        background: $white;
+      }
+      &:hover {
+        color: $black;
+        background: $white-background;
+        &.btn--bb {
+          color: $white;
+          background: $black;
+          border-color: $white;
+        }
+      }
+      &:active,
+      &:focus {
+        border-color: $orangeW-background;
+        color: $white;
+        background: $orangeW-background;
+        outline: none;
+        &.btn--bb {
+          border-color: $orangeW;
+          color: $white;
+          background: $orangeW;
+        }
+      }
+      &.inactive {
+        border-color: $gray3;
+        color: $white;
+        background: $gray3;
+        cursor: auto;
+        &.btn--bb {
+          border-color: $gray5;
+          color: $black;
+          background: $gray5;
+        }
+      }
+    }
+    &.btn--important {
+      color: $white;
+      border-color: $orangeW;
+      background: $orangeW;
+      &.btn--bb {
+        color: $white;
+      }
+      &:hover {
+        border-color: $black;
+        color: $white;
+        background: $black;
+        &.btn--bb {
+          border-color: $white;
+          background: $white;
+          color: $black;
+        }
+      }
+      &:active,
+      &:focus {
+        border-color: $black;
+        color: $black;
+        background: $white-background;
+        outline: none;
+        &.btn--bb {
+          color: $white;
+          background: $black;
+          border-color: $white;
+        }
+      }
+      &.inactive {
+        border-color: $gray3;
+        color: $white;
+        background: $gray3;
+        cursor: auto;
+        &.btn--bb {
+          border-color: $gray5;
+          color: $black;
+          background: $gray5;
+        }
+      }
+    }
+    &.btn--positive {
+      color: $black;
+      border-color: $green-function;
+      background: $green-function;
+      &:hover {
+        border-color: $black;
+        color: $white;
+        background: $black-background;
+        &.btn--bb {
+          border-color: $white;
+          background: $white;
+          color: $black;
+        }
+      }
+      &:active,
+      &:focus {
+        border-color: $orangeW-background;
+        color: $white;
+        background: $orangeW-background;
+        outline: none;
+        &.btn--bb {
+          border-color: $orangeW;
+          color: $white;
+          background: $orangeW;
+        }
+      }
+      &.inactive {
+        border-color: $gray3;
+        color: $white;
+        background: $gray3;
+        cursor: auto;
+        &.btn--bb {
+          border-color: $gray5;
+          color: $black;
+          background: $gray5;
+        }
+      }
+    }
+    &.btn--negative {
+      color: $black;
+      border-color: $red-function;
+      background: $red-function;
+      &:hover {
+        border-color: $black;
+        color: $white;
+        background: $black-background;
+        &.btn--bb {
+          border-color: $white;
+          background: $white;
+          color: $black;
+        }
+      }
+      &:active,
+      &:focus {
+        border-color: $orangeW-background;
+        color: $white;
+        background: $orangeW-background;
+        outline: none;
+        &.btn--bb {
+          border-color: $orangeW;
+          color: $white;
+          background: $orangeW;
+        }
+      }
+      &.inactive {
+        border-color: $gray3;
+        color: $white;
+        background: $gray3;
+        cursor: auto;
+        &.btn--bb {
+          border-color: $gray5;
+          color: $black;
+          background: $gray5;
+        }
+      }
+    }
+    &.no--focus {
+      &:focus {
+        color: #ffffff;
+        border-color: #f16e00;
+        background: #f16e00;
+      }
+    }
+    &.btn-all {
+      @media (max-width: 767px) {
+        max-width: 109px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+    &.mrs {
+      margin-right: 5px;
+    }
+  }
+}

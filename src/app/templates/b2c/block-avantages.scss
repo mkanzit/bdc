@@ -1,0 +1,44 @@
+.item-av{
+    img{
+        width: 100%;
+    }
+    figure{
+        margin: 0 0 1.5rem 0;
+        >a{
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+            max-height: 210px;
+        }
+    }
+    @media #{$phone} {
+        margin-bottom: 20px;
+    }
+}
+.item-av__content{
+    padding: 0 18px 20px 18px;
+}
+
+.item-block-av .mod {
+
+	 position: relative;
+	 padding: 0 0 50px;
+
+	@media #{$phone} {
+        padding: 0 0 10px;
+    }
+
+	 .btn-pos {
+	    bottom: 0;
+	    left: 0;
+	    position: absolute;
+	    text-decoration: none;
+
+	    @media #{$phone} {
+	        position: static;
+	    }
+	}
+
+}

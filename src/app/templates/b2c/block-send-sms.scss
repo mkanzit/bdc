@@ -1,0 +1,304 @@
+.form-nummobile{
+    .zone-info{
+      
+        margin-left: 8px;
+    }
+}
+@media #{$phone}{
+    .sms-reste{
+        margin-bottom: 20px;
+    }
+}
+.form-nummobile{
+    @media #{$phone}{
+        .w45,.w50{
+            width: 100%;
+        }
+    }
+}
+.num-mobile{
+    margin-bottom: 0;
+    @media #{$phone}{
+        .item-form-input.w90{
+            width: 86%;
+        }
+    }  
+}  
+@media #{$phone}{
+    .sms-reste{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}  
+
+
+.wlarge-mob {
+    
+    @media #{$phone}{
+       
+            width: 100%;
+        
+    }  
+
+}
+
+
+.deco_sms ul#navigation {
+    margin: 0 0 10px 0;
+    .current{
+        a{
+            color: $orangeW;
+        } 
+    }
+}
+
+.table-grop_alph  {
+    border: none;
+    border-collapse: inherit;
+    td, th {
+        border: none;
+        border-top: 1px dashed #ccc;
+        border-bottom: 1px dashed #ccc;
+        padding: 13px 0 13px 0;
+        text-align:center;
+        a {
+            margin:5px 8px;
+            &.current{
+                color: $orangeB;
+            }   
+        }
+    }
+    @media #{$phone}{
+         display: block !important;
+        tbody {
+            //display: table-row-group !important;
+            display: table !important;
+            width: 100%;
+        }
+        td, th {
+            display: table-cell !important;
+        }
+        
+    }  
+}
+
+.tablesorter {
+    
+    border: 1px solid #d7d6d6;
+
+    @media #{$phone}{
+       
+         display: block !important;
+
+        tbody, thead {
+            display: table !important;
+            width: 100%;
+        }
+
+        td, th {
+            display: table-cell !important;
+        }
+        
+    }  
+
+
+    th {
+        color: #fff;
+        font-weight: bold;
+        background: $orangeB;
+        padding: 8px 5px;
+        border: none;
+        width: 45%;
+    }
+
+    td {
+        color: #000;
+        padding: 8px 5px;
+        border: none;
+        width: 45%;
+    }
+
+    .pyjama {
+        background: #eee;
+    }
+}
+
+
+.po-pup-dest  {
+
+    .tablesorter {
+
+        table-layout: auto !important;
+
+
+        @media #{$phone}{
+       
+            border: none;
+
+
+            tr {
+                border-bottom: 1px solid #d7d6d6;
+            }
+        }  
+    }
+    
+    .table-grop_alph td a, .table-grop_alph th a {
+        margin: 5px 0.3%;
+    }
+
+
+    .first-elementgroup .ic-search {
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-size: 2.3rem;
+    }
+
+
+    .second-elementgroup .btn {
+        width: 100%;
+        padding: 11px 3px 9px;
+    }
+
+    .first-elementgroup {
+        position: relative;
+    }
+
+
+    .tablesorter th {
+        width: 33%;
+    }
+
+    .form-group-search {
+
+        @media #{$phone}{
+       
+            margin-bottom:15px !important;
+        }  
+
+    }
+
+    .tablesorter thead {
+
+        @media #{$phone}{
+       
+            display: none !important;
+        }  
+        
+    }
+
+
+    .tablesorter td {
+
+        width: 33%;
+
+        @media #{$phone}{
+       
+            display: block !important;
+            width:100% !important;
+            margin-top: 0;
+        }  
+        
+    }
+
+
+    .tablesorter td:before {
+
+        @media #{$phone}{
+       
+            color: #000000;
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 40%;
+            margin-right: 20px;
+        }  
+        
+    }
+
+    .form-type-checkbox {
+        display: inline-block;
+    }
+
+    .form-type-checkbox > label {
+        font-size: 1.6rem;
+
+        &:before {
+
+            @media #{$phone}{
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+.link-picto-right  {
+
+    @extend .ic;
+    @extend .ic-right;
+    &:before{
+        float: right;
+        margin-top: 4px;
+        margin-left:8px;
+        color:#ff7900;
+    }
+}
+
+.showFormContact  {
+    color:#ff7900;
+
+    @extend .ic;
+    @extend .ic-Arrow_down;
+    &:before{
+        float: right;
+        margin-top: 4px;
+        margin-left:10px;
+        color:#ff7900;
+    }
+
+}
+
+.showFormContact.open  {
+    color:#ff7900;
+    @extend .ic;
+    @extend .ic-Arrow_up;
+}
+
+.cell-checkbox {
+    width:5% !important;
+}
+/**********************/
+#keyboardInputMaster{
+    width: auto;
+    table-layout: initial;
+     margin-bottom: 0;
+     @media #{$phone}{
+        width: 310px; 
+        left:3px !important;
+     }
+    thead {
+        display: block;
+    }
+    .row, .table, table {
+        table-layout: initial;
+    }
+    table {
+        margin-bottom: 0;
+    }
+    td, th{
+        display: table-cell;
+    }
+    tbody tr td{
+         @media #{$phone}{
+        padding: 0;
+         }
+    }
+}
+.keyboardInputInitiator{
+    display: none;
+    
+}

@@ -1,0 +1,56 @@
+<div class="block block-login">
+    <div class="container">
+        <div class="block-loginCont block-loginCont-clt grid-2-1">
+            <div class="block-loginCont-col-1">
+                <h2>Déja utilisateur </h2>
+                <form class="form-login form-parsley-validate" method="post" action="#" novalidate>
+                    <fieldset title="">
+                        <div class="mbs grid-3-1 block-grid-mob">
+                            <div>
+                                <div class="unstyled grid-2-tiny-1 grid-mob">
+                                    <div class="block-mob__item item-form">
+                                        <label for="email">E-mail ou RC</label>
+                                        <div class="item-form-input">
+                                            <input type="text" class="input-form" placeholder="" id="email" required data-parsley-trigger="input">
+                                        </div>
+                                    </div>
+                                    <div class="block-mob__item item-form">
+                                        <label for="mot-passe">Mot de passe</label>
+                                        <div class="item-form-input">
+                                            <input type="password" class="input-form" id="mot-passe" required data-parsley-trigger="input">
+                                        </div>
+                                        <a title="" href="#" class="link-form">Mot de passe oublié ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Me connecter" class="btn btn--important inactive submit" disabled>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="block-loginCont-col-2">
+                <h2>Première visite</h2>
+                <form class="form-client form-parsley-validate" method="post" action="#" novalidate>
+                    <fieldset title="">
+                        <p class="mbs">Activer mon compte par :</p>
+                        <div class="form__item mbm">
+                            <div class="form-type-radio">
+                                <input type="radio" id="radio-1" name="genre" required data-parsley-trigger="change">
+                                <label for="radio-1" class="option">RC</label>
+                            </div>
+                            <div class="form-type-radio">
+                                <input type="radio" id="radio-2" name="genre">
+                                <label for="radio-2" class="option">Patente</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Activer mon compte" class="btn btn--important inactive submit" disabled>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

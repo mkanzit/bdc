@@ -1,0 +1,230 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'assets/scss/global/_variables';
+body {
+    overflow: hidden;
+    &.has-menu-opened {
+        .right-container {
+            left: 290px !important;
+        }
+    }
+
+    @media #{$phone} {
+        overflow: visible;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+// icons
+.icon {
+    cursor: pointer;
+    &-user {
+        background: url('./assets/imgs/css/icons/icon-user.png') center no-repeat;
+        display: inline-block;
+        height: 27px;
+        width: 18px;
+        vertical-align: middle;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/icon-user-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/icon-user-m.png') center no-repeat;
+        }
+    }
+    &-favori {
+        background: url('./assets/imgs/css/icons/icon-favori.png') center no-repeat;
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        vertical-align: middle;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/icon-favori-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/icon-favori-m.png') center no-repeat;
+        }
+    }
+    &-history {
+        background: url('./assets/imgs/css/icons/icon-history.png') center no-repeat;
+        display: inline-block;
+        height: 21px;
+        width: 21px;
+        vertical-align: middle;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/icon-history-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/icon-history-m.png') center no-repeat;
+        }
+    }
+    &-notice {
+        background: url('./assets/imgs/css/icons/icon-notice.png') center no-repeat;
+        display: inline-block;
+        height: 24px;
+        width: 19px;
+        vertical-align: text-bottom;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/icon-notice-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/icon-notice-m.png') center no-repeat;
+        }
+    }
+    &-quiz {
+        background: url('./assets/imgs/css/icons/icon-quiz.png') center no-repeat;
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        transition: $fade;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/icon-quiz-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/icon-quiz-m.png') center no-repeat;
+        }
+    }
+    &-anchors {
+        background: url('./assets/imgs/css/icons/anchors.png') center no-repeat;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        background-size: 14%!important;
+        &.active,
+        &:hover {
+            background: url('./assets/imgs/css/icons/anchors-h.png') center no-repeat;
+        }
+        @media #{$phone} {
+            background: url('./assets/imgs/css/icons/anchors-m.png') center no-repeat;
+            background-size: contain!important;
+        }
+    }
+    &-menu-mobile {
+        background: url('./assets/imgs/css/icons/icon-menu-mobile.png') center no-repeat;
+        display: inline-block;
+        height: 34px;
+        width: 20px;
+        @media#{$phone} {
+            height: 30px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    &-menu-internet {
+        background: url('./assets/imgs/css/icons/icon-menu-internet.png') center no-repeat;
+        display: inline-block;
+        height: 32px;
+        width: 32px;
+        @media#{$phone} {
+            height: 30px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    &-menu-fixe {
+        background: url('./assets/imgs/css/icons/icon-menu-fixe.png') center no-repeat;
+        display: inline-block;
+        height: 46px;
+        width: 35px;
+        vertical-align: middle;
+        @media#{$phone} {
+            height: 30px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    &-menu-eshop {
+        background: url('./assets/imgs/css/icons/icon-menu-eshop.png') center no-repeat;
+        display: inline-block;
+        height: 32px;
+        width: 26px;
+        vertical-align: middle;
+        @media#{$phone} {
+            height: 30px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    &-menu-agences {
+        background: url('./assets/imgs/css/icons/icon-menu-agences.png') center no-repeat;
+        display: inline-block;
+        height: 35px;
+        width: 23px;
+        vertical-align: middle;
+        @media#{$phone} {
+            height: 30px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+    &-bc-home {
+        background: url('./assets/imgs/css/icons/icon-home.png') center no-repeat;
+        display: inline-block;
+        height: 15px;
+        width: 14px;
+        vertical-align: middle;
+        @media#{$phone} {
+            height: 20px;
+            width: 14px;
+            background-size: contain;
+        }
+    }
+}
+
+// buttons
+.btn {
+    &-infinite-load {
+        // margin-top: 60px;
+        @media#{$phone} {
+            // margin-top: 10px
+        }
+    }
+
+    .icon {
+        vertical-align: top;
+    }
+
+    .ic-Add {
+        background-image: url('./assets/imgs/contenus/dots.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 30px;
+        height: 19px;
+        display: inline-block;
+        vertical-align: middle;
+        &:before {
+            display: none;
+        }
+    }
+    &:hover {
+        .ic-Add {
+            background-image: url('./assets/imgs/contenus/dots-h.png');
+        }
+    }
+}
+
+/* mCustomScrollBar */
+.mCustomScrollbar {
+    .mCSB_container {
+        margin-right: 0;
+    }
+
+    .mCSB_scrollTools {
+        width: 10px;
+    }
+}
+
+
+
+
+

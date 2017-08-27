@@ -1,0 +1,31 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .block-alerts {
+        .item {
+            //padding-bottom: 3rem;
+            border-bottom: 1px solid $gray3;
+            margin-bottom: 3rem;
+
+            figure {
+/*                @media#{$phone} {
+                    float: none;
+                }*/
+                text-align: center;
+                margin-top: 0;
+                //margin: 0 2rem 0 0;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .item-title {
+                width: 80%;
+                margin-bottom: 1.2rem
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ { }

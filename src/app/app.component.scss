@@ -1,0 +1,234 @@
+@import '../assets/scss/global/_variables.scss';
+
+/* app skeleton styles */
+
+:host /deep/ {
+    .main-container {
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+
+        // @media #{$phone} {
+        //     position: relative;
+        //     height: auto;
+        // }
+
+        &.expended {
+            .left-container {
+                overflow: visible !important;
+
+                .submenu:host {
+                    opacity: 1;
+                }
+            }
+            .right-container {
+                width: calc(100% - 290px);
+                @media #{$phone} {
+                    width: 100%;
+                }
+            }
+        }
+
+        .left-container {
+            height: 100%;
+            left: 0;
+            padding-bottom: 50px;
+
+            @media #{$phone} {
+                padding-bottom: 50px;
+                width: 80px;
+                left: -9rem;
+                z-index: 9999;
+                // height: auto;
+
+                &.active {
+                    left: 0;
+
+                    /deep/ .lang-switcher {
+                        left: 0;
+                    }
+                }
+            }
+
+            position: fixed;
+            top: 0;
+            width: 80px;
+            z-index: 99;
+            transition: $fade;
+
+            .scrollable {
+                height: 100%;
+            }
+
+            .site-logo {
+                a {
+                    display: block;
+                    .logo {
+                        display: block;
+                        height: 50px;
+                        margin: 14px auto;
+                        width: 50px;
+                        @media #{$phone} {
+                            height: 50px;
+                            margin: 15px auto 20px;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+
+            .mCustomScrollbar {
+                .mCSB_container {
+                    margin-right: 0;
+                }
+
+                .mCSB_scrollTools {
+                    width: 2px;
+
+                    &.mCS-dark-thin {
+                        .mCSB_dragger {
+                            .mCSB_dragger_bar {
+                                background-color: rgba(255, 255, 255, .75);
+                            }
+                            &:hover {
+                                .mCSB_dragger_bar {
+                                    background-color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-container {
+            background: $white;
+            height: 100%;
+            right: 0;
+            position: fixed;
+            top: 0;
+            transition: $fade;
+            width: calc(100% - 80px);
+            z-index: 999;
+            @media #{$phone} {
+                width: 100%;
+                // position: relative;
+                // height: auto;
+            }
+
+            .main-content {
+                height: calc(100% - 74px);
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 67px;
+                position: relative;
+
+                &.login {
+                    background: $gray8;
+
+                    .mCSB_container {
+                        height: 100%;
+                    }
+                }
+            }
+            .main-header {
+                background: #fff;
+                border-bottom: 1px solid #ccc;
+                height: 67px;
+                padding: 5px 20px 10px;
+                z-index: 3;
+                @media #{$phone} {
+                    padding: 0;
+                    height: auto;
+                    border-bottom: 0 solid #ccc;
+                }
+            }
+            .main-footer {
+                bottom: 0;
+                height: 74px;
+                overflow: hidden;
+                left: 0;
+                position: absolute;
+                transition: $sfade;
+                width: 100%;
+                z-index: 999;
+
+                &.collapsed {
+                    width: 150px;
+                    @media #{$phone} {
+                        width: 60px;
+                    }
+                    .next {
+                        opacity: 0;
+                        display: none;
+                        z-index: -1;
+                    }
+                }
+                @media #{$phone} {
+                    height: 61px;
+                }
+            }
+        }
+    }
+
+    .nicescroll-rails-vr {
+        left: auto !important;
+        right: 0 !important;
+    }
+}
+
+:host(.rtl) /deep/ {
+    .main-container {
+        .left-container {
+            left: auto;
+            right: 0;
+            left: initial!important;
+            .lang-switcher {
+                left: auto;
+                right: 0;
+                left: initial!important;
+            }
+            &.active {
+                right: 0;
+                left: initial!important;
+                /deep/ .lang-switcher {
+                    right: 0;
+                    left: initial!important;
+                }
+            }
+            @media #{$phone} {
+                right: -9rem;
+                .lang-switcher {
+                    right: -9rem;
+                    left: initial!important;
+                }
+            }
+        }
+        .right-container {
+            left: 0;
+            right: auto;
+
+            app-menu-aside {
+                left: 0;
+                right: auto;
+            }
+            .main-footer {
+                left: auto !important;
+                right: 0 !important;
+                &.collapsed {
+                    width: 150px;
+                    @media #{$phone} {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nicescroll-rails-vr {
+        left: 0 !important;
+        right: auto !important;
+    }
+}

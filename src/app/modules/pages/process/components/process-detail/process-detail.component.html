@@ -1,0 +1,27 @@
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+<app-breadcrumb [data]="processDetails.breadcrumb"></app-breadcrumb>
+
+<section class="mbl {{ processDetails.blocks[0].classes | class }}">
+  <div class="container">
+    <h2 class="mbl">{{ processDetails.title }}</h2>
+
+    <div class="processDescription w72" [innerHTML]="processDetails.blocks[0].content[0].html"></div>
+
+    <ol class="Link-List mbl">
+      <li *ngFor="let item of processDetails.blocks[0].content[0].detail_desc">
+        <a [routerLink]="['/process', 'details']" fragment="item-{{ item.id }}" >
+          {{  item.title.split(" - ").pop() }}
+        </a>
+      </li>
+    </ol>
+
+    <article class="onlineediteur" *ngFor="let item of processDetails.blocks[0].content[0].detail_desc">
+      <div id="item-{{ item.id }}" class="content mbl">
+        <h3 class="n3-title">{{ item.title }}</h3>
+        <img *ngIf="item.img.src" class="fl" src="{{ item.img.src }}" alt="{{ item.img.alt }}">
+        <div [innerHTML]="item.html"></div>
+      </div>
+      <div class="clearfix"></div>
+    </article>
+  </div>
+</section>

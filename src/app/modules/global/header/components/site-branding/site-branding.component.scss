@@ -1,0 +1,58 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .site-branding {
+        width: calc(100% - 2%);
+        padding: 5px 10px 5px 0;
+
+        @media #{$phone} {
+            width: calc(100% - 2%);
+            display: table;
+            width: 100%;
+            padding: 5px 10px 5px 10px;
+        }
+
+        &--title {
+            font-family: $Arial;
+            font-weight: $font-B;
+            font-size: 18px;
+            margin-bottom: 0;
+
+            @media #{$phone} {
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+
+        &--date {
+            font-family: $Arial;
+            font-weight: $font-B;
+            font-size: 12px;
+            margin-bottom: 0;
+
+            @media #{$phone} {
+                display: table-cell;
+                vertical-align: middle;
+                line-height: normal;
+                text-align: right
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    .site-branding {
+        @media #{$phone} {
+            &--title{
+                direction: rtl;
+                text-align: right;
+            }
+            &--date {
+                direction: rtl;
+                text-align: left;
+            }
+        }
+    }
+}

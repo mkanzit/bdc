@@ -1,0 +1,45 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  .block-top-news {
+    .news-list {
+      .news-item {
+
+        .desc {
+          p {
+            max-height: 72px;
+            overflow: hidden;
+          }
+        }
+
+        @media #{$desktop} {
+          img {
+            margin-bottom: 0;
+          }
+        }
+
+        @media #{$phone} {
+          margin-bottom: 3rem;
+
+          .desc {
+            p {
+              max-height: none;
+              overflow: auto;
+            }
+          }
+
+          a {
+            display: block;
+
+            img {
+              margin-bottom: 1.5rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:host(.rtl) /deep/ { }

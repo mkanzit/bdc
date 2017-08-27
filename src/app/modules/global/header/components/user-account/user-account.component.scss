@@ -1,0 +1,38 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  @media #{$phone} {
+    width: 37px;
+    max-width: 170px;
+  }
+
+  .dashboard-shortcuts--login {
+    font-family: $Arial;
+    font-weight: $font-B;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: right;
+
+    @media #{$phone} {
+      text-align: center;
+      line-height: normal;
+    }
+
+    .current-user {
+      vertical-align: middle;
+      margin-right: 16px;
+      @media #{$phone} {
+        display: none;
+      }
+    }
+  }
+}
+
+:host(.rtl) /deep/ {
+  .dashboard-shortcuts--login {
+    .current-user {
+      margin-left: 16px;
+      margin-right: 0;
+    }
+  }
+}

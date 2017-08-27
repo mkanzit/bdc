@@ -1,0 +1,60 @@
+.block-history-conso{
+    position:relative; 
+    .visual{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @media #{$phone} {
+            display:none;
+        }
+    }
+}
+
+.history-solde__info {
+    
+    text-align:center;
+    margin:15px 0 15px 0;
+
+    span {
+        color: #f16e00;
+        display: block;
+        font-size: 6rem;
+        letter-spacing: -0.05em;
+    }
+}
+
+.block-content-graph-history {
+
+    @media #{$phone} {
+        margin: 0 !important;
+    }
+
+    .block-graph {
+
+        @media #{$phone} {
+            margin-bottom: 35px;
+            margin-left: 0 !important;
+            width: 100% !important;
+        }
+
+        p {
+            margin-bottom: 36px;
+        }
+        
+    }
+
+    .block-history-conso {
+
+        padding-bottom: 175px;
+
+        @media #{$phone} {
+            margin-bottom: 25px;
+            margin-left: 0 !important;
+            width: 100% !important;
+            padding-bottom: 0;
+        }
+        
+    }
+    
+}

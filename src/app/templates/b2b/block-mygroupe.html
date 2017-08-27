@@ -1,0 +1,475 @@
+<div class="block-myProfil">
+    <div class="container">
+        <a href="" class="link-wi mbms inbl"><i class="icon ic-left"></i>Retour</a>
+        <h2 class="mbm">Mes groupes</h2>
+        <div class="clearfix mbm block-table-stand">
+            <div class="block-patclear mbm">
+                <a href="#addOptions1" class="link-edite js-header-toggle">
+                    <span class="edit btn btn--important">Ajouter un groupe</span>
+                    <span class="close pbs"><i class="icon ic-Delete"></i>Fermer</span>
+                </a>
+                <div class="js-blockEdite addOptions" id="addOptions1" style="display: none;">
+                    <h4 class="mbm">Ajouter un groupe</h4>
+                    <div class="w90 mob-larg">
+                        <form class="form-parsley-validate" novalidate>
+                            <fieldset>
+                                <div class="grid-4-tiny-1">
+                                    <div class="item-form">
+                                        <label for="numero">Nom de groupe</label>
+                                        <div class="item-form-input">
+                                            <input type="text" class="input-form" id="numero" placeholder="" required data-parsley-trigger="input" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-form">
+                                    <input type="reset" value="Annuler" class="btn mrs">
+                                    <input type="submit" value="Envoyer" class="btn btn--important inactive submit" disabled>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="separator-l mbm"></div>
+                </div>
+            </div>
+            <table class="table-stand cell-vert-middle table-stand-label-50">
+                <thead>
+                    <tr>
+                        <th>Groupe </th>
+                        <th>Date de création</th>
+                        <th>Nbr de ligne </th>
+                        <th class="txtcenter w20">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: none;">
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td   style="display: none;" class="hidden regular" data-label="Date de création">28/12/2016</td>
+                        <td   style="display: none;" class="hidden regular" data-label="Nbr de ligne"><a href="#">10</a></td>
+                        <td   style="display: none;" class="hidden txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20 "></i></a>
+                        </td>
+                        <td   colspan="4" class="app-editTd">
+                            <form name="group_edit_form" method="post" action="/group/edit/121" class="form-parsley-validate app-groupEditForm" novalidate="novalidate">
+                                <div class="item-form-input mob-mbs fl">
+                                    <div class="item-form-input">
+                                        <input type="text" id="group_edit_form_title" name="group_edit_form[title]" required="required" data-parsley-trigger="input" class="input-form " autocomplete="off" value="test2">
+                                    </div>
+                                </div>
+                                <div class="items-form-row mob-mbs fr">
+                                    <input type="reset" name="reset" value="Annuler" class="btn app-groupEditCancel">
+                                    <input type="submit" name="submit" value="Valider" class="btn btn--important submit">
+                                </div>
+                                <input type="hidden" id="group_edit_form_ezxform_token" name="group_edit_form[ezxform_token]" data-parsley-trigger="input" class="input-form " autocomplete="off" value="l83aUUj5GGKESAdqiPyPLqgX9DsAE3Jbdxt-iNZn9xg">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td class="regular" data-label="Date de création">28/12/2016</td>
+                        <td class="regular" data-label="Nbr de ligne"><a href="#">22</a></td>
+                        <td class="txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon  js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20 "></i></a>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td class="regular" data-label="Date de création">28/12/2016</td>
+                        <td class="regular" data-label="Nbr de ligne"><a href="#">09</a></td>
+                        <td class="txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20 "></i></a>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td class="regular" data-label="Date de création">28/12/2016</td>
+                        <td class="regular" data-label="Nbr de ligne"><a href="#">98</a></td>
+                        <td class="txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20 "></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20"></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20 "></i></a>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td class="regular" data-label="Date de création">28/12/2016</td>
+                        <td class="regular" data-label="Nbr de ligne"><a href="#">999</a></td>
+                        <td class="txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20"></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20"></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" title=""> Groupe A </a>
+                        </td>
+                        <td class="regular" data-label="Date de création">28/12/2016</td>
+                        <td class="regular" data-label="Nbr de ligne"><a href="#">8</a></td>
+                        <td class="txtcenter cell-tiny-right">
+                            <a class="link-ml5-icon js-open-editLigne" href="#" title=""><i class="icon  ic-Pencil ic-FS-20"></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Conference_call ic-FS-20"></i></a>
+                            <span class="separator-icon">&nbsp;</span>
+                            <a class="link-ml5-icon" href="#" title=""><i class="icon  ic-Delete ic-FS-20 "></i></a>
+                        </td>
+                    </tr>
+                    <tr class="js-editLigne">
+                        <td>
+                            <div class="item-form-input">
+                                <input type="text" placeholder="Groupe A" class="input-form input-table">
+                            </div>
+                        </td>
+                        <td class="txtright" colspan="3">
+                            <div class="items-form-row mob-mbs">
+                                <input type="reset" class="btn mrs" value="Annuler">
+                                <input type="submit" class="btn btn--important" value="Valider">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="link-souligne fr mbm" title="" href="#">Charger la suite</a>
+        </div>
+        <!---->
+        <div>
+            <h3 class="mbm">Associer une ligne</h3>
+            <form method="post" action="#">
+                <fieldset title="">
+                    <div>
+                        <div class="grid-4-1">
+                            <div>
+                                <div class="grid-4-tiny-1">
+                                    <div class="item-form">
+                                        <div class="item-form-input">
+                                            <select name="fixe" class="dropdown-black">
+                                                <option>Fixe</option>
+                                                <option>Fixe</option>
+                                                <option>Fixe</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="item-form">
+                                        <div class="item-form-input">
+                                            <select name="voix" class="dropdown-black">
+                                                <option>Voix</option>
+                                                <option>Voix</option>
+                                                <option>Voix</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="item-form">
+                                        <div class="item-form-input">
+                                            <select name="plan-tarifaire" class="dropdown-black">
+                                                <option>Plan tarifaire</option>
+                                                <option>Plan tarifaire</option>
+                                                <option>Plan tarifaire</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="item-form">
+                                        <div class="item-form-input">
+                                            <input type="text" class="input-form" placeholder="Mot clé">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items-form-row">
+                                    <div class="item-form">
+                                        <div class="form-type-checkbox mrl">
+                                            <input type="checkbox" id="checkbox-1" name="genre">
+                                            <label for="checkbox-1" class="option">Lignes actives</label>
+                                        </div>
+                                        <div class="form-type-checkbox mrl">
+                                            <input type="checkbox" id="checkbox-2" name="genre">
+                                            <label for="checkbox-2" class="option">Lignes inactives</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item-form">
+                                    <input type="submit" class="btn btn--standard" value="Appliquer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="clearfix mbl block-table-stand">
+            <table class="table-stand">
+                <thead>
+                    <tr>
+                        <th class="w25">Numéro </th>
+                        <th class="w30">Plan tarifaire</th>
+                        <th>site</th>
+                        <th class="txtcenter">Etat de la ligne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox1" class="">
+                                    <label for="checkbox1"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-green-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-green-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox2" class="">
+                                    <label for="checkbox2"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-red-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe Lorum 1</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-red-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox3" class="">
+                                    <label for="checkbox3"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-green-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-green-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox4" class="">
+                                    <label for="checkbox4"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-red-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe Lorum 1</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-red-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox5" class="">
+                                    <label for="checkbox5"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-green-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-green-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox6" class="">
+                                    <label for="checkbox6"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-red-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe Lorum 1</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-red-function"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="block-position-cell">
+                                <span class="form-type-checkbox">
+                                    <input type="checkbox" id="checkbox7" class="">
+                                    <label for="checkbox7"><strong class="number-direction">06 63 12 31 23</strong></label>
+                                </span>
+                                <span class="picto-15-radius bg-green-function"></span>
+                            </div>
+                        </td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="regular">Ghandi</td>
+                        <td class="txtcenter hidden-tiny-cell"><span class="picto-15-radius bg-green-function"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="link-souligne fr" title="" href="#">Charger la suite</a>
+            <div class="items-form-row block-patclear">
+                <input type="reset" value="Annuler" class="btn mrs mbs">
+                <input type="submit" value="Valider" class="btn btn--important mbs">
+            </div>
+        </div>
+        <!---->
+        <div class="clearfix mbl block-table-stand">
+            <table class="table-stand">
+                <thead>
+                    <tr>
+                        <th class="w25">Numéro </th>
+                        <th >Utilisateur</th>
+                        <th >Groupe</th>
+                        <th class="w30">Plan tarifaire</th>
+                        <th class="txtcenter">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="visible-tiny fr"><i class="icon  ic-Delete ic-FS-20 "></i></a><strong class="number-direction">06 63 12 31 23</strong></td>
+                        <td class="regular">Ghandi</td>
+                        <td class="regular">Groupe</td>
+                        <td class="regular">Abonnement Fixe</td>
+                        <td class="txtcenter hidden-tiny-cell"><a href="#"><i class="icon  ic-Delete ic-FS-20 "></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="link-souligne fr" title="" href="#">Charger la suite</a>
+        </div>
+    </div>
+</div>

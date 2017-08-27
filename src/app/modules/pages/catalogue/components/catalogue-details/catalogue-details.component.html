@@ -1,0 +1,250 @@
+<app-breadcrumb [data]="terminal.breadcrumb"></app-breadcrumb>
+<app-menu-aside [state]="anchorsState" asideMenu></app-menu-aside>
+
+<section class="mbl {{ terminal.blocks[0].classes | class }}">
+  <div class="container">
+    <h2 class="mbl">Alcatel One Touch Pixi 3</h2>
+    <div class="block block--n">
+      <div class="container">
+        <article class="clearfix mbs plr">
+
+          <div class="w24 fl mbs mob-larg">
+            <div class="mbm">
+              <img src="assets/imgs/contenus/mobile1.png" alt="">
+            </div>
+          </div>
+
+          <div class="w24 fl mbm mob-larg">
+            <h3 class="n3-title--alt mbm">Alcatel One Touch Pixi 3</h3>
+            <ul class="liste-av mbs">
+              <li>Ecran 5"</li>
+              <li>Appareil photo 13Mp</li>
+              <li>Dual SIM</li>
+              <li>4G</li>
+            </ul>
+            <p class="o-mbl">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+          </div>
+
+          <div class="w45 fl mbm mob-larg">
+            <h3 class="n3-title--alt mbm">Tarification</h3>
+
+            <div class="block-table-stand mbs">
+              <table class="table-stand table-stand-label-50">
+                <tbody>
+
+                <tr>
+                  <th class="cell-middle w45">Avec un forfait</th>
+                  <td class="cell-middle w55 color-gray-mob text-right"><span>1249.00</span> Dh</td>
+                </tr>
+
+                <tr>
+                  <th class="cell-middle w45">Avec une carte prépayé</th>
+                  <td class="cell-middle w55 color-gray-mob text-right"><span>1249.00</span> Dh</td>
+                </tr>
+
+                <tr>
+                  <th class="cell-middle w45">Avec une carte prépayé</th>
+                  <td class="cell-middle w55 color-gray-mob text-right"><span>1249.00</span> Dh</td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <p class="o-mbl text-right">Tarifs par plan tarifaire</p>
+          </div>
+
+        </article>
+
+
+        <div class="plr">
+          <div class="tab-line">
+
+            <div class="block-catalogue-categories">
+              <ul class="detail-mobile-list tab-dash-header hidden-tiny">
+                <li class="wp-active" [class.active]="i === selected" *ngFor="let tab of ['L\'essentiel', 'Caractéristiques']; let i=index">
+                  <a (click)="selectTab($event, i)" class="ui-tabs-anchor">{{ tab }}</a>
+                </li>
+              </ul>
+              <select class="type-mobile-select dropdown-black">
+                <option class="inbl" value="#items-mobile-1">L'essentiel</option>
+                <option class="inbl mrm" value="#items-mobile-2">Caractéristiques</option>
+              </select>
+            </div>
+
+            <div id="items-mobile-1">
+              <div class="items-mobile__cotent">
+                <div class=" grid-2-tiny-1">
+                  <div>
+                    <h3 class="n3-title--alt color-orangeW mbm">Général</h3>
+
+                    <div class="block-table-stand mbl">
+                      <table class="table-stand table-stand-label-50">
+
+                        <tbody>
+
+                        <tr>
+                          <th class="cell-middle w45">Taille de l'ecran</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            5"
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Ecran tactile</th>
+                          <td class="cell-middle w55">
+                            <i class="ic-ok color-orangeW ic-FS-25"></i>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Dimensions</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            142.1 x 71.80 x 7.9 mm
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Poids</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            120 g
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Mémoire interne</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            16 GB
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Batterie en veille</th>
+                          <td class="cell-middle w55 color-gray-mob">
+
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Batterie en conversation</th>
+                          <td class="cell-middle w55 color-gray-mob">
+
+                          </td>
+
+                        </tr>
+
+
+                        </tbody>
+
+                      </table>
+
+
+                    </div>
+                  </div>
+                  <div>
+
+                    <h3 class="n3-title--alt color-orangeW mbm">Connectivité</h3>
+
+                    <div class="block-table-stand mbl">
+                      <table class="table-stand table-stand-label-50">
+
+                        <tbody>
+
+                        <tr>
+                          <th class="cell-middle w45">Accès internet mobile</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            4G
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">Bluetooth</th>
+                          <td class="cell-middle w55">
+                            <i class="ic-ok color-orangeW ic-FS-25"></i>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">WiFi</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            <i class="ic-ok color-orangeW ic-FS-25"></i>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">GPS</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            <i class="ic-ok color-orangeW ic-FS-25"></i>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <th class="cell-middle w45">USB</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            <i class="ic-ok color-orangeW ic-FS-25"></i>
+                          </td>
+
+                        </tr>
+
+                        </tbody>
+
+                      </table>
+
+
+                    </div>
+
+                  </div>
+                  <div>
+                    <h3 class="n3-title--alt color-orangeW mbm">Système</h3>
+
+                    <div class="block-table-stand">
+                      <table class="table-stand table-stand-label-50">
+
+                        <tbody>
+
+                        <tr>
+                          <th class="cell-middle w45">Système d'exploitation</th>
+                          <td class="cell-middle w55 color-gray-mob">
+                            Android 5
+                          </td>
+
+                        </tr>
+
+
+                        </tbody>
+
+                      </table>
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <section class="block block-nos-mobiles block--n">
+      <div class="container">
+        <h3 class="n3-title--alt o-mbl">Voir aussi</h3>
+      </div>
+      <app-mobile-4-remontees [data]="terminal.blocks[0]"></app-mobile-4-remontees>
+    </section>
+  </div>
+</section>

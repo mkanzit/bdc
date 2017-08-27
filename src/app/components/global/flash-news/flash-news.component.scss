@@ -1,0 +1,223 @@
+@import '../../../../assets/scss/global/_variables.scss';
+:host {
+  overflow: hidden;
+  transition: $fade;
+
+  .flash-news-container {
+    @media #{$phone} {
+      height: 100%;
+    }
+    &::after {
+      clear: 'both';
+      content: '';
+      display: block;
+    }
+
+    .label {
+      background: $yellow-dark;
+      margin: 0;
+      width: 150px;
+      height: 74px;
+      @media #{$phone} {
+        width: 60px;
+        height: 100%;
+      }
+      h2 {
+        cursor: pointer;
+        font-family: $Arial;
+        font-weight: $font-B;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+        padding: 16px 14px;
+        user-select: none;
+        @media #{$phone} {
+          padding: 14px 8px 8px 8px;
+          font-size: 16px;
+          line-height: normal;
+          margin: 0;
+        }
+      }
+    }
+    .flash-news-slider /deep/ {
+      width: calc(100% - 150px);
+      padding-right: 180px;
+      @media #{$phone} {
+        width: calc(100% - 60px);
+        padding-right: 40px;
+      }
+      .next {
+        background: url('/assets/imgs/css/icons/icon-black-arrow.png') center no-repeat;
+        cursor: pointer;
+        display: block;
+        height: 33px;
+        position: absolute;
+        right: 126px;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        transition: $sfade;
+        width: 16px;
+        z-index: 9;
+        @media #{$phone} {
+          height: 23px;
+          right: 9px;
+          top: 32px;
+          width: 16px;
+        }
+      }
+      .slide-item {
+        height: 74px;
+        padding: 11px 26px;
+        position: relative;
+        direction: ltr;
+        text-align: left;
+        width: 100%;
+
+        @media #{$phone} {
+          height: 64px;
+          padding: 10px;
+          position: relative;
+
+          width: 260px;
+        }
+        &::after {
+          background-color: $gray4;
+          content: '';
+          display: block;
+          height: 35px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          width: 1px;
+
+          @media #{$tablet} { display: none; }
+        }
+        .vid {
+          height: 52px;
+          display: inline-block;
+          margin-right: 7px;
+          vertical-align: top;
+          width: 88px;
+          @media #{$phone} {
+            height: auto;
+            vertical-align: sub;
+            width: 60px;
+          }
+        }
+        .desc {
+          display: inline-block;
+          font-family: $Arial;
+          font-weight: $font-B;
+          font-size: 14px;
+          vertical-align: middle;
+          width: calc(100% - 110px);
+          line-height: normal;
+
+          a {
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+              color: $black;
+              text-decoration: underline;
+            }
+          }
+
+          &.full {
+            width: 100%;
+            @media #{$phone} {
+              width: 90%
+            }
+          }
+
+          @media #{$phone} {
+            line-height: normal;
+            font-size: 12px;
+            width: calc(100% - 90px);
+          }
+        }
+      }
+      .owl-stage {
+        .owl-item {
+          // max-width: 400px !important;
+          // width: 400px !important;
+
+          @media #{$phone} {
+            width: 270px !important;
+          }
+
+          &:last-of-type {
+            .slide-item::after {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.collapsed {
+    .next {
+      opacity: 0;
+      display: none;
+      z-index: -1;
+    }
+  }
+}
+
+:host(.rtl) {
+  .flash-news-container {
+    .label,
+    .flash-news-slider {
+      float: right;
+    }
+
+    .label {
+      h2 {
+        font-family: $HelvNeue-roman-arabic;
+      }
+    }
+
+    .flash-news-slider {
+      padding-right: 0;
+      padding-left: 180px;
+      @media #{$phone} {
+        padding-left: 30px;
+      }
+      .next {
+        -webkit-transform: translate(0, -50%) rotate(180deg);
+        -moz-transform: translate(0, -50%) rotate(180deg);
+        transform: translate(0, -50%) rotate(180deg);
+        right: auto;
+        left: 126px;
+        @media #{$phone} {
+          left: 7px;
+        }
+      }
+
+      .slide-item {
+        direction: rtl;
+        float: right;
+        text-align: right;
+
+        &::after {
+          right: auto;
+          left: 0;
+        }
+        .vid {
+          margin-right: 0;
+          margin-left: 7px;
+        }
+        .desc {
+          text-align: right;
+          direction: rtl;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

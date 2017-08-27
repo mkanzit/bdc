@@ -1,0 +1,61 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+.profile-switcher {
+  padding: 18px 14px;
+
+  @media #{$phone} {
+    padding: 5px 14px;
+  }
+
+  .profiles-list {
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    direction: ltr;
+    font-size: 0;
+    padding: 3px 6px;
+    position: relative;
+
+    &::after {
+      background: $white;
+      content: '';
+      display: block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      height: 22px;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 22px);
+      width: 22px;
+      transition: $fade;
+    }
+
+    .profile {
+      display: inline-block;
+      cursor: pointer;
+      font-family: $Arial;
+      font-weight: $font-B;
+      font-size: 11px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 50%;
+    }
+
+    &.b2c {
+      .profile:last-child {
+        visibility: hidden;
+      }
+    }
+
+    &.b2b {
+      .profile:first-child {
+        visibility: hidden;
+      }
+
+      &::after {
+        left: 0;
+      }
+    }
+  }
+}

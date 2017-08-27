@@ -1,0 +1,31 @@
+@import '../../../../assets/scss/global/_variables.scss';
+:host() {
+    .lang-switcher {
+        bottom: 0;
+        left: 0;
+        padding: 5px 14px;
+        position: fixed;
+        width: 80px;
+        font-size: 0;
+        transition: $fade;
+        .lang {
+            display: inline-block;
+            color: $white;
+            cursor: pointer;
+            font-family: $Arial;
+            font-weight: $font-B;
+            font-size: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: $fade;
+            width: 50%;
+            &.active,
+            &:hover {
+                color: $orangeB;
+            }
+        }
+        @media #{$phone}{
+            left: -9rem;
+        }
+    }
+}

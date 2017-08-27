@@ -1,0 +1,104 @@
+<div class="block-login block block--n">
+    <div class="container">
+        <div class="block-loginCont grid-2-1">
+            <div class="block-loginCont-col-1">
+                <h2>Déja utilisateur</h2>
+                <form class="form-parsley-validate form-login" novalidate>
+                    <fieldset title="">
+                        <div class="mbl mod">
+                            <div class="login-items res-w75 fl res-mr17">
+                                <div class="unstyled grid-2-tiny-1 grid-mob">
+                                    <div class="block-mob__item">
+                                        <div class="item-form">
+                                            <label for="numero">Numéro de ligne ou e-mail</label>
+                                            <div class="item-form-input">
+                                                <input type="text" class="input-form" name="numero" id="numero" required data-parsley-trigger="input">
+                                            </div>
+                                        </div>
+                                        <a class="link-form" href="#" title="">Adresse mail oubliée ?</a>
+                                    </div>
+                                    <div class="block-mob__item">
+                                        <div class="item-form">
+                                            <label for="mot-passe">Mot de passe</label>
+                                            <div class="item-form-input">
+                                                <input type="password" class="input-form password" id="mot-passe" data-parsley-trigger="input"  required>
+                                            </div>
+                                        </div>
+                                        <a class="link-form" href="#" title="">Mot de passe oublié ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="captcha-logon w100 clear" style="display: none;">
+                                <div class="grid-2-tiny-1 ">
+                                    <div class="item-form">
+                                        <label for="caractere">Entrer les caractères affichés</label>
+                                        <div class="item-form-input">
+                                            <input type="text" id="caractere" placeholder="" class="input-form" required data-parsley-trigger="input">
+                                        </div>
+                                    </div>
+                                    <div class="item-form ptm25">
+                                        <img alt="captcha" src="../img/contenus/captcha.jpg">
+                                        <a href=""><i class="icon ic-Syncronise ic-FS-30"></i> Nouvelle image</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-mob__item1 space-top  fl">
+                                <input class="btn btn--mm btn--important submit inactive" type="submit" value="Me connecter" disabled="">
+                            </div>
+                        </div>
+
+                        <div class="block-separator-txt">
+                            <span> ou </span>
+                        </div>
+                        <div class="grid-3-1">
+                            <div>
+                                <div class="zone-info fr">
+                                    <a class="picto-info" href="#" title="">
+                                        <i class="icon ic-assistance ic-FS-25"></i>
+                                    </a>
+                                    <div class="content-info">
+                                        <div class="arrow_box">
+                                            This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mrl mbs">Me connecter avec mon mobile grâce au nouveau service de connexion Mobile connect</p>
+                            </div>
+                            <div>
+                                <a href="#"><img alt="" src="../img/contenus/link-connect.png"></a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="block-loginCont-col-2">
+                <h2>Première visite</h2>
+                <form action="#" method="post" class="form-client form-parsley-validate" novalidate="">
+                    <fieldset title="">
+                        <p class="mbm">Activer mon compte en tant que client : </p>
+                        <div class="form__item item-form">
+                            <div class="form-type-radio">
+                                <input type="radio" name="genre" id="radio-1" required="" data-parsley-trigger="change">
+                                <label class="option" for="radio-1">Mobile</label>
+                            </div>
+                            <div class="form-type-radio">
+                                <input type="radio" name="genre" id="radio-2">
+                                <label class="option" for="radio-2">Internet</label>
+                            </div>
+                            <div class="form-type-radio">
+                                <input type="radio" name="genre" id="radio-3">
+                                <label class="option" for="radio-3">Fixe</label>
+                            </div>
+                        </div>
+                        <div class="block-pv-tab item-form">
+                            <div class="item-form-input">
+                                <input type="text" class="input-form" name="numero2" id="numero2" required data-parsley-trigger="input">
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn--important inactive submit" value="Activer mon compte" disabled="">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

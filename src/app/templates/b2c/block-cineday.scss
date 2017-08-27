@@ -1,0 +1,409 @@
+.block-cineday {
+    background:$black-background;
+    color:$white;
+    .btn {
+        border: 2px solid #ffffff;
+    }
+}
+.txt-medium {
+    font-size:1.8rem;
+    line-height:19px;
+    margin:0;
+    padding:0 0 16px 0;
+
+    @media #{$phone} {
+        font-size: 1.6rem;
+        line-height: 17px;
+        margin: 0;
+        padding: 0 0 23px;
+    }
+}
+.block-cineday-content {
+    background: url("../img/css/icons/visuel-3.png") no-repeat right top / cover ;
+    min-height: 585px;
+    padding:30px 0 20px 0;
+
+    @media #{$phone} {
+        min-height: 459px;
+        padding:13px 9px 20px 9px;
+    }
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        min-height: 517px;
+    }
+
+    .title-block-2 {
+        margin: 0 0 23px 0;
+    }
+}
+
+.Cont-care {
+    margin: 0 0 19px;
+    position:relative;
+}
+
+.Cont-care__content {
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    width:100%;
+    display:table;
+}
+
+.Cont-care__content__txt {
+    display:table-cell;
+    vertical-align:middle;
+
+    span {
+        display: inline-block;
+        font-size: 3.2rem;
+        line-height: 33px;
+        padding: 0 9%;
+        text-align: center;
+        width: 100%;
+        letter-spacing: -0.7px;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            font-size: 2.6rem;
+            line-height: 27px;
+        }
+
+        @media #{$phone} {
+            font-size: 1.6rem;
+            line-height: 18px;
+            padding: 0 11%;
+        }
+
+    }
+}
+
+.block-ServiceCont .Cont-care__content__txt {
+
+    span {
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            padding: 0 12%;
+        }
+
+    }
+
+}
+
+.code-large-color {
+    display:block;
+    font-size:6rem;
+    color:$orangeB;
+    margin:0;
+
+    @media #{$phone} {
+        font-size:4rem;
+    }
+}
+
+.block-code__item {
+
+
+    .link-border {
+        position: relative;
+
+        @media #{$phone} {
+            float:none;
+        }
+    }
+}
+
+.block-code-cineday {
+
+    padding:0 0 40px 0;
+
+    @media #{$phone} {
+        padding:0 9px 40px;
+    }
+
+    h1 {
+
+        @media #{$phone} {
+            margin-left:0;
+            margin-right:0;
+        }
+    }
+
+    .form-type-radio {
+        margin: 0 0 18px;
+    }
+
+    label, .label {
+        margin-bottom: 1px;
+    }
+}
+
+.number-place {
+    color:$orangeW;
+    display:block;
+    padding:0 0 0 30px;
+    font-size: 1.6rem;
+
+    @media #{$phone} {
+        padding:0 0 0 20px;
+        font-size: 1.6rem;
+    }
+}
+
+#cineday {
+
+    background: #0c0000 url("../img/css/bg/background-cineday.jpg") no-repeat center top;
+    overflow: hidden;
+    position: relative;
+}
+
+#sieges {
+    background: transparent url("../img/css/bg/sieges.png") no-repeat 0 0;
+    height: 183px;
+    left: -30px;
+    margin: 0 auto;
+    position: relative;
+    top: -16px;
+    width: 1004px;
+}
+
+#seats {
+    margin-top: -20px;
+    color:$white;
+    padding:0 0 25px;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        padding:0 0 20px;
+    }
+
+    @media #{$phone} {
+        padding:0 9px 20px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        line-height: 33px;
+        margin: 0 0 48px;
+    }
+
+}
+
+#screen {
+    background: transparent url("../img/css/bg/ecran.png") no-repeat 0 0;
+    height: 425px;
+    margin: 0 auto;
+    padding: 32px 0 0;
+    width: 798px;
+    font-weight:normal;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        background: #ffffff;
+        width: 100%;
+    }
+
+    @media #{$phone} {
+        background: #ffffff;
+        width: 100%;
+        height:auto !important;
+    }
+
+    .left {
+        float: left;
+        font-size: 1.8rem;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        width: 522px;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            width: 60%;
+        }
+
+        @media #{$phone} {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    .logos {
+        margin-bottom: 20px;
+
+        @media #{$phone} {
+            text-align:center;
+        }
+    }
+
+    .accroche {
+        line-height: 20px;
+        padding: 0 45px 10px;
+
+        @media #{$phone} {
+            padding: 0 20px 20px;
+        }
+    }
+
+    .accroche h1 {
+        font-size:1.8rem;
+        margin: 0 0 17px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        line-height: 20px;
+        width:100%;
+    }
+
+    .accroche p.note {
+        font-size: 1.3rem;
+
+        a {
+            font-size: 1.3rem;
+        }
+    }
+
+    .accroche a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .accroche strong {
+        color: #f60;
+        font-size: 1.1em;
+    }
+
+    .right_element {
+        float: left;
+        font-size:1.8rem;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        width: 276px;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            width: 30%;
+        }
+
+        @media #{$phone} {
+            float: none;
+            width: 100%;
+            padding: 0 20px 20px;
+        }
+    }
+
+    .right_element .no_code {
+        color: #565656;
+        text-align: center;
+        width: 260px;
+
+        @media #{$phone} {
+            width: auto !important;
+        }
+    }
+
+    .right_element .next_code {
+        font-size: 1.7rem;
+        line-height: 20px;
+        margin: 2em 5px;
+        width: 264px;
+
+        @media #{$phone} {
+            margin: 15px 20px;
+            width: auto !important;
+        }
+    }
+
+    .ticket {
+        float: left;
+        height: 85px;
+        margin: 0 20px 0 100px;
+        width: 156px;
+
+        @media #{$phone} {
+            float: left;
+            height: auto !important;
+            margin: 0 5px 0 5px;
+            width: 140px;
+        }
+
+        @media #{$phone} {
+            display: inline-block;
+            float: none;
+        }
+    }
+
+    .cineday-logo {
+        display: block;
+        float: left;
+        position: relative;
+        top: 15px;
+
+        @media #{$phone} {
+            display: inline-block;
+            float: none;
+        }
+    }
+
+
+}
+
+.block-seats {
+    display: table;
+    width: 100%;
+    margin:0 0 27px 0;
+
+    @media #{$phone} {
+        display: block;
+    }
+
+    .ic-Map_Pin {
+        margin-left: -10px;
+
+        @media #{$phone} {
+            margin-left: 0;
+        }
+    }
+
+}
+
+.block-seats__item {
+
+    display: table-cell;
+    vertical-align: middle;
+    width: 33%;
+
+    @media #{$phone} {
+        display: block;
+        width: 100%;
+        margin:0 0 35px 0;
+    }
+
+    .block-seats__item__content {
+
+        display: table;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    .image {
+        display: table-cell;
+        height: 100%;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .info {
+        display: table-cell;
+        padding: 0 15px 0 12px;
+        vertical-align: middle;
+        width: 79%;
+
+        a {
+            color:#ffffff;
+            text-decoration:none;
+        }
+    }
+
+}

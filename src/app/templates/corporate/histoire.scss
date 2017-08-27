@@ -1,0 +1,27 @@
+.block-histoire{
+    &.block > .container{
+        padding-top: 0;
+    }
+}
+.item-histoire{
+    border-bottom: 1px solid $gray3;
+    padding-top: 23px;
+}
+.items-histoire{
+    border-top: 1px solid $gray3; 
+}
+.item-histoire__title{
+    color: $black;
+    display: block;
+    cursor: pointer;
+    @extend .ic;
+    @extend .ic-Arrow_down;
+    &:before{
+        float: right;
+        font-size: 3rem;
+    }
+    &.open{
+        @extend .ic-Arrow_up;  
+        color: $orangeW; 
+    }
+}

@@ -1,0 +1,102 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+  .block-login {
+    background: $gray8;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99999;
+
+    @media#{$phone} {
+      padding-top: 20px;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      position: relative;
+      vertical-align: middle;
+      width: 0;
+    }
+
+    .login-form-container {
+      background: $white;
+      border: 2px solid $gray6;
+      display: inline-block;
+      padding: 18px;
+      text-align: left;
+      vertical-align: middle;
+      max-width: 756px;
+      width: 100%;
+
+      @media#{$phone} {
+        width: 80%;
+        min-width: 320px;
+      }
+
+      .site-branding {
+        border-bottom: 1px solid $gray6;
+        padding-bottom: 20px;
+
+        img {
+          display: inline-block;
+          height: 50px;
+          margin-right: 15px;
+          vertical-align: middle;
+          width: 50px;
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .login-form {
+        overflow: visible;
+
+        .block-bg-stand__visuel {
+          position: relative;
+
+          img {
+            bottom: -18px;
+            right: -18px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+:host(.rtl) /deep/ {
+  .block-login {
+    .login-form-container {
+      text-align: right;
+
+      .site-branding {
+        img {
+          margin-left: 15px;
+          margin-right: 0;
+        }
+      }
+
+      .login-form {
+        .block-bg-stand__visuel {
+          img {
+            bottom: -18px;
+            right: auto;
+            top: auto;
+            left: -18px;
+          }
+        }
+      }
+    }
+  }
+}

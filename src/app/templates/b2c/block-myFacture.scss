@@ -1,0 +1,43 @@
+.block-myFacture{
+    color: #fff;
+    background: #000;
+
+    .txt-medium{
+        color: #ff7900;
+        margin-bottom: 27px;
+        padding: 0;
+    }
+}
+.myFacture-content {
+    z-index: 9;
+}
+.myFacture-visual img{
+    position: absolute; 
+    bottom: -49px;
+    right: 0;
+    @media #{$phone} {
+        display:none;
+    }
+
+}
+.carouselnum{
+  .bx-wrapper .bx-controls-auto,
+  .bx-wrapper .bx-pager{
+    top: auto;
+    bottom: -44px;
+  }
+  .bx-wrapper .bx-controls-direction a i {
+    margin: -18px 0 0 -28px;
+  }
+  .bx-wrapper .bx-next{
+    right: 0;
+  }
+  .bx-wrapper .bx-prev{
+    left: 0;
+  }
+}
+.item-num-ligne{
+  .checkbox-col {
+    margin-top: 2.5rem;
+  }
+}

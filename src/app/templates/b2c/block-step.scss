@@ -1,0 +1,882 @@
+.block_step {
+
+
+    @media #{$phone} {
+        margin: 0 0 20px;
+    }
+
+    li {
+        text-align:left;
+        font-size:1.4rem;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px 0 25px;
+        background: #dddddd;
+        width:33.33%;
+        float:left;
+        position: relative;
+
+        @media #{$phone} {
+            width: 17.5%;
+        }
+    }
+    &.block_step--four{
+        li{
+            width: 25%;     
+            @media #{$phone} {
+                width: 16%;
+
+            }
+        }
+    }
+    li:first-child {
+        padding: 0 10px 0 10px;
+    }
+
+    li.current {
+        background: $orangeW-background;
+        color:$white;
+
+        @media #{$phone} {
+            width: 65%;
+        }
+    }
+    &.block_step--four{
+        li.current{
+            @media #{$phone} {
+                width: 52%;
+            }      
+        }
+    }
+
+    li.previous-step {
+        background: $black-background;
+        color:$white;
+    }
+
+    li:after, li:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    li:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #dddddd;
+        border-width: 15px;
+        margin-top: -15px;
+
+        @media #{$phone} {
+            border-width: 15px;
+            margin-top: -15px;
+        }
+    }
+
+    li:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-left-color: #ffffff;
+        border-width: 18px;
+        margin-top: -18px;
+
+        @media #{$phone} {
+            border-width: 18px;
+            margin-top: -18px;
+        }
+    }
+
+
+    li.current:after {
+        border-left-color: #f16e00;
+    }
+
+    li.previous-step:after {
+        border-left-color: #000000;
+    }
+
+    li:last-child:after, li:last-child:before {
+        display:none;
+    }
+}
+
+.txt-large-2 {
+    font-size: 4rem;
+    letter-spacing: -0.5px;
+    line-height: 41px;
+    margin: 0 0 9px 0;
+}
+
+.txt-small-1 {
+    font-size: 1.6rem;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 0 18px 0;
+}
+
+.link-picto-souligne {
+    font-size:1.6rem;
+    text-decoration:underline;
+    display: inline-block;
+    &.open{
+        margin-bottom: 2rem;
+    }
+}
+
+.link-picto-souligne.simpletoggle-title:before {
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+.list-validetta {
+
+    margin: 27px 0 0 !important;
+
+    @media #{$phone} {
+        margin: 0 !important;
+    }
+
+    li {
+
+        position:relative;
+        margin:0 0 10px 0;
+    }
+}
+
+.icn-check {
+    background: url("../img/css/icons/check.gif") no-repeat 0 0;
+    width:20px;
+    height:20px;
+    float:left;
+    margin:0 9px 0 0;
+}
+
+.checked {
+
+    .icn-check {
+        background: url("../img/css/icons/checked.gif") no-repeat 0 0;
+    }
+}
+
+.list-validetta__txt {
+    display:inline-block;
+}
+
+.block-security {
+    font-size:1.6rem;
+
+    span {
+        margin:0 0 7px 0;
+    }
+}
+
+.weight-normal {
+    font-weight:normal;
+}
+
+.step-txt {
+
+    @media #{$phone} {
+        display:none;
+    }
+}
+
+.block_step {
+
+    .current {
+
+        .step-txt {
+
+            @media #{$phone} {
+                display:inline-block;
+            }
+        }
+    }
+}
+
+.block-content-step {
+
+
+    .txt-large-1 {
+
+        @media #{$phone} {
+            font-size: 2rem;
+            line-height: 21px;
+            /*padding: 0 0 16px;*/
+        }
+
+    }
+
+    .title-block-2 {
+
+        @media #{$phone} {
+            font-size: 2.4rem;
+            line-height: 25px;
+        }
+
+    }
+}
+
+.block-content-step.mbl {
+
+    @media #{$phone} {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.block-content-step {
+
+    .mbl {
+
+        @media #{$phone} {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+}
+
+.mbmob {
+
+    @media #{$phone} {
+        margin-bottom: 15px;
+    }
+}
+@media #{$phone} {
+    .block-radios-desc{
+        width: 100%;
+        padding: 0;
+        clear: both;
+        margin-top:5px;
+    }
+}
+.block-radios {
+
+    .form-type-radio {
+        margin-bottom: 25px;
+        margin-right: 0;
+        margin-left: 2rem;
+
+         @media #{$phone} {
+            margin-bottom: 19px;
+        }
+    }
+
+    .form-type-radio label {
+        font-size: 2.4rem;
+        line-height: 24px;
+        margin:0;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+           font-size: 2.3rem;
+        }
+
+        @media #{$phone} {
+            font-size: 2rem;
+            line-height: 21px;
+        }
+    }
+
+    .form-type-radio > label:before {
+        margin: 2px 10px 0 0;
+        @media #{$phone} {
+             margin: 2px 5px 0 0;
+        }
+    }
+
+}
+.number-medium {
+
+    font-size:2.4rem;
+    line-height:26px;
+    color:$orangeW;
+
+    @media #{$phone} {
+        display: block;
+        float: none;
+        font-size: 1.8rem;
+        line-height: 19px;
+        margin: 0 0 10px;
+        text-align: right;
+    }
+}
+
+.number-large {
+
+    font-size:4rem;
+    line-height:42px;
+    color:$orangeW;
+
+    @media #{$phone} {
+        font-size:2rem;
+        line-height:21px;
+    }
+}
+
+.form-type-radio-marge  {
+
+    margin: 0 0 18px 0;
+
+    label {
+        font-size: 2.4rem;
+        line-height: 24px;
+        margin: 0;
+
+        @media #{$phone} {
+            font-size: 1.3rem;
+            line-height: 15px;
+        }
+    }
+
+    label:before {
+        margin: -4px 10px 0 0;
+
+        @media #{$phone} {
+            margin: -2px 10px 0 0;
+        }
+    }
+}
+
+.group-radios {
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width:100% !important;
+    }
+}
+
+.form-type-checkbox {
+
+    label {
+
+        a {
+            font-size: 1.6rem;
+
+            @media #{$phone} {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.block-label-grid {
+
+    label {
+        margin-top: 10px;
+
+        @media #{$phone} {
+            margin-top: 0;
+        }
+
+    }
+}
+
+.block-form-info {
+
+    width:90%;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width:100%;
+    }
+
+    @media #{$phone} {
+        width:100%;
+    }
+
+    .carte {
+        margin-top:6px;
+    }
+}
+
+.block-left-order {
+    width:33%;
+
+    @media #{$phone} {
+        width:100%;
+    }
+}
+
+.block-right-order {
+    width:33%;
+
+    @media #{$phone} {
+        width:100%;
+        margin:0 0 15px 0;
+    }
+}
+
+.item-form-checkbox {
+
+    @media #{$phone} {
+        display:block !important;
+    }
+
+}
+
+.block_step_2col {
+
+    li {
+        width: 50%;
+
+        @media #{$phone} {
+              width: 17%;
+        }
+    }
+
+    li.current {
+
+        @media #{$phone} {
+            width: 100%;
+        }
+        
+    }
+}
+
+.block_step li.previous-step {
+
+    a {
+        color: #ffffff;
+    }
+    
+}
+
+.block-item-recharge {
+    
+    .block-radios .form-type-radio {
+        margin-left: 0;
+    }
+
+    .mod .block-radios .form-type-radio {
+        margin-left: 2rem;
+    }
+
+    .dropdown-black {
+        
+        @media #{$phone} {
+            font-size: 1.3rem;
+        }
+    }
+
+    .dropdown-black .selectBox-arrow {
+        font-size: 1.6rem;
+    }
+
+    img.fl {
+        margin-right: 2rem;
+        max-width: 134px;
+    }
+}
+
+
+.table-stand-bg  {
+    
+    border:1px solid #e1e0dd;
+    //background:#f6f6f6;
+
+    thead {
+        
+
+        @media #{$phone} {
+            /*display: table-row-group !important;*/
+            width: 100%;
+        }
+    }
+    
+    td, th {
+        padding: 16px 2% 16px 2%;
+        border: none;
+        font-size:1.8rem;
+
+        @media #{$phone} {
+           /*display:table-cell !important;*/
+           width:100%;
+           padding: 5px 2% 5px 2%;
+        }
+
+    }
+
+    th {
+        padding: 20px 2% 23px 2%;
+    }
+
+
+    thead {
+        
+
+        th {
+            background:#000000;
+            color:#ffffff;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom:1px solid #e1e0dd;
+
+            td {
+                border-left:1px solid #e1e0dd;
+
+                @media #{$phone} {
+                    border-left:none;
+                }
+            }
+
+            td:first-child {
+                border-left:none;
+            }
+            
+        }
+    }
+
+    tfoot {
+
+        td, th {
+            padding: 15px 35px;
+            font-size:3rem;
+            color:#f16e00;
+
+            }
+    }
+
+
+    .table-cell-4.txtcenter {
+
+            @media #{$phone} {
+                text-align:left;
+            }
+    }
+
+}
+
+.table-cell-1 {
+    width:30%;
+}
+
+.table-cell-2 {
+    width:45%;
+}
+
+.table-cell-3 {
+    width:15%;
+    vertical-align: middle;
+}
+
+.table-cell-4 {
+    width:10%;
+    vertical-align: middle;
+}
+
+img.fl.mrm-2 {
+
+    margin-right: 2rem;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        margin-right: 1rem;
+    }
+}
+
+.block-change-numero {
+    
+    .ic-device_smart_phone {
+        margin-left:-8px;
+    }
+}
+
+.mtl-30 {
+    margin-top: 3rem;
+}
+
+
+.block-change-numero .link-edite i {
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+.block-change-numero .addOptions {
+    padding: 23px 0 0;
+    margin-top: 0;
+}
+
+.block-change-numero .link-edite .close i {
+    margin-right: 9px;
+}
+
+.block-large-tab70 {
+    
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width:70% !important;
+    }
+
+}
+
+.block-mode {   
+    font-size:2.7rem;
+    text-align:center;
+
+    @media #{$phone} {
+       font-size:2rem;
+       width: 36%;
+    }
+
+    img {
+        margin:0 0 7px 0;
+    }
+}
+
+.block-mode-choice {
+    font-size:3rem;
+    width:97px;
+    margin-top:13%;
+    text-align:center;
+
+    @media #{$phone} {
+        font-size: 2rem;
+        width: 79px;
+        margin-top: 17%;
+    }
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        margin-top:13%;
+    }
+}
+
+.w183 {
+    
+    width:183px;
+
+    @media #{$phone} {
+       width:165px;
+    }
+}
+
+.class-size-24 {
+
+    font-size:2.4rem;
+
+    @media #{$phone} {
+       font-size:1.6rem;
+    }
+}
+
+.block_step_4col {
+    
+
+    li {
+        width: 25%;
+
+        @media #{$phone} {
+              width: 16%;
+        }
+    }
+
+    li.current {
+
+        @media #{$phone} {
+            width: 52%;
+        }
+        
+    }
+}
+
+.icon-border {
+    
+    border:2px solid #000000; 
+    width:72px; 
+    height:72px; 
+    line-height:62px; 
+    border-radius:60px; 
+    display:inline-block;
+}
+
+.block-payment {
+    
+    float:right;
+
+    @media #{$phone} {
+        float:none;
+        margin:15px 0 0;
+        width: 44%;
+    }
+}
+
+.large-col-resp {
+    
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width:100%;
+    }
+
+    @media #{$phone} {
+       width:100%;
+    }
+    
+}
+
+
+.link-position-top {
+    
+    @media #{$phone} {
+        position: absolute;
+        right: 9px;
+        top: 0;
+    }
+}
+
+.block-item-close  {
+    
+    @media #{$phone} {
+        padding: 0 35px 0 0;
+        position: relative;
+    }
+}
+
+
+.block-payment  {
+    
+     @media #{$phone} {
+        width: 100%;
+    }
+}
+
+.block-payment__txt {
+    
+    @media #{$phone} {
+        float: left;
+        margin-right: 20px;
+        width: 40%;
+    }
+}
+
+.block-payment__visuel {
+    
+    @media #{$phone} {
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+}
+
+.price-color {
+    
+     @media #{$phone} {
+        color:#f16e00;
+    }
+}
+
+.hidden-tiny-cell {
+
+    @media #{$phone} {
+        display:none !important;
+    }
+    
+    
+}
+
+.block-form-type-radio  {
+    
+    .form-type-radio {
+        margin: 0 12px 26px 0;
+    }
+
+
+    .form-type-radio {
+
+        @media #{$phone} {
+            display: inline-block;
+        }
+
+        label, .label {
+
+            @media #{$phone} {
+                margin-bottom: 0;
+            }
+            
+        }
+
+
+    }
+
+
+}
+
+.block-relative {
+
+    .block-absolute {
+
+        position:absolute;
+        right:10px;
+        bottom:0;
+
+        @media #{$phone} {
+            display:none;
+        }
+    }
+}
+
+.ml-52 {
+    
+    margin-left:52px;
+}
+
+.price-radio {
+    color: #f16e00;
+    display: block;
+    font-size: 2.4rem;
+    padding: 0 0 0 30px;
+}
+
+.block-content-puce {
+
+    padding: 10px 0 10px 5px;
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    width:70%;
+
+    @media #{$phone} {
+        width:85%;
+    }
+
+    .block-content-puce__link {
+
+        position:relative;
+        display:block;
+        padding:0 24px 0 0;
+
+        &:before {
+            position:absolute;
+            content: "+";
+            display: block;
+            right: 5px;
+            top: -3px;
+            font-size: 22px;
+        }
+
+
+        &.open {
+            padding:0 24px 0 0;
+            margin-bottom:10px;
+            color:#f16e00;
+
+            &:before {
+                content: "-";
+            }
+        }
+
+    }
+}
+
+.w52 {
+    
+    width:52px;
+}
+
+.block-form-radio-item {
+    
+    .form-type-radio {
+        margin: 0 10px 5px 0;
+    }
+}

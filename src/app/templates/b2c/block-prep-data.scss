@@ -1,0 +1,37 @@
+.number-large-color {
+    font-size: 6rem;
+    line-height: 52px;
+}
+
+.info-alert-small {
+
+    margin-bottom: 0.5rem;
+
+    i {
+
+        font-size: 2.5rem;
+        margin-right: 7px;
+        margin-top: -2px;
+    }
+    
+}
+
+.o-mbs {
+    margin-bottom: 0.5rem;
+}
+
+.block-prep-Data {
+    
+    margin-bottom: 10px;
+
+    @media #{$phone} {
+        padding:0 9px;
+    }
+}
+.numero-recharge{
+    padding: 15px 15px 15px 0; 
+}
+
+.icon-ml-4:before {
+    margin-left: -4px;
+}

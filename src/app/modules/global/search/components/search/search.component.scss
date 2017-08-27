@@ -1,0 +1,181 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+    .block-search {
+        margin: 0 auto;
+        max-width: 900px;
+        position: relative;
+        width: 100%;
+
+        .search-query {
+            position: relative;
+
+            .form-item {
+                @media #{$phone} {
+                    padding: 0 2rem
+                }
+
+                input {
+                    border: 0;
+                    border-bottom: 2px solid $gray5;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    color: $black;
+                    height: 60px;
+                    font-size: 30px;
+                    font-weight: $font-B;
+                    outline: none;
+                    padding-right: 80px;
+                    width: 100%;
+
+                    &::-webkit-input-placeholder {
+                        /* Chrome/Opera/Safari */
+                        color: $gray4;
+                    }
+                    &::-moz-placeholder {
+                        /* Firefox 19+ */
+                        color: $gray4;
+                    }
+                    &:-ms-input-placeholder {
+                        /* IE 10+ */
+                        color: $gray4;
+                    }
+                    &:-moz-placeholder {
+                        /* Firefox 18- */
+                        color: $gray4;
+                    }
+                    @media #{$phone} {
+                        height: 40px;
+                        font-size: 2rem;
+                        text-align: left;
+                        padding: 0 2.5rem 0 0;
+                    }
+                }
+            }
+
+            .form-action {
+                height: 40px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+                width: 40px;
+
+                &:hover {
+                    .icon {
+                        color: $orangeW;
+                    }
+                }
+
+                .icon {
+                    transition: $fade;
+                    font-size: 36px;
+                    font-weight: $font-B;
+                    line-height: 48px;
+                    @media #{$phone} {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .search-hints {
+            background: $white;
+            box-shadow: 0 10px 20px 0 $gray5;
+            opacity: 0;
+            padding-bottom: 15px;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            z-index: -1;
+
+            &.active {
+                opacity: 1;
+                top: calc(100% - 40px);
+                z-index: 3;
+                @media #{$phone} {
+                    top: 100%;
+                    padding-top: 20px;
+                }
+            }
+
+            h2 {
+                color: $gray3;
+                font-size: 24px;
+                font-weight: 400;
+                @media #{$phone} {
+                    font-size: 18px;
+                }
+            }
+
+            .terms-list {
+                margin-bottom: 3rem;
+
+                .term {
+                    color: $gray4;
+                    cursor: pointer;
+                    font-size: 16px;
+                    padding: 10px 80px 10px 0;
+                    position: relative;
+                    font-weight: 600;
+                    transition: $fade;
+
+                    @media #{$phone} {
+                        font-size: 14px;
+                    }
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $gray4;
+                    }
+
+                    &:hover {
+                        color: $black;
+                    }
+
+                    .icon {
+                        line-height: 24px;
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                        z-index: 9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    .block-search {
+        .search-query {
+            .form-item {
+                input {
+                    padding: 0 0 0 2.5rem;
+                    text-align: right;
+                }
+            }
+
+            .form-action {
+                left: 0;
+                right: auto;
+            }
+        }
+
+        .search-hints {
+            .terms-list {
+                .term {
+                    padding: 10px 0 10px 80px;
+
+                    .icon {
+                        left: 0;
+                        right: auto;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

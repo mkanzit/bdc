@@ -1,0 +1,159 @@
+<%= include('b2c-blocks/block-breadcrumbs') %>
+<%= include('blocks-pattern/block-banner-g',
+{
+classes: 'block-banne--wbreadcrumbs',
+title: 'Lorem Ipsum',
+withimage: false,
+img: ''
+}
+)  
+%>
+<div class="block block--n">
+    <div class="container">
+        <h2 class="mbm">Mr Mohamed Nadif</h2>
+        <div class="grid-2-1">
+            <div>
+                <h3 class="mbs n3-title--alt ">votre numero de la igne: <span class="color-orangeW number-direction">0663123123</span></h3>
+                <p class="mbl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                <h3 class="n3-title--alt  mbm">Forfait Confort + Particlulier guichet</h3>
+                <h5 class="mbs">Les avantages de l'offre:</h5>
+                <ul class="liste-wp">
+                    <li>30 Go de volume</li>
+                    <li>Débit allant jusqu'à 14.4 Mbps</li>
+                </ul>
+                <div class="separator mtm mbm"></div>
+                <p class="mbs"><span>Valider votre compte client</span></p>
+                <p class="mbm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <form class="form-parsley-validate" novalidate>
+                    <fieldset>
+                        <div class="grid-2-tiny-1 ">
+                            <div>
+                                <div class="item-form">
+                                    <label for="e-mail">Adresse e-mail</label>
+                                    <div class="item-form-input">
+                                       
+                                        <input type="email" data-parsley-trigger="input" class="input-form" name="email" id="email" required>
+                                       
+                                    </div>                         
+                                </div>
+                                <div class="item-form">
+                                    <label for="numero-contact">Numéro  de mobile</label>
+                                    <div class="item-form-input">
+                                       <input type="tel" class="input-form tel" placeholder="0663048012" id="numero-contact" data-parsley-trigger="input" data-parsley-type="number" minlength="10" maxlength="10" data-parsley-error-message="Le numéro de téléphone doit être 10 chiffres" required>
+                                    </div>                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-2-tiny-1">
+                            <div>
+                                <div class="item-form">
+                                    <label for="mot-passe">Nouveau mot de passe</label>
+                                    <div class="item-form-input">
+                                        <input type="password" class="input-form password" id="mot-passe" data-parsley-trigger="input" data-parsley-ivp required>
+                                    </div>
+
+                                </div>
+
+                                <div class="item-form">
+                                    <label for="mot-passe-1">Confirmer le nouveau mot de passe</label>
+                                    <div class="item-form-input">
+                                       <input type="password" class="input-form password-confirm" id="mot-passe-1" data-parsley-trigger="input" data-parsley-ivpc required data-parsley-error-message="Les mots de passes ne sont pas identiques">
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+                            <div>
+                                <ul class="list-validetta">
+                                    <li class="checked">
+                                        <i class="icn-check"></i>
+                                        <span class="list-validetta__txt"> 6 caractères minimum <span class="asterisk">*</span></span>
+                                    </li>
+                                    <li>
+                                        <i class="icn-check"></i>
+                                        <span class="list-validetta__txt"> 1 chiffre minimum <span class="asterisk">*</span></span>
+                                    </li>
+                                    <li>
+                                        <i class="icn-check"></i>
+                                        <span class="list-validetta__txt"> 1 majuscule minimum <span class="asterisk">*</span></span>
+                                    </li>
+                                    <li>
+                                        <i class="icn-check"></i>
+                                        <span class="list-validetta__txt"> Caractère spécial <span class="asterisk">*</span></span>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+                        <div class="grid-2-tiny-1">
+                            <div>
+                                <div class="item-form">
+                                    <label for="mot-passe-1">Captcha</label>
+                                    <div class="item-form-input">
+                                        <input type="password" class="input-form" id="captcha">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item-form ptm25">
+                                    <img alt="captcha" src="../img/contenus/captcha.jpg">
+                                    <a href=""><i class="icon ic-Syncronise ic-FS-30"></i> Nouvelle image</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item-form">
+                            <div class="form-type-checkbox mrl">
+                                 <input type="checkbox" id="conditions" name="conditions" data-parsley-trigger="change" required>
+                                <label class="option" for="conditions">J'accepte les <a class="js-popup-open" href="#condition">conditions générales de vente</a></label>
+                            </div>
+                        </div>
+                        <input class="btn mrs" type="reset" value="Annuler">
+                         <input type="submit" value="Suivant" class="btn btn--important inactive submit" disabled>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display:none;">
+    <div class="popin-block popin-form" id="condition">
+        <div class="container-popup">
+            <div class="onlineediteur">
+
+                <h2>Conditions spécifiques d'utilisation du service " Recharge méditel en ligne "</h2>
+                <h3>Article 1. Conditions d'application</h3>
+                <p>Les présentes conditions spécifiques régissent le service Recharge Méditel en ligne (ci-après le « Service »). Elles ont pour objet de définir les termes et conditions dans lesquelles MEDI TELECOM SA, société anonyme de droit marocain au capital de 2.752.295.200 MAD, ayant son siège social sis au Lotissement la Colline II, Immeuble les Quatre Temps, Casablanca, inscrite au Registre du Commerce de Casablanca sous le numéro 97 815 (ci-après « MT ») fournit aux personnes physiques répondant aux conditions fixées au sein de l'article 2 (ci-après désignés par « Clients ») le Service par le biais de la plate forme de Maroc Telecommerce. Le seul fait d'utiliser le Service entraîne l'acceptation sans réserve par le Client des présentes conditions. En cas de leur non respect par le Client, MT se réserve le droit de suspendre et de refuser l'accès au Service.</p><a name="eztoc2004316_0_1_2" id="eztoc2004316_0_1_2"></a><h3>Article 2. Description du service " Recharge Méditel en ligne "</h3><p>Le Service permet au Client de MT de recharger une ligne téléphonique Méditel (ci-après « E-recharges ») via l'ensemble des canaux suivants : site Internet, applications développées sur les réseaux sociaux (Facebook, twitter, Dailymotion, Flickr....), canaux et applications mobiles, à à travers lesquels MT propose le Service (« ci-après «la Boutique») et ce par l'intermédiaire de la plate forme de Maroc Telecommerce. Le Service est accessible du monde entier depuis le réseau Internet.</p><p>L'achat d'E-recharge nécessite que :</p>
+                <ul>
+                    <li><span>le Client soit titulaire d'une carte bancaire Visa, MasterCard ou cmi valide et émise par un établissement bancaire au Maroc ou d'une carte bancaire Visa ou MasterCard valide et émise par établissement bancaire hors du Maroc (ci-après « CB »); </span></li><li><span>le Client fournisse une adresse e-mail valide. </span></li>
+                </ul>
+                <p>À aucun moment le code confidentiel de la CB du Client n'est réclamé par MT par e-mail. Le paiement par CB sur le site Internet « www.meditel.ma » de MT est sécurisé par Maroc Telecommerce qui offre un service de paiement entièrement sécurisé.</p><a name="eztoc2004316_0_1_3" id="eztoc2004316_0_1_3"></a><h3>Article 3. Droit de rétraction</h3><p>Conformément à l'article 36 de la loi 31-08 édictant des mesures de protection du consommateur, le Client dispose d'un délai de 7 (sept) jours francs à compter de l'achat de l'E-recharge pour exercer son droit de rétractation, sauf si le Client a utilisé le Service avant la fin de ce délai, auquel cas le droit de rétractation ne peut être exercé.</p><a name="eztoc2004316_0_1_4" id="eztoc2004316_0_1_4"></a><h3>Article 4. Mode opératoire</h3><p><b>4.1 Fonctionnement</b></p><p>Une fois que le Client accède à la page relative à l'E-recharge sur la Boutique celui-ci peut procéder à la commande d'une E-recharge conformément au processus décrit de ladite page. À cet égard, le Client devra saisir au sein du formulaire de commande d'E-recharge les informations suivantes :</p>
+                <ul>
+                    <li><span>nom et prénom, </span></li><li><span>adresse, </span></li><li><span>numéro de ligne à recharger : numéro du Client ou d'un tiers bénéficiaire, </span></li><li><span>numéro de ligne de contact, </span></li><li><span>adresse e-mail valide, </span></li><li><span>choisir le montant de la recharge parmi les montants proposés, </span></li><li><span>consulter et confirmer l'acceptation des conditions d'utilisation du Service, </span></li><li><span>saisir le code de décryptage qui apparaît à l'écran. </span></li>
+                </ul>
+                <p>Le Client garantit la véracité et l'exactitude des informations susvisées.</p><p>Toute E-recharge effectuée par le biais du formulaire de commande d'E-recharge (valant signature électronique) est présumée être effectuée par le Client dont le nom et prénom ont été saisis au sein dudit formulaire. En conséquence, le Client est seul responsable des données reprises au sein du formulaire. L'E-recharge commandée sera créditée directement sur le compte recharge du numéro à recharger indiqué par le Client, sous réserve des dispositions de l'article 4.2 ci-après.</p><p>Le Client peut acheter des E-recharges à tout moment sauf cas d'encombrement, de dysfonctionnement ou d'indisponibilité du réseau Internet ou d'un des canaux de sa Boutique» dont MT ne peut être responsable, et dans les limites fixées par MT. Le montant total d'achat d'E-recharge effectué par le Client aussi bien pour son propre compte que pour le compte d'un tiers, peut être limité par MT.</p><p><b>4.2 Prix et Modalités de paiement</b></p><p>Le Client achète l'E-recharge en passant sa commande en ligne via la Boutique conformément aux tarifs qui y sont mentionnés à la date de son achat.</p><p>En effet, après avoir validé définitivement le formulaire de commande d'E-recharge, le Client accèdera à l'écran de paiement pour régler le montant correspondant à la commande d'E-recharge en cliquant sur l'icône relative à l'acceptation du paiement.</p><p>Avant la validation de la demande de paiement, le Client peut à tout moment annuler la demande de paiement et par conséquent la commande.</p><p>Il est établi que toute validation par le Client du récapitulatif de sa commande vaut commande définitive et mandat irrévocable de payer le prix de la commande affiché en dirham marocain toutes taxes comprises.</p><p>À ce titre, le règlement sera pris en compte immédiatement par la plate-forme de Maroc Telecommerce. Dans l'hypothèse où cette dernière est indisponible, le Client en sera informé et son paiement ne sera pas pris en compte.</p><p>MT informera le Client, par l'envoi d'un SMS de la bonne prise en compte de sa commande, et lui adressera un reçu électronique valant facture par courrier électronique à son adresse e-mail. En cas d'achat d'E-recharge pour un tiers, ce dernier sera également informé par SMS du rechargement effectué pour son compte par le Client et du crédit correspondant de son compte recharge.</p><p>L'achat d'E-recharge n'est définitif qu'après la parfaite réalisation du paiement, tout achat d'E-recharge étant payable d'avance.</p><a name="eztoc2004316_0_1_5" id="eztoc2004316_0_1_5"></a><h3>Article 5. Durée de validité de l'e-recharge</h3><p>La durée de validité de l'E-recharge est définie au sein de l'Offre tarifaire des produits et services de MT. Toute E-recharge est automatiquement et irrévocablement perdue :</p>
+                <ul>
+                    <li><span>si elle n'est pas utilisée pendant sa durée de validité,</span></li><li><span>&nbsp;si le titulaire de la ligne rechargée n'est plus client de l'une des offres commerciales de MT.</span></li>
+                </ul>
+                <h3>Article 6. Données personnelles</h3><p>Le Client reconnaît et accepte que les données collectées dans le cadre de l’utilisation par ce dernier du Service fassent l'objet d'un traitement sous forme de fichier papier ou électronique. Les informations nominatives concernant le Client dites données à caractère personnel (nom, prénom, numéro de téléphone, adresse etc…) (ci-après «&nbsp;Données&nbsp;») pourront être communiquées sur réquisition des autorités<b>&nbsp;</b>judiciaires. Elles sont traitées et stockées par MT et communiquées par cette dernière à ses sociétés mères, filiales ou prestataires pour la fourniture du Service et la gestion de celui-ci.</p><p>MT pourra communiquer lesdites informations à des tiers pour la mise en œuvre du Service auxquels elle étend le respect des dispositions de la loi 09-08 et des règles de sécurité et de confidentialité desdites Données.</p><p>Le Client autorise MT à utiliser les données collectées pour lui proposer, par courrier électronique ou tout autre moyen employant une technologie de même nature, les services MT similaires à ceux utilisés par ce dernier et pouvant répondre à ses besoins.</p><p>Le Cliente est informé que, lorsqu’il appelle le Service Client de MT, la conversation est susceptible d’être enregistrée dans le cadre de la démarche qualité de MT. Le Client dispose à tout moment d’un droit individuel d’accès, de rectification de ses données à caractère personnel et, le cas échéant, d'opposition au traitement de celles-ci en envoyant un courrier mentionnant ses nom, prénom, numéro d’appel et copie de sa pièce d'identité, à l’adresse de MEDI TELECOM: Lotissement La Colline II, Immeuble les Quatre Temps, Sidi Maârouf, 20 270 Casablanca, Maroc.</p><a name="eztoc2004316_0_1_7" id="eztoc2004316_0_1_7"></a><h3>Article 7. Obligations du Client</h3><p>À titre déterminant du consentement de MT :</p>
+                <ul>
+                    <li><span>le Client utilisera le Service " en bon père de famille " ; </span></li><li><span>le Client s'engage à n'émettre aucun message susceptible de porter atteinte de quelque manière que ce soit à MT notamment à son image, ses marques et ses intérêts commerciaux ; </span></li><li><span>le Client ne peut faire qu'une utilisation strictement personnelle et privée du Service ; la revente du Service ou de la recharge de même que le transfert du bénéfice du Service à un tiers, sous quelque forme que ce soit, sont interdits sans l'accord préalable et écrit de MT ; </span></li><li><span>le Client déclare accepter les caractéristiques et les limites du réseau Internet, et notamment, reconnaît qu'il a une parfaite connaissance de la nature du réseau Internet, et en particulier de ses performances techniques et des temps de réponse pour consulter, interroger ou transférer des informations. Lorsqu'il donne accès à ses propres données ou logiciels via le réseau Internet, il lui appartient de prendre toutes les mesures appropriées de façon à en maintenir la disponibilité, l'intégrité et la confidentialité, en particulier en les protégeant de la contamination par d'éventuels virus. </span></li>
+                </ul>
+                <p>Par ailleurs, le Client garantit MT qu'il est le titulaire de la CB et qu'il dispose des autorisations nécessaires auprès de sa banque pour utiliser la CB dans le cadre du Service, notamment pour le paiement en ligne sur Internet.</p><p>De plus, le Client s'interdit d'effectuer toute fraude dans le cadre du Service.</p><p>Ainsi, en cas d'utilisation frauduleuse d'une CB, le Client reconnaît et accepte que MT se réserve le droit de débiter de plein droit et sans mise en demeure préalable le montant de la recharge achetée par ses soins dans le cadre du Service avec ladite CB, du compte recharge de la ligne MT rechargée.</p><p>De plus, le Client reconnaît et accepte que les dispositions relatives à l'utilisation frauduleuse de CB prévues dans le cadre des conventions conclues, entre le Client et la banque émettrice de la CB, entre MT et le cmi d'une part et sa banque d'autre part, seront applicables.</p><p>MT se réserve en outre, le droit d'exercer toutes les voies de recours possibles contre le Client ou tout tiers ayant tenté d'utiliser ou usé le Service de manière non conforme aux dispositions des présentes, de manière frauduleuse et de façon générale de manière contraire à la réglementation en vigueur.</p><a name="eztoc2004316_0_1_8" id="eztoc2004316_0_1_8"></a><h3>Article 8. Suspension</h3><p><b>&nbsp;</b>Nonobstant les cas mentionnés à l'article 7, MT pourra suspendre le Service après information préalable du Client par tout moyen si des renseignements erronés ont été communiqués lors de l'utilisation en ligne au Service et sans notification préalable dans les autres cas.</p><p>Par ailleurs, toute suspension par MT du service de base entraînera de plein droit la suspension de la fourniture du présent Service.</p><a name="eztoc2004316_0_1_9" id="eztoc2004316_0_1_9"></a><h3>Article 9. Obligations et responsabilité de MT</h3><p>MT met en œuvre les moyens nécessaires à la bonne marche du Service.</p><p>MT décline toute responsabilité quant à l'utilisation frauduleuse qui pourrait être faite du Service, d'un quelconque dommage que le Client pourrait subir du fait de l'utilisation par autrui de ses coordonnées bancaires, que le Client ait eu connaissance ou non de cette utilisation.</p><p>MT ne saurait en aucun cas être tenue de réparer d'éventuels dommages directs, indirects et/ou immatériels subis par le Client à l'occasion de l'utilisation du Service (pertes d'exploitation, de chiffre d'affaires, préjudices commerciaux, pertes de données, etc.).</p><p>MT n'est pas responsable en cas de non disponibilité du Service.</p><a name="eztoc2004316_0_1_10" id="eztoc2004316_0_1_10"></a><h3>Article 10. Opposabilité des échanges électroniques</h3><p>Le Client reconnaît et accepte que les enregistrements des transactions et échanges électroniques sur les serveurs informatiques et/ou systèmes d'information de MT, par le biais de Maroc Telecommerce, constituent la preuve des transactions effectuées par le Client et la justification de leur imputation au compte recharge de la ligne rechargée. Le Client admet expressément que ces enregistrements (et leur reproduction sur tout support) ont force probante en justice.</p><a name="eztoc2004316_0_1_11" id="eztoc2004316_0_1_11"></a><h3>Article 11. Réclamation</h3><p>Toute demande d'information et/ou de réclamation relative à l'indisponibilité de l'E-recharge ou du site doit être formulée auprès du Centre Relation Client par téléphone ou par courrier à l'adresse suivante :</p><p class=" text-center">
+                    <b>Courrier : Centre Relation Client, Immeuble les Quatre temps,</b><br>
+                    &nbsp;<b>Lotissement la Colline II, Sidi Maarouf, Casablanca, Maroc</b><br>
+                    &nbsp;<b>Téléphone: le 121(ligne MT) ou +212 663121121</b><br>&nbsp;<b>FAX : +212 665555131 ou +212 665555121</b></p><p>Toutefois, pour toute demande relative au paiement par le biais de la CB, le Client doit s'adresser directement et exclusivement à l'organisme bancaire émetteur de ladite CB.</p><a name="eztoc2004316_0_1_12" id="eztoc2004316_0_1_12"></a><h3>Article 12. Modification</h3><p>MT se réserve le droit de modifier ou de façon plus générale, d'actualiser les présentes conditions à tout moment et sans notification préalable. Toute modification ou actualisation des présentes conditions prendra effet à la date de mise en ligne de ces derniers déments modifiées ou actualisées sur la Boutique de MT.</p><a name="eztoc2004316_0_1_13" id="eztoc2004316_0_1_13"></a><h3>Article 13. Loi applicable</h3><p>Les présentes conditions sont soumises à la législation marocaine.</p><p>Nonobstant les règles de compétences juridictionnelles internationales, tout litige résultant de l'exécution, de l'interprétation des présentes conditions sera porté devant le Tribunal de Commerce de Casablanca.</p><a name="eztoc2004316_0_1_14" id="eztoc2004316_0_1_14"></a><h3>CONDITIONS PARTICULIERES "CHANGEMENT D'OFFRE TARIFAIRE AU SEIN DE MEDITEL ABONNEMENT"</h3><p>Le changement de votre forfait sera effectif le 18 du mois suivant.</p><p>Les forfaits illimités ne permettent pas de bénéficier du programme de fidélité. Ainsi, la migration vers ces forfaits entraînera l'annulation de vos points de fidélité acquis dans le cadre de votre offre actuelle, si cette offre vous permettait de cumuler des points de fidélité.</p><p>Si vous disposez d'un forfait dont la facturation a lieu à la fin du cycle, vous serez amené à recevoir 2 factures après changement de votre forfait : la première facture relative à la consommation de votre forfait actuel et la 2ème relative à la facturation à l’avance de votre nouveau forfait méditel abonnement.</p><p>Le changement d'offre pour un forfait moins cher (migration vers un forfait inférieur) avant la fin de la durée minimale d'engagement de votre contrat d'abonnement donne lieu à des frais qui seront indiqués dans la facture.</p>                                                                <div class="breaker"></div>
+            </div>
+        </div>
+    </div>
+</div>

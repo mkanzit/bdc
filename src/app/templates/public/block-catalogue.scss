@@ -1,0 +1,136 @@
+.block-nos-mobiles.block--n {
+
+    .ui-tabs-active,.active {
+        color:$orangeW;
+
+        a {
+            color:$orangeW;
+        }
+    }
+}
+.aside-affinez-recherche{
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+        order:2;
+    }
+}
+.block-link-search-mobile {
+    position: relative;
+    display:block;
+    padding: 0 0 0 0;
+}
+
+.block-content-search-mobile {
+
+
+    .form-type-checkbox > label {
+        font-size: 1.4rem;
+    }
+
+    .form-type-checkbox {
+        min-width: 48%;
+    }
+    .price_bar{
+        padding: 0 10px;
+    }
+    .ui-widget-content {
+        background: url('../imgs/css/bg/barre_grey.gif') no-repeat 0 0;
+        color: #222;
+        padding-top: 4px;
+        margin-top: 15px;
+    }
+    .ui-slider-horizontal {
+        height: 7px;
+    }
+    .ui-slider {
+        position: relative;
+        text-align: left;
+        margin: 0 auto;
+
+    }
+
+    .amount_text {
+        border: none;
+        color: #ff7900;
+        display: block;
+        font-size: 1.4rem;
+        margin-top: 13px;
+        text-align: right;
+        width: 100%;
+    }
+
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+        background: url('../imgs/css/bg/picto-barre_grey.png') no-repeat center;
+        height: 23px;
+        margin-top: -3px;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+        margin-left: -0.6em;
+        top: -0.3em;
+    }
+    .ui-slider .ui-slider-handle {
+        cursor: default;
+        height: 23px;
+        position: absolute;
+        width: 24px;
+        z-index: 2;
+    }
+}
+
+.items-mobile__cotent {
+
+    padding:40px 17px 0 17px;
+
+    @media #{$phone} {
+        padding: 20px 8px 0;
+    }
+
+
+
+    .table-stand td, .table-stand th {
+        padding: 8px 2%;
+
+        @media #{$phone} {
+            padding: 8px 0;
+        }
+    }
+
+    .table-stand th {
+        padding: 8px 2% 8px 0;
+
+        @media #{$phone} {
+            padding: 8px 0;
+        }
+    }
+
+    .mbl {
+
+         @media #{$phone} {
+            margin-bottom: 2rem;
+        }
+
+    }
+}
+
+.detail-mobile-list {
+
+    .ui-tabs-active {
+
+        background: #fff;
+        border-left: 2px solid #000000;
+        border-right: 2px solid #000000;
+        border-top: 2px solid #000000;
+    }
+
+    &.tab-dash-header li span, &.tab-dash-header li a {
+        margin: 0;
+        padding:7px 22px;
+    }
+
+    &.tab-dash-header li {
+        width: auto !important;
+    }
+
+}

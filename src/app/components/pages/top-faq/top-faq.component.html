@@ -1,0 +1,11 @@
+<div class="block block-top-news">
+  <!-- <div class="container"> -->
+    <h2>TOP 5 des FAQ</h2>
+    <ul class="news-list">
+      <li class="news-item mbs w87" *ngFor="let item of topFAQ; let i = index">
+        <span class="color-orangeB">{{i + 1}}\</span>
+        {{ item.title }}
+      </li>
+    </ul>
+  <!-- </div> -->
+</div>

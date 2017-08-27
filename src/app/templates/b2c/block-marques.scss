@@ -1,0 +1,16 @@
+.block-marques{
+    .table{
+        border: none;
+        .col{
+            vertical-align: middle;
+            text-align: center;
+        }
+    }
+}
+.block-marques .table .col {
+    @media (max-width: 767px){
+        width: 48% !important;
+        display: inline-block !important;
+        margin-bottom: 30px;
+    }
+}

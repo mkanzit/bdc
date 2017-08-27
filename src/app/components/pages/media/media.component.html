@@ -1,0 +1,22 @@
+<section class="{{ data.classes | class }}">
+    <div class="container">
+        <h2 class="mbm" *ngIf="data.title">{{ data.title }}</h2>
+        <div class="grid-4-tiny-1">
+
+            <article class="item-av item-av-position mob-mbm bg-black color-white" *ngFor="let item of data.content; let i = index">
+                <figure class="mbm">
+                    <a routerLink="{{ item.link.href }}" title="{{ item.link.title }}">
+                        <img *ngIf="item.vid.vtype === 'img'" src="{{ item.vid.src }}" alt="{{ item.vid.alt }}" title="{{ item.vid.title }}">
+                        <iframe *ngIf="item.vid.vtype === 'video'" width="560" height="315" [src]="item.vid.src | safeUrl" frameborder="0" allowfullscreen></iframe>
+                    </a>
+                </figure>
+                <div class="item-av__content">
+                    <h3><a routerLink="{{ item.link.href }}" title="{{ item.link.title }}">{{ item.title }}</a></h3>
+                    <div class="onlineediteur" [innerHTML]="item.html"></div>
+                    <a *ngIf="item.link.text" class="btn btn--bb btn--ms" routerLink="{{ item.link.href }}" title="{{ item.link.title }}">{{ item.link.text }}</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>

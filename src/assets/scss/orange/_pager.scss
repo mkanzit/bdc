@@ -1,0 +1,116 @@
+/*pager*/
+.pager {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    li,.pager__item {
+        display: inline;
+        span,a {
+            text-align: center;
+            color: black;
+            float: left;
+            padding: 13px 5px;
+            line-height: 1;
+            text-decoration: none;
+            min-width: 40px;
+            height: 40px; 
+            .icon{
+                vertical-align: bottom;
+            }
+            &:hover{
+                border: 2px solid $black; 
+                padding: 11px 5px;
+            }
+            &.active{
+                border: 2px solid $black;
+                padding: 11px 5px;
+                background:  $black;
+                color: $white;
+            }
+            &.prev, &.next{
+                border: 2px solid $black;
+                padding: 11px 5px;
+                &.incative{
+                    border-color: $gray3;
+                    color: $gray3;
+                }
+            }
+            &.prev.wl{
+                i{
+                    margin-right: 5px; 
+                }
+
+            }
+            &.next.wl{
+                i{
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+}
+.table-stand td.last_col_table{
+    padding: 0;
+    vertical-align: middle;
+    @media #{$phone}{
+        text-align: right;
+    }
+}
+.td-middle{
+    vertical-align: middle !important;
+}
+.td-top{
+    vertical-align: top !important;
+}
+
+.table-stand td.last_col_table .icon{
+    margin: 0;
+}
+@media #{$phone}{
+    .visible-tiny.inbl {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.table-stand.table-activites td{  
+    textarea{
+        margin: 0;
+    }
+    @media #{$phone}{
+        &:first-child{
+            text-align: left;
+        }
+        &:before{
+            width: 100%;
+            margin-bottom: 7px;    
+        }   
+        padding-bottom: 9px;  
+        
+    }
+}
+.table-stand.table-activites{  
+    &.main_achievement {
+        .last_col_table{
+            padding-top: 16px;
+            @media #{$phone}{
+                padding-top: 0;
+            }
+        }
+    }
+    @media #{$phone}{
+        tbody{
+            th{
+                background: black;
+                color: white;
+            }
+        }
+    }
+}
+.block-in-container{
+    @media #{$phone}{
+        margin-left: -9px;
+        margin-right: -9px;
+    }
+}
+#chartContainerLine canvas:first-of-type{z-index:999;}

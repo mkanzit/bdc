@@ -1,0 +1,12 @@
+.wm94 {
+    @media #{$phone} {
+        width:94% !important;
+    }
+}
+
+.w80-resp  {
+	
+	@media #{$phone} {
+        width:80%;
+    }
+}

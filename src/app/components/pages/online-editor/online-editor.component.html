@@ -1,0 +1,28 @@
+<div class="block">
+  <div class="container">
+    <article class="onlineediteur">
+      <div class="grid-2-tiny-1">
+        <div>
+          <img *ngIf="data.content[0].vtype === 'img'" src="{{ data.content[0].src }}" alt="{{data.content[0].title}}" title="{{data.content[0].title}}" />
+          <iframe *ngIf="data.content[0].vtype === 'videoFrame'" width="560" height="315" [src]="data.content[0].src | safeUrl" frameborder="0" allowfullscreen></iframe>
+
+          <video *ngIf="data.content[0].vtype === 'video'" id="video" controls preload="none" poster='http://img.clubic.com/08517218-photo-4-orange.jpg'>
+            <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+            <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+          </video>
+        </div>
+        <div class="mob-mbm">
+          <h2>{{ data.content[0].title }}</h2>
+          <ul class="mbm">
+
+            <li *ngFor="let item of data.content[0].content; let i = index" [innerHTML]="item"></li>
+
+          </ul>
+          <div class="block-btns">
+            <a class="btn btn--ms" routerLink="{{ data.content[0].link.href }}" title="{{ data.content[0].link.title }}">{{ data.content[0].link.text }}</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<section class="{{ quizScore.blocks[0].classes | class }}">
+    <h2 class="n2-title mbm">{{ quizScore.title }}</h2>
+
+    <p class="mbm bg-pink mb28 p20 w85">{{ quizScore.description }}</p>
+
+    <div class="grid-3-1">
+        <div class="congrats">
+            <h3 class="n3-title mb28">{{ quizScore.blocks[0].content[0].title }}</h3>
+            <p class="mb28">{{ quizScore.blocks[0].content[0].html }}</p>
+            <a [routerLink]="quizScore.blocks[0].content[0].link.href" class="{{ quizScore.blocks[0].content[0].link.classes | class }}" title="{{ quizScore.blocks[0].content[0].link.title }}">{{ quizScore.blocks[0].content[0].link.text }}</a>
+        </div>
+        <div class="score">
+            <circle-progress #score
+              [percent]="quizScore.blocks[0].content[0].progress.percent"
+              [boxSize]="quizScore.blocks[0].content[0].progress.boxSize"
+              [radius]="quizScore.blocks[0].content[0].progress.radius"
+              [lowColor]="quizScore.blocks[0].content[0].progress.lowColor"
+              [middleColor]="quizScore.blocks[0].content[0].progress.middleColor"
+              [interColor]="quizScore.blocks[0].content[0].progress.interColor"
+              [highColor]="quizScore.blocks[0].content[0].progress.highColor"
+              [border]="quizScore.blocks[0].content[0].progress.border"
+              [time]="quizScore.blocks[0].content[0].progress.time"
+              [fontFamily]="quizScore.blocks[0].content[0].progress.fontFamily"
+              [fontSize]="quizScore.blocks[0].content[0].progress.fontSize"
+              [backgroundColor] = "quizScore.blocks[0].content[0].progress.backgroundColor">
+            </circle-progress>
+        </div>
+    </div>
+</section>
+
+
+

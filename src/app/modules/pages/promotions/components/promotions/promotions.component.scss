@@ -1,0 +1,13 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+
+:host /deep/ {
+  .block-page-title {
+    padding-bottom: 20px;
+  }
+
+  .block-filter {
+    padding-bottom: 0;
+  }
+}
+
+:host(.rtl) /deep/ { }

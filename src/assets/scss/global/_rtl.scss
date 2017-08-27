@@ -1,0 +1,82 @@
+@import './_variables.scss';
+
+
+// RTL
+.rtl {
+    @import '../knacss-rtl.scss';
+    @import '../orange-rtl.scss';
+
+    direction: rtl;
+    font-family: $HelvNeue-roman-arabic;
+
+    * {
+        direction: rtl;
+        font-family: $HelvNeue-roman-arabic;
+    }
+
+    td,
+    th {
+        text-align: right;
+    }
+
+    .fl {
+        float: right;
+    }
+    .fr {
+        float: left;
+    }
+
+
+    .text {
+        &-center {
+            text-align: center
+        }
+
+        &-right {
+            text-align: left;
+        }
+
+        &-left {
+            text-align: right;
+        }
+    }
+
+
+    .mCustomScrollbar {
+        .mCSB_scrollTools {
+            &_vertical {
+                right: auto !important;
+            left: 0 !important;
+            }
+        }
+    }
+
+    ul{
+        li{
+            text-align: right;
+            *{
+                text-align: right;
+            }
+        }
+    }
+    //Online editor
+    .onlineediteur {
+        display: block;
+        ul{
+            padding-right: 1.5rem;
+        }
+        img{
+            &.fl{
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+        }
+        img{
+            &.fr{
+                margin-right: 2rem;
+                margin-left: 0;
+            }
+        }
+    }
+}
+

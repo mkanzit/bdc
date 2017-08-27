@@ -1,0 +1,38 @@
+.block-avant-premiere{
+    .liste-wt li {
+        margin-bottom: 2px;
+    }
+}
+
+.blockwb-1 {
+    border-top: 2px solid #cccccc;
+    padding: 30px 0 20px;
+
+    .form-type-radio {
+	    margin: 0 18px 13px 0;
+	}
+}
+
+.block-tv {
+    text-align:center;
+}
+
+.block-stand-b {
+
+    background: #000000;
+
+    img {
+        width: 100%;
+    }
+
+    .block-stand-b__centent {
+        color: #ffffff;
+        padding: 20px 23px;
+
+        @media screen and  (min-width: 768px) and (max-width: 959px) {
+            padding: 20px 10px;
+           
+        }
+
+    }
+}

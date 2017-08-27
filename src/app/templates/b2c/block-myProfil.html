@@ -1,0 +1,235 @@
+<div class="block-myProfil">
+    <div class="container">
+        <a href="" class="link-wi mbms inbl"><i class="icon ic-left"></i>Retour</a>
+        <div class="sslist-block">
+            <h2 class="js-st-title simpletoggle-title simpletoggle-title--alt mb50 inbl">Mon profil</h2>
+            <div class="simpletoggle-content sslist">
+                <a href="#"><i class="icon ic-left"></i>Acceuil tableau de bord</a>
+                <a href="#">Mon profil<i class="icon ic-right fr"></i></a>
+                <a href="#">Mes Pass<i class="icon ic-right fr"></i></a>
+                <a href="#">Mon Suivi Conso<i class="icon ic-right fr"></i></a>
+                <a href="#">Changer mon forfait<i class="icon ic-right fr"></i></a>
+                <a href="#">Assistance<i class="icon ic-right fr"></i></a>
+            </div>
+        </div>
+        <form class="form-parsley-validate" novalidate="">
+            <fieldset>
+                <div class="info-profil">
+                    <h3>Mes informations personnelles</h3>
+                    <div class="heder-profil">
+
+                        <div class="item nam-profil inbl">
+
+                            <span class="avatar mrm ic-Avatar ic-FS-35 fl"></span>
+
+                            <div class="block-desc-ste inbl">
+                                <h4 class="fl">Hicham Elganadi</h4>
+                                <div class="item editer-profil inbl fl">
+                                    <a href="#blockEditeProfile" class="js-header-toggle is-toggle"><i class="icon ic-Edit_Image ic-FS-30 mrs"></i>Editer mon profil</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="js-blockEdite simpletoggle-content" id="blockEditeProfile">
+                            <div class="form-edit-profil">
+                                <a href="#" class="simpletoggle-close link-close"><i class="icon ic-Delete "></i>Fermer</a>
+                                <div class="inside">
+                                    <h4>Modifier mon profil</h4>
+
+                                    <div class="items-form-row">
+                                        <p class="mbs">Civilité <span>*</span></p>
+                                        <div class="item-form">
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-1" name="genre" required="" data-parsley-trigger="change" data-parsley-multiple="genre" />
+                                                <label class="option" for="radio-1">Mr</label>
+                                            </div>
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-2" name="genre" required="" data-parsley-trigger="change" data-parsley-multiple="genre" />
+                                                <label class="option" for="radio-2">Mme</label>
+                                            </div>
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-3" name="genre" required="" data-parsley-trigger="change" data-parsley-multiple="genre" />
+                                                <label class="option" for="radio-3">Mlle</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="items-form-row">
+                                        <div class="unstyled grid-3-tiny-1">
+                                            <div class="item-form ">
+                                                <label for="Nom" class="label">Nom  <span>*</span></label>
+                                                <div class="item-form-input">
+                                                    <input type="text" class="input-form" name="fullName" id="Nom" required="" data-parsley-trigger="input">
+                                                </div>
+
+                                            </div>
+                                            <div class="item-form ">
+                                                <label for="prenom" class="label">Prénom  <span>*</span></label>
+                                                <div class="item-form-input">
+                                                    <input type="text" class="input-form" name="prenom" id="prenom" required="" data-parsley-trigger="input">
+                                                </div>
+
+                                            </div>
+                                            <div class="item-form ">
+                                                <label for="date-naissence" class="label">Date de naissence</label>
+                                                <div class="item-form-input item-form-datepicker">
+                                                    <input type="text" class="input-form zone-datepicker datepicker-icon" name="date-naissence" id="date-naissence"  placeholder="JJ / MM / AAAA" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value=" Annuler" class="btn mrs"/>
+                                        <input type="submit" value=" Valider"  class="btn btn--important inactive submit" disabled />
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-contact mb50">
+                    <div class="info-contact-row">
+                        <div class="grid-3-tiny-1">
+                            <div class="info-contact-item">
+                                <h4>Mon adresse</h4>
+                                <p>Imm 123 Bd, Zarktouni, Casablanca 20100, Maroc</p>
+                                <a href="#blockEditeadresse" class="link-edite js-header-toggle is-toggle">
+                                    <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                                    <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                                </a>
+                            </div>
+                            <div  class="info-contact-item">
+                                <h4>Me contacter</h4>
+                                <p>Par e-mail :<br/>hicham.elganadi@smile-maroc.com</p>
+                                <a id="linkEditecontact" href="#blockEditecontact" class="link-edite js-header-toggle  is-toggle">
+                                    <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                                    <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="js-blockEdite mob-mt-25" id="blockEditecontact">
+                            <div class="form-edit-profil">
+                                <div class="inside">
+                                    <h4>Moyen de contact préféré</h4>
+
+                                    <div class="items-form-row">
+                                        <div class="item-form">
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-11" name="telephone" />
+                                                <label class="option" for="radio-11">Téléphone</label>
+                                            </div>
+
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-22" name="telephone"  />
+                                                <label class="option" for="radio-22">E-mail</label>
+
+                                            </div>
+
+                                            <div class="form-type-radio">
+                                                <input type="radio" id="radio-33" name="telephone" />
+                                                <label class="option" for="radio-33">SMS</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="item-form">
+                                            <div class="form-type-checkbox ">
+                                                <input type="checkbox" id="conditions" name="conditions"  />
+                                                <label class="option" for="conditions">J'accepte de recevoir des informations des partenaires de Méditel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value="Annuler" class="btn js-header-toggle mrs" data-close="#blockEditecontact"   />
+                                        <input type="submit" value="Valider"  class="btn btn--important inactive submit" disabled />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-blockEdite mob-mt-25" id="blockEditeadresse">
+                            <div class="form-edit-profil">
+                                <div class="inside">
+                                    <h4>Modifier mon adresse</h4>
+
+                                    <div class="items-form-row ">
+                                        <div >
+                                            <div class="item-form mrs inbl w28 ">
+                                                <label for="adresse" class="label">Adresse </label>
+                                                <div class="item-form-input">
+                                                    <input type="text" class="input-form" name="adresse" id="adresse">
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w24">
+                                                <label for="Ville" class="label">Ville</label>
+                                                <div class="item-form-input">
+                                                    <select name="Ville" class="dropdown-black" >
+                                                        <option>ville</option>
+                                                        <option>Casablanca</option>
+                                                        <option>Marrakech</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w11">
+                                                <label for="code-postal" class="label">Code postal <span>*</span> </label>
+                                                <div class="item-form-input">
+                                                    <input type="text" class="input-form" name="code-postal" id="code-postal" >
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w20">
+                                                <label for="pays" class="label">Pays </label>
+                                                <div class="item-form-input">
+                                                    <select name="pays" class="dropdown-black" >
+                                                        <option>Pays</option>
+                                                        <option>Pays</option>
+                                                        <option>Pays</option>
+                                                        <option>Pays</option>
+                                                        <option>Pays</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value="Annuler" class="btn js-header-toggle mrs" data-close="#blockEditeadresse" />
+                                        <input type="submit" value="Valider"  class="btn btn--important inactive submit" disabled />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-contact-row">
+                        <div class="grid-3-tiny-1">
+
+                            <div class="info-contact-item">
+                                <h4 class="mbs">Mon E-mail</h4>
+                                <p>hicham.elganadi@smile-maroc.com</p>
+                                <a href="#" class="link-edite js-header-toggle">
+                                    <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                                </a>
+                            </div>
+                            <div class="info-contact-item">
+                                <h4 class="mbs">Mon mot de passe</h4>
+                                <p>***************</p>
+                                <a href="#" class="link-edite js-header-toggle">
+                                    <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div >
+            <a href="#" class="btn"><small>Supprimer le compte</small></a>
+        </div>
+
+
+    </div>
+</div>

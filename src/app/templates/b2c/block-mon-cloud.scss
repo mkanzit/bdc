@@ -1,0 +1,12 @@
+.block-mon-cloud {
+    margin-bottom: 26px;
+
+    .block-mon-cloud__visuel{
+        img{
+            margin-top: -40px;
+            @media #{$phone} {
+                display:none;
+            }
+        }
+    }
+}

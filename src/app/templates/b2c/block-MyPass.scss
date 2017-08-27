@@ -1,0 +1,60 @@
+.block-MyPass, .block-mon-cloud{
+
+    .form-type-radio > label {
+        color: #ffffff;
+        font-size: 2.4rem;
+
+        @media #{$phone} {
+            font-size: 2rem;
+        }
+    }
+
+    .form-type-radio {
+
+        @media #{$phone} {
+            margin: 0 0 27px;
+        }
+        
+    }
+}
+
+.value-pass {
+
+    
+    display: block;
+    font-size: 1.8rem;
+    padding: 0 0 0 30px;
+
+    span {
+        display:block;
+        font-size: 1.4rem;
+    }
+}
+
+
+.block-MyPass {
+    
+    .value-pass {
+
+            @media #{$phone} {
+                display: block;
+                float: right;
+                width: 65%;
+                padding: 0 5%;
+            }
+    }
+
+}
+.block-mon-cloud {
+    
+    .value-pass {
+
+            @media #{$phone} {
+                display: block;
+                float: right;
+                width: 50%;
+                padding: 0 2%;
+            }
+    }
+
+}

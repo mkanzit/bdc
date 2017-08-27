@@ -1,0 +1,110 @@
+@import '../../../../assets/scss/global/_variables.scss';
+
+:host {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  .block-notifications {
+    float: right;
+    margin: 7px 11px;
+    opacity: .3;
+    padding: 13px 16px;
+    position: relative;
+    transition: $sfade;
+    width: 205px;
+
+    @media #{$phone} {
+      opacity: 1;
+      float: none;
+      margin: 7px auto;
+      padding: 13px 16px;
+      width: 93%;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.bg-yellow {
+      a {
+        &:hover {
+          color: $black;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    a {
+      line-height: 16px;
+    }
+
+    .aide {
+      height: 18px;
+      line-height: 16px;
+      overflow: hidden;
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      width: 16px;
+      &:hover {
+        overflow: visible;
+
+        span {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      span {
+        background: $black;
+        color: $white;
+        font-size: 12px;
+        font-style: italic;
+        opacity: 0;
+        padding: 8px;
+        position: absolute;
+        right: calc(100% + 5px);
+        top: 100%;
+        transition: $sfade;
+        width: 172px;
+
+        &::after {
+          content: '';
+          border-style: solid;
+          border-width: 4px 0 4px 5px;
+          border-color: transparent transparent transparent $black;
+          display: block;
+          left: 100%;
+          position: absolute;
+          height: 0;
+          top: 7px;
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+:host(.rtl) {
+  .block-notifications {
+    .aide {
+      right: initial!important;
+      left: 8px!important;
+
+      span {
+        right: auto;
+        left: calc(100% + 5px);
+
+        &::after {
+          border-width: 4px 5px 4px 0;
+          border-color: transparent $black transparent transparent;
+          left: auto;
+          right: 100%;
+        }
+      }
+    }
+  }
+}

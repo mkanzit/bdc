@@ -1,0 +1,70 @@
+@import '../../../../../assets/scss/global/_variables.scss';
+
+:host {
+    display: none;
+    height: 100%;
+    left: 80px;
+    padding: 67px 14px 20px;
+    position: fixed;
+    top: 0;
+    width: 210px;
+
+    &.active {
+        display: block;
+    }
+
+    .sub-menu {
+        .close-menu {
+            background: url('/assets/imgs/css/icons/icon-menu-close.png') center no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 40px;
+            width: 40px;
+        }
+
+        .submenu-label {
+            font-size: 18px;
+            font-family: $Arial;
+            font-weight: $font-B;
+            text-align: left;
+        }
+
+        .extralinks {
+            a {
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+
+    @media #{$phone} {
+        &.active {
+            position: fixed;
+        }
+    }
+}
+
+:host(.rtl) {
+    left: auto;
+    right: 80px;
+
+    .sub-menu {
+        .close-menu {
+            left: 0;
+            right: auto;
+        }
+
+        .submenu-label {
+            direction: rtl;
+            text-align: right;
+        }
+
+
+        .extralinks {
+            a {
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,371 @@
+.tab-dash-pt{
+    padding-top: 30px;
+}
+.block-table-ligne {
+
+    @media #{$phone} {
+        padding:0 9px;
+        margin:0 0 15px 0;
+    }
+}
+
+.table-ligne {
+    border: none;
+    table-layout: auto;
+    width:100%;
+    margin-bottom:27px;
+
+    @media #{$phone} { 
+        padding-bottom: 8px;
+        position: relative;
+        /*overflow-x: auto;
+        white-space: nowrap;
+        width: auto;*/
+        margin-bottom:15px;
+    }
+
+    tr {
+
+        border-bottom:1px solid #dddddd;
+    }
+
+    td {
+        border: none;
+        padding: 13px 0;
+        font-size:2.4rem;
+        vertical-align: middle;
+
+        @media #{$phone} {
+            display: table-cell !important;
+            font-size:1.6rem;
+            padding: 7px 18px 7px 0;
+        }
+    }
+
+    td.cell-3 {
+
+        @media #{$phone} {
+            display: none !important;
+        }
+    }
+
+    .selected {
+        color:$orangeW;
+    }
+
+    .ic-device_smart_phone:before {
+        margin-left: -15px;
+
+        @media #{$phone} {
+            font-size:5rem;
+        }
+    }
+
+    .ic-device_fixed-line_phone:before {
+        margin-left: -10px;
+
+        @media #{$phone} {
+            font-size:5rem;
+        }
+    }
+}
+
+.link-souligne {
+    font-size:1.6rem;
+    text-decoration:underline;
+
+    @media #{$phone} {
+        font-size:1.4rem;
+    }
+
+    &:hover {
+        color:$orangeW;
+    }
+}
+
+.block-addline {
+    margin:0 0 34px 0;
+
+    @media #{$phone} {
+        padding:0 9px;
+        margin:0 0 17px 0;
+    }
+}
+
+.title-block-3 {
+    font-size: 2.2rem;
+    letter-spacing: -0.8px;
+    line-height: 23px;
+    margin: 0 0 29px;
+
+    @media #{$phone} {
+        font-size: 1.6rem;
+        line-height: 18px;
+        margin: 0 0 15px;
+    }
+}
+
+.tab-line-header {
+
+    margin:0 0 31px 0;
+
+    @media #{$phone} {
+
+        margin:0 0 15px 0;
+    }
+
+    li {
+        display: inline-block;
+        width: 49.6%;
+        font-size:1.5rem;
+        background:#dddddd;
+        position:relative;
+        height:30px;
+        line-height:30px;
+
+        @media #{$phone} {
+            width: 49%;
+            font-size: 1.2rem;
+        }
+
+        a {
+            display: block;
+            text-align:center;
+            padding: 0 10px 0;
+            font-size:1.5rem;
+            line-height:30px;
+
+            @media #{$phone} {
+                padding: 0 5px 0;
+            }
+        }
+    }
+
+    li:first-child:after, li:first-child:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    li:first-child:after {
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: #dddddd;
+        border-width: 15px;
+        margin-top: -15px;
+    }
+
+    li:first-child:before {
+        border-color: rgba(194, 225, 245, 0);
+        border-left-color: #ffffff;
+        border-width: 18px;
+        margin-top: -18px;
+    }
+
+    .ui-tabs-active {
+        color:$white;
+        background:$orangeW-background;
+
+        a {
+            color:$white;
+        }
+    }
+
+    li.ui-tabs-active:first-child:after {
+        border-left-color: #f16e00;
+    }
+    li.ui-tabs-active:first-child:before {
+        border-left-color: #ffffff;
+    }
+}
+
+.block-grid__item {
+    text-align: center;
+    margin-top:34px;
+    margin-bottom:58px;
+
+    @media #{$phone} {
+        margin-bottom: 30px;
+        margin-top: 17px;
+    }
+
+    /*img {
+            margin:0 0 18px 0;
+
+            @media #{$phone} {
+                margin:0 0 9px 0;
+                height: 74px;
+            }
+    }*/
+
+    .form-type-radio {
+        /*display: block;*/
+        margin: 0;
+    }
+}
+
+.form-tab {
+
+    fieldset {
+
+        padding:0;
+        margin:0;
+    }
+
+    .ic-device_smart_phone:before {
+
+        @media #{$phone} {
+            font-size:7rem;
+        }
+    }
+
+    .ic-device_fixed-line_phone:before {
+
+        @media #{$phone} {
+            font-size:7rem;
+        }
+    }
+
+    .ic-Internet:before {
+
+        @media #{$phone} {
+            font-size:7rem;
+        }
+    }
+
+    .icon {
+        margin: 0 0 18px;
+    }
+
+}
+
+.block-input-marge {
+
+    margin-left:0 !important;
+}
+
+.block-input-marge-1 {
+
+    margin-left:1rem !important;
+}
+
+.txt-large-1 {
+
+    font-size: 3rem;
+    line-height: 31px;
+    margin: 0;
+    padding: 0 0 28px 0;
+    letter-spacing: -0.5px;
+
+    @media #{$phone} {
+        font-size: 1.5rem;
+        line-height: 18px;
+        padding: 0 0 16px;
+    }
+}
+
+.cell-1 {
+    width:10%;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width:10%;
+    }
+
+    @media #{$phone} {
+        padding: 7px 20px 7px 0 !important;
+        width: 12%;
+    }
+}
+
+.cell-2 {
+    /*width:30%;*/
+    border: 1px solid blue;
+    width: 70%;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        width: 70%;
+    }
+}
+
+.cell-number {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5% 0 0;
+    width: 45%;
+
+    @media screen and  (min-width: 768px) and (max-width: 959px) {
+        padding: 0;
+        width: 48%;
+    }
+
+    @media #{$phone} {
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.cell-name {
+    display: inline-block;
+    padding: 0;
+    width: 50%;
+    vertical-align: middle;
+
+    @media #{$phone} {
+        display: block;
+        width: 100%;
+    }
+}
+
+.cell-3 {
+    width:20%;
+}
+
+
+.block-bt-mob {
+
+    @media #{$phone} {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .block-input-marge {
+
+        @media #{$phone} {
+            width: 100% !important;
+        }
+
+    }
+
+    .block-input-marge-1 {
+
+        @media #{$phone} {
+            margin-left: 0 !important;
+            width: 30% !important;
+        }
+
+    }
+}
+
+.medium-mob {
+
+    .sb-border-black {
+
+        @media #{$phone} {
+            width: 100% !important;
+        }
+    }
+}
+
+.block-dirt-f {
+
+    @media #{$phone} {
+        float:left;
+    }
+
+}

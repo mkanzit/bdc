@@ -1,0 +1,42 @@
+.block-large-stable-select {
+	width:160px;
+
+	.dropdown-black {
+	    font-size: 1.4rem;
+	}
+
+	.selectBox-options LI A {
+	    font-size: 1.4rem;
+	}
+}
+
+.diaporama{
+    position: relative;
+    padding: 0 60px;
+    @media #{$phone} {
+    padding: 0 20px;    
+    }
+
+    .diaporama-nav{
+            position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-top:-20px;
+        .nav-link{
+            float: left;
+            &.next{
+              float: right;  
+            }
+            
+            i{
+                font-size: 3.5rem;
+                @media #{$phone} {
+  font-size: 1.8rem;  
+    }
+            }
+            
+        }
+    }
+}

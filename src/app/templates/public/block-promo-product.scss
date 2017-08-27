@@ -1,0 +1,23 @@
+.link-av-promo{
+    @media #{$phone} {
+        margin-bottom: 20px;
+    }
+    a{
+        color: $white;
+        text-decoration: underline;
+        vertical-align: top;
+        padding-right: 10px;
+        &:last-child{
+            padding-right: 0;
+        }
+        @media #{$phone} {
+            min-width: 85%;
+            margin-left: 0;
+            margin-bottom: 20px;
+            
+        }
+    }
+}
+.prix-offre{
+    letter-spacing: -0.4rem;
+}

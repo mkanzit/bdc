@@ -1,0 +1,238 @@
+<div class="block-myProfil">
+    <div class="container">
+        <a href="" class="link-wi mbms inbl"><i class="icon ic-left"></i>Retour</a>
+        <div class="sslist-block">
+            <h2 class="js-st-title simpletoggle-title simpletoggle-title--alt mb50 inbl">Mon profil</h2>
+            <div class="simpletoggle-content sslist">
+                <a href="#"><i class="icon ic-left"></i>Acceuil tableau de bord</a>
+                <a href="#">Mon profil<i class="icon ic-right fr"></i></a>
+                <a href="#">Mes Pass<i class="icon ic-right fr"></i></a>
+                <a href="#">Mon Suivi Conso<i class="icon ic-right fr"></i></a>
+                <a href="#">Changer mon forfait<i class="icon ic-right fr"></i></a>
+                <a href="#">Assistance<i class="icon ic-right fr"></i></a>
+            </div>
+        </div>
+        <div class="info-profil">
+            <h3 class="mbm">Mes informations </h3>
+            <div class="heder-profil">
+                <div class="item nam-profil inbl">
+                    <span class="avatar mrm ic-Avatar ic-FS-35 fl"></span>
+                    <div class="block-desc-ste inbl">
+                        <h4 class="fl">Smile Maroc</h4>
+                        <div class="item editer-profil inbl fl">
+                            <a href="#blockEditeProfile" class="js-header-toggle"><i class="icon ic-Edit_Image ic-FS-30 mrs"></i>Editer mon profil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-blockEdite simpletoggle-content" id="blockEditeProfile">
+                    <div class="form-edit-profil">
+                        <a href="#" class="simpletoggle-close link-close"><i class="icon ic-Delete "></i>Fermer</a>
+                        <div class="inside">
+                            <h4>Modifier mon profil</h4>
+                            <form class="form-parsley-validate" novalidate>
+                                <fieldset>
+                                    <div class="items-form-row">
+                                        <p class="mbs">Civilité</p>
+                                        <div class="item-form">
+                                            <div class="form-type-radio">
+                                                <input type="radio" name="genre" id="radio-1" required data-parsley-trigger="change" />
+                                                <label class="option" for="radio-1">Mr</label>
+                                            </div>
+                                            <div class="form-type-radio">
+                                                <input type="radio" name="genre" id="radio-2" required data-parsley-trigger="change" />
+                                                <label class="option" for="radio-2">Mme</label>
+                                            </div>
+                                            <div class="form-type-radio">
+                                                <input type="radio" name="genre" id="radio-3" required data-parsley-trigger="change" />
+                                                <label class="option" for="radio-3">Mlle</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <div class="unstyled grid-3-tiny-1">
+                                            <div class="item-form ">
+                                                <label for="numero" class="label">Nom </label>
+                                                <div class="item-form-input">
+                                                    <input id="numero" type="text" placeholder="nom" class="input-form" required data-parsley-trigger="input" />
+                                                </div>
+                                            </div>
+                                            <div class="item-form ">
+                                                <label for="mot-passe" class="label">Prénom</label>
+                                                <div class="item-form-input">
+                                                    <input id="mot-passe" type="text" class="input-form" placeholder="Prénom" required data-parsley-trigger="input" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value="Annuler" class="btn mrs">
+                                        <input type="submit" value="Valider" class="btn btn--important inactive submit" disabled>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-contact info-contact-col">
+            <div class="info-contact-row">
+                <div>
+                    <div class="info-contact-item">
+                        <h4>Ma raison sociale</h4>
+                        <p>7 rue Assilah (2ème étage)</p>
+                        <p>Type RC : NRC</p>
+                        <p>N° RC : 0000000</p>
+                        <a href="#blockEditeadresse" class="link-edite js-header-toggle">
+                            <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                            <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                        </a>
+                    </div>
+                    <div class="info-contact-item">
+                        <h4>Mes coordonnées</h4>
+                        <p>E-mail :</p>
+                        <p>hicham.elganadi@smile-maroc.com</p>
+                        <p>Téléphone :</p>
+                        <p><strong class="number-direction">06 63 12 11 21</strong></p>
+                        <a id="linkEditecontact" href="#blockEditecontact" class="link-edite js-header-toggle">
+                            <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                            <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                        </a>
+                    </div>
+                    <div class="info-contact-item">
+                        <h4>Ma pièce d'identité</h4>
+                        <p>Type de pièce d'identité :</p>
+                        <p>CIN</p>
+                        <p>N° de la pièce d'identité :</p>
+                        <p>00000000</p>
+                        <a id="linkEditeidentite" href="#blockEditeidentite" class="link-edite js-header-toggle">
+                            <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                            <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="blockEditeidentite" class="js-blockEdite mob-mt-25">
+                    <div class="form-edit-profil">
+                        <div class="inside">
+                            <h4>Modifier ma pièce d'identité</h4>
+                            <form class="form-parsley-validate" novalidate>
+                                <fieldset>
+                                    <div class="items-form-row ">
+                                        <div>
+                                            <div class="item-form inbl mrs w30">
+                                                <label class="label">Type de pièce d'identité</label>
+                                                <div class="item-form-input">
+                                                    <select name="test" class="dropdown-black" required data-parsley-trigger="change">
+                                                        <option>CIN</option>
+                                                        <option>CIN</option>
+                                                        <option>CIN</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="item-form mrs inbl w30 ">
+                                                <label class="label" for="piece-identite">N° de la pièce d'identité</label>
+                                                <div class="item-form-input">
+                                                    <input type="text" class="input-form" placeholder="" id="piece-identite" required data-parsley-trigger="input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" data-close="#blockEditeadresse" class="btn js-header-toggle mrs" value=" Annuler">
+                                        <input type="submit" class="btn btn--important inactive submit" disabled value="Valider">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-blockEdite mob-mt-25" id="blockEditecontact">
+                    <div class="form-edit-profil">
+                        <div class="inside">
+                            <h4>Modifier mes coordonnées</h4>
+                            <form class="form-parsley-validate" novalidate>
+                                <fieldset>
+                                    <div class="items-form-row ">
+                                        <div>
+                                            <div class="item-form inbl mrs w30">
+                                                <label for="mail" class="label">Adresse e-mail</label>
+                                                <div class="item-form-input">
+                                                    <input id="mail" type="email" placeholder="" class="input-form" required data-parsley-trigger="input" />
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w30">
+                                                <label for="numero-contact" class="label">Numéro de contact</label>
+                                                <div class="item-form-input">
+                                                    <input id="numero-contact" type="tel" placeholder="" class="input-form" data-parsley-trigger="input" data-parsley-type="number" minlength="10" maxlength="10" data-parsley-error-message="Le numéro de téléphone doit être 10 chiffres" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value="Annuler" class="btn js-header-toggle mrs" data-close="#blockEditecontact" />
+                                        <input type="submit" value="Valider" class="btn btn--important inactive submit" disabled />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-blockEdite mob-mt-25" id="blockEditeadresse">
+                    <div class="form-edit-profil">
+                        <div class="inside">
+                            <h4>Modifier ma raison sociale</h4>
+                            <form class="form-parsley-validate" novalidate>
+                                <fieldset>
+                                    <div class="items-form-row ">
+                                        <div>
+                                            <div class="item-form mrs inbl w30 ">
+                                                <label for="raison-sociale" class="label">Raison sociale</label>
+                                                <div class="item-form-input">
+                                                    <input id="raison-sociale" type="text" placeholder="" class="input-form" required data-parsley-trigger="input" />
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w30">
+                                                <label class="label">Type RC</label>
+                                                <div class="item-form-input">
+                                                    <select name="test" class="dropdown-black" required data-parsley-trigger="change">
+                                                        <option>patente</option>
+                                                        <option>patente</option>
+                                                        <option>patente</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="item-form inbl mrs w30">
+                                                <label for="numero-rc" class="label">Numéro RC</label>
+                                                <div class="item-form-input">
+                                                    <input id="numero-rc" type="text" placeholder="" class="input-form" required data-parsley-trigger="input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-form-row">
+                                        <input type="reset" value=" Annuler" class="btn js-header-toggle mrs" data-close="#blockEditeadresse" />
+                                        <input type="submit" value="Valider" class="btn btn--important inactive submit" disabled />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-contact-row">
+                <div>
+                    <div class="info-contact-item">
+                        <h4 class="mbs">Mon mot de passe</h4>
+                        <p>***************</p>
+                        <a href="#" class="link-edite js-header-toggle">
+                            <span class="edit"><i class="icon ic-Pencil ic-FS-20"></i>Modifier</span>
+                            <span class="close"><i class="icon ic-Delete "></i>Fermer</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

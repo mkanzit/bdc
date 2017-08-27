@@ -1,0 +1,7 @@
+<li class="menu-item" [class.active]="active" (click)="onSelect()">
+  <div class="menu-item-link">
+    <i class="icon {{ item.icon }}"></i>
+    <span>{{ item.title }}</span>
+  </div>
+  <app-submenu #submenu *ngIf="item.children" [menu]="item.children" [title]="item.title" class="bg-gray2" (collapse)="onCollapse($event)"></app-submenu>
+</li>

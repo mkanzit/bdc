@@ -1,0 +1,11 @@
+<div class="notice-widget">
+  <i class="icon icon-notice" title="{{ messages.title }}"></i>
+  <span class="notice-counter bg-orangeB">{{ counter }}</span>
+  <div class="widget-links" malihu-scrollbar [scrollbarOptions]="csOptions">
+    <ul>
+      <li *ngFor="let link of messages.links">
+        <a routerLink="{{ link.href }}" class="link" title="{{ link.title }}">{{ link.text }}</a>
+      </li>
+    </ul>
+  </div>
+</div>

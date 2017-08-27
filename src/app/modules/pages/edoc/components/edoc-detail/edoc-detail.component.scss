@@ -1,0 +1,49 @@
+@import '../../../../../../assets/scss/global/_variables.scss';
+@import '../../../../../../assets/scss/global/fonts/_icon-orange.scss';
+
+:host /deep/ {
+    .e-doc {
+        display: table;
+        width: 100%;
+
+        .onlineediteur {
+            padding-right: 10%;
+
+            @media #{$phone} {
+                padding-right: 0;
+            }
+        }
+
+        >.icon,
+        div {
+            display: table-cell;
+            vertical-align: top;
+            float: none;
+        }
+
+        >.icon {
+            font-size: 7rem;
+            padding-right: 1rem;
+        }
+
+        p {
+            width: 100%
+        }
+
+        .btn {
+            margin-right: 1rem;
+            vertical-align: middle;
+
+            i {
+                font-size: 1.6rem;
+                vertical-align: middle;
+
+                &.ic-accessibility_vision {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {}

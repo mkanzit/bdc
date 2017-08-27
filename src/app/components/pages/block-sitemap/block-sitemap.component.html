@@ -1,0 +1,35 @@
+<section class="block block-sitemap">
+  <div class="container">
+    <div class="grid-2-1">
+      <div>
+        <div class="global-links mb28" *ngFor="let item of sections">
+          <h2 class="n2-title color-orangeB">{{ item.title }}</h2>
+          <div class="grid-3-tiny-1">
+            <div *ngFor="let section of item.sections">
+              <h3 class="n3-title">{{ section.title }}</h3>
+              <ul>
+                <li *ngFor="let link of section.links">
+                  <a routerLink="{{ link.href }}" title="{{ link.title }}">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="special-links mb28">
+          <div class="grid-3-tiny-1">
+            <div *ngFor="let link of special[0].sections[0].links">
+              <h2 class="n2-title color-orangeB"><a routerLink="{{ link.href }}" title="{{ link.title }}">{{ link.text }}</a></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-links mb28">
+        <h3 class="n3-title" *ngFor="let link of extra[0].sections[0].links">
+          <a routerLink="{{ link.href }}" title="{{ link.title }}">{{ link.text }}</a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>

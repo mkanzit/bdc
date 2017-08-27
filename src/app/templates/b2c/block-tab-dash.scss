@@ -1,0 +1,65 @@
+.tab-dash-header{
+    border-bottom: 2px solid $black;
+    li{
+        display: inline-block;
+        bottom: -2px;
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: bold;
+        // width: 32.2%;
+        width: 15%;
+        margin-left: -4px;
+        text-align: center;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:focus{
+            outline: 0;
+        }
+        span,a{
+            display: block;
+            margin: 0 9px;
+            padding: 7px 0;
+            letter-spacing: -0.01em;
+            &:focus{
+                outline: 0;
+            }
+        }
+        &:hover{
+            a{
+                background: $black;
+                color: $white;
+            }
+        }
+        &.active {
+            border-left: 2px solid $black;
+            border-right: 2px solid $black;
+            border-top: 2px solid $black;
+
+            background: #fff;
+        }
+    }
+    @media #{$phone} {
+        li{
+            vertical-align: middle;
+            width: 37%;
+            span,a{
+                padding: 1%;
+                margin: 0;
+            }
+            a{
+                padding-top: 26px;
+            }
+
+        }
+    }
+}
+.tab-dash__item{
+    padding-top: 40px;
+}
+.tab-dash__item--s{
+     padding-top: 19px;
+}
+.tab-dash__item--n{
+     padding-top: 19px;
+}

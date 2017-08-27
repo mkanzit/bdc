@@ -1,0 +1,27 @@
+@import '../../../../assets/scss/global/_variables.scss';
+@import '../../../../assets/scss/global/fonts/_icon-orange.scss';
+:host /deep/ {
+    ol {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+        li{
+            &::before{
+                color: $black;
+            }
+        }
+    }
+
+    ul {
+        padding-left: 1.5rem;
+
+        li {
+            list-style: initial;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+:host(.rtl) /deep/ {}

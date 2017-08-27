@@ -1,0 +1,35 @@
+<div class="block block-search">
+  <div class="search-query">
+    <form autocomplete="off">
+      <div class="form-item">
+        <input #queryTerm type="text" name="query" placeholder="Tapez votre recherche içi" [value]="query" (keyup)="updateQuery(queryTerm.value)" autocomplete="off">
+      </div>
+      <div class="form-action">
+        <i class="icon ic-search" (click)="search(queryTerm)"></i>
+      </div>
+    </form>
+  </div>
+  <div class="search-hints" [class.active]="active" preventClick>
+    <div class="container">
+      <div class="grid-2-tiny-1">
+        <div class="history-items">
+          <h2>Historique de la recherche</h2>
+          <ul class="terms-list">
+            <li class="term" *ngFor="let term of historyTermsFiltered; let i = index">
+              <span (click)="select(term)">{{ term.query }}</span>
+              <i class="icon ic-Delete" title="Delete" (click)="reduceHistory(i)"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="favorites-items">
+          <h2>Les plus recherchés</h2>
+          <ul class="terms-list">
+            <li class="term" *ngFor="let term of favoritesTermsFiltered; let i = index">
+              <span (click)="select(term)">{{ term.query }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.item-av-position {
+	position:relative;
+
+	.item-av__content {
+	    padding: 0 18px 77px;
+	}
+
+	.btn.btn--bb {
+	    bottom: 16px;
+	    left: 18px;
+	    position: absolute;
+	}
+
+	.n3-title--alt {
+	    line-height: 27px;
+	}
+}
+
+.block-height-element {
+	min-height: 66px;
+	height:auto;
+
+	@media #{$phone} {
+       min-height: auto !important;
+    }
+}

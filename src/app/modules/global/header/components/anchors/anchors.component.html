@@ -1,0 +1,10 @@
+<div class="dashboard-shortcuts--anchors">
+  <i class="icon icon-anchors" title="{{ anchors.title }}"></i>
+  <div class="widget-links" malihu-scrollbar [scrollbarOptions]="csOptions">
+    <ul>
+      <li *ngFor="let link of anchors.links; let i = index">
+        <a routerLink="{{ currentRoute }}" fragment="item-{{ i + 1 }}" title="{{ link.title }}">{{ link.text }}</a>
+      </li>
+    </ul>
+  </div>
+</div>

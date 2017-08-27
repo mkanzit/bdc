@@ -1,0 +1,20 @@
+@import '../../../../assets/scss/global/_variables.scss';
+:host /deep/ {
+    .item-mobile {
+        position: relative;
+        margin-bottom: 40px;
+
+        .prices {
+            p {
+                margin-bottom: 0
+            }
+        }
+    }
+}
+
+:host(.rtl) /deep/ {
+    .item-mobile {
+        direction: rtl;
+        text-align: right;
+    }
+}

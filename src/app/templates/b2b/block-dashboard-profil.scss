@@ -1,0 +1,27 @@
+.cercel-icon{
+     background: #000000;
+    border-radius: 60px;
+    display: inline-block;
+    height: 62px;
+    text-align: center;
+    width: 62px;
+
+    @media #{$phone} {
+        height: 52px;
+        width: 52px;
+    }
+
+    &:before{
+        color: $white;
+	    display: inline-block;
+	    margin-top: 8px;
+    }
+}
+
+.block-dashboard-profil {
+	
+	@media #{$phone} {
+		padding-left: 1rem;
+    	padding-right: 1rem;
+	}
+}

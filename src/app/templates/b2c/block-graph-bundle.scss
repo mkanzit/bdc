@@ -1,0 +1,132 @@
+.block-btn {
+    margin: 0 0 30px 0;
+    .btn {
+        position: relative;
+        min-width: 170px;
+        text-align: center;
+        @media #{$phone} {
+            float: none;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.list-calls {
+    margin: 25px 0 0 0 !important;
+    li {
+        margin: 0 0 16px 0;
+        font-size: 1.6rem;
+    }
+}
+
+.picto-call {
+    border-radius: 25px;
+    display: inline-block;
+    height: 25px;
+    vertical-align: middle;
+    width: 25px;
+    margin-right: 16px;
+}
+
+.picto-call--national {
+    background: #4bb4e6;
+}
+
+.picto-call--international {
+    background: #b5e8f7;
+}
+
+.picto-call--roaming {
+    background: #085ebd;
+}
+
+.picto-call--other {
+    background: #8f8f8f;
+}
+
+.table-number {
+    border: none;
+    margin: 0 0 25px 0;
+    thead {
+        background: #000000;
+        color: #ffffff;
+        @media #{$phone} {
+            display: table-row-group !important;
+            width: 100%;
+        }
+    }
+    td,
+    th {
+        padding: 8px 2% 8px 2%;
+        border: none;
+        font-size: 1.6rem;
+        @media #{$tablet} {
+            width: 44%;
+        }
+        @media #{$phone} {
+            display: table-cell !important;
+            width: 44%;
+        }
+    }
+    td.w15,
+    th.w15 {
+        width: 15%;
+    }
+    td.w20,
+    th.w20 {
+        width: 20%;
+    }
+    tr td:first-child,
+    tr th:first-child {
+        @media #{$tablet} {
+            width: 19%;
+        }
+        @media #{$phone} {
+            width: 19%;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+}
+
+.regular {
+    font-weight: normal;
+}
+
+
+
+.block-call-graph {
+    @media #{$phone} {
+        margin-bottom: 20px;
+    }
+}
+@media #{$tablet-phone} {
+    .block-graph-large__inside{
+        width: 758px;
+    }
+ }
+.block-graph-large {
+    margin: 0 0 54px;
+    @media #{$phone} {
+        overflow: hidden;
+        overflow-x: scroll;
+       
+    }
+
+    img {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.table-number td.w31,
+.table-number th.w31 {
+    width: 31%;
+}
+
+.canvasjs-chart-container {
+    text-align: start !important;
+}

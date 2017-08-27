@@ -1,0 +1,41 @@
+.sous-menu{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 50px;
+    padding: 4px 0;
+    background: $white;
+    z-index: 99999999999;
+    .link-ssmenu{
+        text-align: right;
+    }
+    .sous-menu__links{
+            margin-top: 9px;
+        li{
+            float: left;
+            a{
+                margin-right: 20px
+            }
+            &.active{
+                a{
+                    color: $orangeW;
+                }
+            }
+        }
+    }
+    a.dropdown-black{
+        display: none !important;
+        @media #{$phone} {
+            display: inline-block !important;
+        }
+    }
+    &.sous-menu--fix{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        @media #{$phone} {
+             top: 51px;
+        }
+    }
+}
